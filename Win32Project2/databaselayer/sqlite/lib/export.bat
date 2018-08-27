@@ -1,0 +1,1 @@
+lib.exe /def:sqlite3.def /machine:x86 /out:sqlite3.lib
