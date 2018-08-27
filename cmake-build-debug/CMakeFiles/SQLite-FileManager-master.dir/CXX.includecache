@@ -1,0 +1,126 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/About.h
+wx/artprov.h
+-
+wx/xrc/xmlres.h
+-
+wx/string.h
+-
+wx/stattext.h
+-
+wx/gdicmn.h
+-
+wx/font.h
+-
+wx/colour.h
+-
+wx/settings.h
+-
+wx/sizer.h
+-
+wx/button.h
+-
+wx/dialog.h
+-
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/EditElementDialog.h
+wx/wx.h
+-
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/EditGroupDialog.cpp
+EditGroupDialog.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/EditGroupDialog.h
+wx/valgen.h
+-
+databaselayer/include/wx/filepicker.h
+-
+databaselayer/include/wx/wfstream.h
+-
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/EditGroupDialog.h
+wx/wx.h
+-
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/Element.h
+wxActiveRecord.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/wxActiveRecord.h
+wx/wx.h
+-
+wx/string.h
+-
+wx/datetime.h
+-
+Group.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/Group.h
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/Group.h
+wxActiveRecord.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/wxActiveRecord.h
+wx/wx.h
+-
+wx/string.h
+-
+wx/datetime.h
+-
+Element.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/Element.h
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/RecordIDClientData.h
+wx/clntdata.h
+-
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SQLiteTestApp.h
+wx/wx.h
+-
+DatabaseLayer.h
+-
+SqliteDatabaseLayer.h
+-
+Group.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/Group.h
+Element.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/Element.h
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SQLiteTestMainFrame.cpp
+SQLiteTestMainFrame.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SQLiteTestMainFrame.h
+SQLiteTestApp.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SQLiteTestApp.h
+About.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/About.h
+RecordIDClientData.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/RecordIDClientData.h
+EditGroupDialog.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/EditGroupDialog.h
+EditElementDialog.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/EditElementDialog.h
+SearchElement.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SearchElement.h
+wx/splitter.h
+-
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SQLiteTestMainFrame.h
+wx/wx.h
+-
+wx/toolbar.h
+-
+wx/listbox.h
+-
+wx/listctrl.h
+-
+wx/html/htmlwin.h
+-
+About.h
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/About.h
+
+C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/Win32Project2/SearchElement.h
+wx/dialog.h
+-
+
