@@ -16,12 +16,14 @@ include_directories(Win32Project2/wxActiveRecord)
 
 
 add_executable(Win32Project2__Copia WIN32
-        ${PROJECT_SOURCE_DIR}/Win32Project2/EditGroupDialog.cpp
+               ${PROJECT_SOURCE_DIR}/Win32Project2/EditGroupDialog.cpp
         ${PROJECT_SOURCE_DIR}/Win32Project2/EditGroupDialog.h
         ${PROJECT_SOURCE_DIR}/Win32Project2/EditElementDialog.cpp
         ${PROJECT_SOURCE_DIR}/Win32Project2/EditElementDialog.h
         ${PROJECT_SOURCE_DIR}/Win32Project2/Group.cpp
         ${PROJECT_SOURCE_DIR}/Win32Project2/Group.h
+        ${PROJECT_SOURCE_DIR}/Win32Project2/Gcode.cpp
+        ${PROJECT_SOURCE_DIR}/Win32Project2/Gcode.h
         ${PROJECT_SOURCE_DIR}/Win32Project2/Element.cpp
         ${PROJECT_SOURCE_DIR}/Win32Project2/Element.h
         ${PROJECT_SOURCE_DIR}/Win32Project2/RecordIDClientData.h
@@ -35,6 +37,7 @@ add_executable(Win32Project2__Copia WIN32
         ${PROJECT_SOURCE_DIR}/Win32Project2/About.h
         ${PROJECT_SOURCE_DIR}/Win32Project2/SearchElement.cpp
         ${PROJECT_SOURCE_DIR}/Win32Project2/SearchElement.h
+
 
         )
 
