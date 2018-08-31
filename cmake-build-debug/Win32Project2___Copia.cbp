@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Win32Project2___Copia"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Win32Project2___Copia">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug/Win32Project2___Copia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/wxActiveRecord"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 Win32Project2___Copia"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Win32Project2___Copia/fast">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug/Win32Project2___Copia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/wxActiveRecord"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 Win32Project2___Copia/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/About.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/About.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/EditElementDialog.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/EditElementDialog.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/EditGroupDialog.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/EditGroupDialog.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/Element.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/Element.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/Group.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/Group.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/RecordIDClientData.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/SQLiteTestApp.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/SQLiteTestApp.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/SQLiteTestMainFrame.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/SQLiteTestMainFrame.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/SearchElement.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/SearchElement.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/wxActiveRecord.cpp">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/Win32Project2/wxActiveRecord.h">
+			<Option target="Win32Project2___Copia"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Nuova cartella (12)/Win32Project2 - Copia/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

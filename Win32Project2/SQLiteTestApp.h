@@ -6,12 +6,13 @@
 #include <SqliteDatabaseLayer.h>
 #include "Group.h"
 #include "Element.h"
+#include "Gcode.h"
 
 class SQLiteTestApp : public wxApp
 {
 	Group * GroupTable;
 	Element * ElementTable;
-
+	Gcode * GcodeTable;
 	DatabaseLayer * Database;
 public:
 	virtual bool OnInit();
@@ -22,7 +23,7 @@ public:
 
 	Group * GetGroupTable();
 	Element * GetElementTable();
-
+	Gcode * GetGcodeTable();
 };
 
 DECLARE_APP(SQLiteTestApp)

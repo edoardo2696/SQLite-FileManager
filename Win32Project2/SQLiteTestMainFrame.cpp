@@ -11,6 +11,7 @@
 enum
 {
 	ID_GROUPS_LISTBOX = 10001,
+
 	ID_ELEMENTS_LISTCTRL,
 	ID_ELEMENT_INFO_PANEL,
 	ID_ADD_GROUP,
@@ -22,7 +23,7 @@ enum
     ID_SEARCH_ELEMENT,
 	ID_DELETE_ELEMENT,
     ID_ELEMENT_IMAGE_PANEL,
-    ID_GROUP_IMAGE_INFO_PANEL
+    ID_GCODE_PANEL
 };
 
 BEGIN_EVENT_TABLE(SQLiteTestMainFrame, wxFrame)
@@ -83,22 +84,18 @@ void SQLiteTestMainFrame::CreateControls()
 
 	wxSplitterWindow * Elementsplitter = new wxSplitterWindow(splitter, wxID_ANY, wxDefaultPosition, wxSize(500, 400), wxSP_3DSASH);
     Elementsplitter->SetMinimumPaneSize(100);
-
     wxSplitterWindow * ElementInfoSplitter = new wxSplitterWindow(Elementsplitter, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxSP_3DSASH);
+    ElementInfoSplitter->SetMinimumPaneSize(100);
 
-	GroupsListBox = new wxListBox(splitter, ID_GROUPS_LISTBOX, wxDefaultPosition, wxDefaultSize);
+
+    GroupsListBox = new wxListBox(splitter, ID_GROUPS_LISTBOX, wxDefaultPosition, wxDefaultSize);
     ElementsListView = new wxListView(Elementsplitter, ID_ELEMENTS_LISTCTRL, wxDefaultPosition, wxDefaultSize, wxLC_REPORT);
     {
         ElementsListView->InsertColumn(0, _("id"), wxLIST_FORMAT_LEFT, 120);
         ElementsListView->InsertColumn(1, _("groupid"), wxLIST_FORMAT_LEFT, 110);
         ElementsListView->InsertColumn(2, _("image"), wxLIST_FORMAT_LEFT, 130);
-        ElementsListView->InsertColumn(3, _("gcode"), wxLIST_FORMAT_LEFT, 130);
+
     }
-
-
-
-    ElementInfoSplitter->SetMinimumPaneSize(100);
-
 
     ElementImagePanel = new wxHtmlWindow(ElementInfoSplitter, ID_ELEMENT_IMAGE_PANEL);
     int fontsizes[] = {6, 8, 9, 10, 12, 16, 18};
@@ -107,11 +104,8 @@ void SQLiteTestMainFrame::CreateControls()
     ElementInfoPanel = new wxHtmlWindow(ElementInfoSplitter, ID_ELEMENT_INFO_PANEL);
     ElementInfoPanel->SetFonts(wxT("Tahoma"), wxT("Tahoma"), fontsizes);
 
-
     Elementsplitter->SetSashGravity(1.0);
-
     splitter->SplitVertically(GroupsListBox, Elementsplitter, 160);
-
     Elementsplitter->SplitHorizontally(ElementsListView, ElementInfoSplitter, Elementsplitter->GetSize().GetHeight());
     ElementInfoSplitter->SplitVertically(ElementInfoPanel, ElementImagePanel, 160);
 
@@ -178,6 +172,7 @@ void SQLiteTestMainFrame::FillGroupsList()
 			GroupsListBox->GetClientObject(GroupsListBox->GetSelection());
 		if(data)
 		{
+
 			FillElementsList(data->GetID());
 		}
 	}
@@ -198,7 +193,7 @@ void SQLiteTestMainFrame::FillElementsList(int groupid)
 		for(unsigned long i = 0; i < allElements->Count(); ++i)
 		{
             item = ElementsListView->InsertItem(item, allElements->Item(i)->id);
-            ElementsListView->SetItem(item, 3, allElements->Item(i)->gcode);
+
             ElementsListView->SetItem(item, 2, allElements->Item(i)->image);
             ElementsListView->SetItem(item, 1, wxString::Format(wxT("%i"),allElements->Item(i)->groupid));
             ElementsListView->SetItem(item, 0, wxString::Format(wxT("%i"),allElements->Item(i)->id));
@@ -231,6 +226,7 @@ void SQLiteTestMainFrame::OnGroupListBoxSelected(wxCommandEvent & event)
 
 // ONELEMENTLISTVIEWSELECTED
 
+
 void SQLiteTestMainFrame::OnElementListViewSelected(wxListEvent & event)
 {
 	long Elementid = event.GetData();
@@ -244,9 +240,7 @@ void SQLiteTestMainFrame::OnElementListViewSelected(wxListEvent & event)
         ElementImagePanel->SetPage(wxString::Format(
                 wxT("<html><body></body></html>")));
 
-        ElementImagePanel->AppendToPage(wxString::Format(
-			wxT("<b>gcode:</b> <a href=\"file:%s\">%s</a><br>"),
-			Element->gcode.GetData(), Element->gcode.GetData()));
+
         ElementImagePanel->AppendToPage(wxString::Format(
                 wxT("<b>Image:</b> <a href=\"%s\" ><img height=\"400\" width=\"400\"  src=\"%s\"/></a><br>"),
                 Element->image.GetData(), Element->image.GetData()));
@@ -399,27 +393,6 @@ void SQLiteTestMainFrame::OnExit(wxCommandEvent & event)
 
 void SQLiteTestMainFrame::OnSearchElement(wxCommandEvent &event) {
 
-	wxListView * list;
-	SearchDialog *search = new SearchDialog(this);
-	if(search->ShowModal() == wxID_OK)
-	{
-		int found = -1;
-		wxString result;
-		while((found = list->FindItem(found+1, "", true)) >= 0)
-		{
-			result += list->GetItemText(found, 0);
-			result += wxT("\r\n");
-		}
-		wxMessageBox(result);
-	}
-
-}
-
-void SQLiteTestMainFrame::OnAddGcode(wxCommandEvent &event) {
-
-}
-
-void SQLiteTestMainFrame::OnRemoveGcode(wxCommandEvent &event) {
 
 }
 

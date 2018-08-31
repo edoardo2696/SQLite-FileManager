@@ -1,6 +1,5 @@
 #include "Group.h"
 
-/** ACTIVE_RECORD **/
 Group::Group():wxSqliteActiveRecord(){
 }
 
@@ -16,7 +15,9 @@ bool Group::Create(const wxString& table,const wxString& name,const wxString& se
 
 GroupRow* Group::RowFromResult(DatabaseResultSet* result){
 	GroupRow* row=new GroupRow(this);
+	
 	row->GetFromResult(result);
+	
 	return row;
 }
 
@@ -130,9 +131,6 @@ GroupRowSet* Group::All(){
 	}
 }
 
-/** END ACTIVE RECORD **/
-
-/** ACTIVE RECORD ROW **/
 
 GroupRow::GroupRow():wxActiveRecordRow(){
 	bool newRow=true;
@@ -174,9 +172,10 @@ GroupRow& GroupRow::operator=(const GroupRow& src){
 bool GroupRow::GetFromResult(DatabaseResultSet* result){
 	
 	newRow=false;
-	name=result->GetResultString(wxT("name"));
+		name=result->GetResultString(wxT("name"));
 	description=result->GetResultString(wxT("description"));
 	id=result->GetResultInt(wxT("id"));
+
 
 	return true;
 }
@@ -188,7 +187,6 @@ bool GroupRow::Save(){
 			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("INSERT INTO %s (name,description) VALUES (?,?)"),m_table.c_str()));
 			pStatement->SetParamString(1,name);
 			pStatement->SetParamString(2,description);
-
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
 
@@ -229,13 +227,13 @@ bool GroupRow::Delete(){
 
 
 ElementRowSet* GroupRow::GetElements(){
-	ElementRowSet* set= new ElementRowSet(m_database,wxT("Elements"));
-	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM Elements WHERE groupid=?"));
+	ElementRowSet* set= new ElementRowSet(m_database,wxT("elements"));
+	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM elements WHERE groupid=?"));
 	pStatement->SetParamInt(1,id);
 	DatabaseResultSet* result= pStatement->ExecuteQuery();
 
 	while(result->Next()){
-		ElementRow* toAdd=new ElementRow(m_database,wxT("Elements"));
+		ElementRow* toAdd=new ElementRow(m_database,wxT("elements"));
 		toAdd->GetFromResult(result);
 		set->Add(toAdd);
 	}
@@ -246,10 +244,6 @@ ElementRowSet* GroupRow::GetElements(){
 }
 
 
-
-/** END ACTIVE RECORD ROW **/
-
-/** ACTIVE RECORD ROW SET **/
 
 GroupRowSet::GroupRowSet():wxActiveRecordRowSet(){
 }
@@ -314,6 +308,3 @@ CMPFUNC_proto GroupRowSet::GetCmpFunc(const wxString& var) const{
 	return (CMPFUNC_proto)CMPFUNC_default;
 }
 
-
-
-/** END ACTIVE RECORD ROW SET **/

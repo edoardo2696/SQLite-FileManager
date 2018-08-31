@@ -1,6 +1,5 @@
 #ifndef __GROUP_
 #define __GROUP_
-
 #include "wxActiveRecord.h"
 #include <wx/wx.h>
 #include <wx/string.h>
@@ -15,7 +14,8 @@ class Element;
 class ElementRow;
 class ElementRowSet;
 
-class Group: public wxSqliteActiveRecord{
+class Group: public wxSqliteActiveRecord
+		{
 protected:
 	GroupRow* RowFromResult(DatabaseResultSet* result);
 public:
@@ -52,7 +52,6 @@ public:
 	bool Save();
 	bool Delete();
 
-
 };
 class GroupRowSet: public wxActiveRecordRowSet{
 public:
@@ -69,4 +68,5 @@ protected:
 	virtual CMPFUNC_proto GetCmpFunc(const wxString& var) const;
 
 };
+
 #endif

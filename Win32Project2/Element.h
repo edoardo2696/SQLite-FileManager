@@ -1,11 +1,12 @@
-#ifndef __Element_
-#define __Element_
+#ifndef __ELEMENT_
+#define __ELEMENT_
 
 #include "wxActiveRecord.h"
 #include <wx/wx.h>
 #include <wx/string.h>
 #include <wx/datetime.h>
 #include "Group.h"
+#include "Gcode.h"
 
 class Element;
 class ElementRow;
@@ -14,6 +15,9 @@ class ElementRowSet;
 class Group;
 class GroupRow;
 class GroupRowSet;
+class Gcode;
+class GcodeRow;
+class GcodeRowSet;
 
 class Element: public wxSqliteActiveRecord{
 protected:
@@ -42,17 +46,17 @@ public:
 	ElementRow& operator=(const ElementRow& src);
 	bool GetFromResult(DatabaseResultSet* result);
 public:
-
 	int id;
 	int groupid;
 	wxString image;
-    wxString gcode;
 
 public:
 	GroupRow* GetGroup();
+	GcodeRowSet* GetGcodes();
 
 	bool Save();
 	bool Delete();
+
 
 };
 class ElementRowSet: public wxActiveRecordRowSet{
@@ -63,11 +67,10 @@ public:
 	virtual ElementRow* Item(unsigned long item);
 	virtual bool SaveAll();
 protected:
-
 	static int CMPFUNC_id(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_groupid(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_image(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
-	static int CMPFUNC_gcode(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
+	static int CMPFUNC_global(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	virtual CMPFUNC_proto GetCmpFunc(const wxString& var) const;
 
 };

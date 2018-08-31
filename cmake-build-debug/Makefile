@@ -49,24 +49,13 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master"
+CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache\fast: edit_cache
-
-.PHONY : edit_cache\fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -79,11 +68,22 @@ rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache\fast: edit_cache
+
+.PHONY : edit_cache\fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SQLite-FileManager-master
+# Target rules for targets named Win32Project2__Copia
 
 # Build rule for target.
-SQLite-FileManager-master: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) SQLite-FileManager-master
-.PHONY : SQLite-FileManager-master
+Win32Project2__Copia: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project2__Copia
+.PHONY : Win32Project2__Copia
 
 # fast build rule for target.
-SQLite-FileManager-master\fast:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\build
-.PHONY : SQLite-FileManager-master\fast
+Win32Project2__Copia\fast:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\build
+.PHONY : Win32Project2__Copia\fast
 
 Win32Project2\About.obj: Win32Project2\About.cpp.obj
 
@@ -130,7 +130,7 @@ Win32Project2\About.obj: Win32Project2\About.cpp.obj
 
 # target to build an object file
 Win32Project2\About.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\About.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj
 .PHONY : Win32Project2\About.cpp.obj
 
 Win32Project2\About.i: Win32Project2\About.cpp.i
@@ -139,7 +139,7 @@ Win32Project2\About.i: Win32Project2\About.cpp.i
 
 # target to preprocess a source file
 Win32Project2\About.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\About.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.i
 .PHONY : Win32Project2\About.cpp.i
 
 Win32Project2\About.s: Win32Project2\About.cpp.s
@@ -148,7 +148,7 @@ Win32Project2\About.s: Win32Project2\About.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\About.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\About.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.s
 .PHONY : Win32Project2\About.cpp.s
 
 Win32Project2\EditElementDialog.obj: Win32Project2\EditElementDialog.cpp.obj
@@ -157,7 +157,7 @@ Win32Project2\EditElementDialog.obj: Win32Project2\EditElementDialog.cpp.obj
 
 # target to build an object file
 Win32Project2\EditElementDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\EditElementDialog.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj
 .PHONY : Win32Project2\EditElementDialog.cpp.obj
 
 Win32Project2\EditElementDialog.i: Win32Project2\EditElementDialog.cpp.i
@@ -166,7 +166,7 @@ Win32Project2\EditElementDialog.i: Win32Project2\EditElementDialog.cpp.i
 
 # target to preprocess a source file
 Win32Project2\EditElementDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\EditElementDialog.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.i
 .PHONY : Win32Project2\EditElementDialog.cpp.i
 
 Win32Project2\EditElementDialog.s: Win32Project2\EditElementDialog.cpp.s
@@ -175,7 +175,7 @@ Win32Project2\EditElementDialog.s: Win32Project2\EditElementDialog.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\EditElementDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\EditElementDialog.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.s
 .PHONY : Win32Project2\EditElementDialog.cpp.s
 
 Win32Project2\EditGroupDialog.obj: Win32Project2\EditGroupDialog.cpp.obj
@@ -184,7 +184,7 @@ Win32Project2\EditGroupDialog.obj: Win32Project2\EditGroupDialog.cpp.obj
 
 # target to build an object file
 Win32Project2\EditGroupDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\EditGroupDialog.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj
 .PHONY : Win32Project2\EditGroupDialog.cpp.obj
 
 Win32Project2\EditGroupDialog.i: Win32Project2\EditGroupDialog.cpp.i
@@ -193,7 +193,7 @@ Win32Project2\EditGroupDialog.i: Win32Project2\EditGroupDialog.cpp.i
 
 # target to preprocess a source file
 Win32Project2\EditGroupDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\EditGroupDialog.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.i
 .PHONY : Win32Project2\EditGroupDialog.cpp.i
 
 Win32Project2\EditGroupDialog.s: Win32Project2\EditGroupDialog.cpp.s
@@ -202,7 +202,7 @@ Win32Project2\EditGroupDialog.s: Win32Project2\EditGroupDialog.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\EditGroupDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\EditGroupDialog.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.s
 .PHONY : Win32Project2\EditGroupDialog.cpp.s
 
 Win32Project2\Element.obj: Win32Project2\Element.cpp.obj
@@ -211,7 +211,7 @@ Win32Project2\Element.obj: Win32Project2\Element.cpp.obj
 
 # target to build an object file
 Win32Project2\Element.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\Element.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj
 .PHONY : Win32Project2\Element.cpp.obj
 
 Win32Project2\Element.i: Win32Project2\Element.cpp.i
@@ -220,7 +220,7 @@ Win32Project2\Element.i: Win32Project2\Element.cpp.i
 
 # target to preprocess a source file
 Win32Project2\Element.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\Element.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.i
 .PHONY : Win32Project2\Element.cpp.i
 
 Win32Project2\Element.s: Win32Project2\Element.cpp.s
@@ -229,8 +229,35 @@ Win32Project2\Element.s: Win32Project2\Element.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\Element.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\Element.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.s
 .PHONY : Win32Project2\Element.cpp.s
+
+Win32Project2\Gcode.obj: Win32Project2\Gcode.cpp.obj
+
+.PHONY : Win32Project2\Gcode.obj
+
+# target to build an object file
+Win32Project2\Gcode.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj
+.PHONY : Win32Project2\Gcode.cpp.obj
+
+Win32Project2\Gcode.i: Win32Project2\Gcode.cpp.i
+
+.PHONY : Win32Project2\Gcode.i
+
+# target to preprocess a source file
+Win32Project2\Gcode.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.i
+.PHONY : Win32Project2\Gcode.cpp.i
+
+Win32Project2\Gcode.s: Win32Project2\Gcode.cpp.s
+
+.PHONY : Win32Project2\Gcode.s
+
+# target to generate assembly for a file
+Win32Project2\Gcode.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.s
+.PHONY : Win32Project2\Gcode.cpp.s
 
 Win32Project2\Group.obj: Win32Project2\Group.cpp.obj
 
@@ -238,7 +265,7 @@ Win32Project2\Group.obj: Win32Project2\Group.cpp.obj
 
 # target to build an object file
 Win32Project2\Group.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\Group.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj
 .PHONY : Win32Project2\Group.cpp.obj
 
 Win32Project2\Group.i: Win32Project2\Group.cpp.i
@@ -247,7 +274,7 @@ Win32Project2\Group.i: Win32Project2\Group.cpp.i
 
 # target to preprocess a source file
 Win32Project2\Group.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\Group.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.i
 .PHONY : Win32Project2\Group.cpp.i
 
 Win32Project2\Group.s: Win32Project2\Group.cpp.s
@@ -256,7 +283,7 @@ Win32Project2\Group.s: Win32Project2\Group.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\Group.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\Group.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.s
 .PHONY : Win32Project2\Group.cpp.s
 
 Win32Project2\SQLiteTestApp.obj: Win32Project2\SQLiteTestApp.cpp.obj
@@ -265,7 +292,7 @@ Win32Project2\SQLiteTestApp.obj: Win32Project2\SQLiteTestApp.cpp.obj
 
 # target to build an object file
 Win32Project2\SQLiteTestApp.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SQLiteTestApp.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj
 .PHONY : Win32Project2\SQLiteTestApp.cpp.obj
 
 Win32Project2\SQLiteTestApp.i: Win32Project2\SQLiteTestApp.cpp.i
@@ -274,7 +301,7 @@ Win32Project2\SQLiteTestApp.i: Win32Project2\SQLiteTestApp.cpp.i
 
 # target to preprocess a source file
 Win32Project2\SQLiteTestApp.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SQLiteTestApp.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.i
 .PHONY : Win32Project2\SQLiteTestApp.cpp.i
 
 Win32Project2\SQLiteTestApp.s: Win32Project2\SQLiteTestApp.cpp.s
@@ -283,7 +310,7 @@ Win32Project2\SQLiteTestApp.s: Win32Project2\SQLiteTestApp.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\SQLiteTestApp.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SQLiteTestApp.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.s
 .PHONY : Win32Project2\SQLiteTestApp.cpp.s
 
 Win32Project2\SQLiteTestMainFrame.obj: Win32Project2\SQLiteTestMainFrame.cpp.obj
@@ -292,7 +319,7 @@ Win32Project2\SQLiteTestMainFrame.obj: Win32Project2\SQLiteTestMainFrame.cpp.obj
 
 # target to build an object file
 Win32Project2\SQLiteTestMainFrame.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj
 .PHONY : Win32Project2\SQLiteTestMainFrame.cpp.obj
 
 Win32Project2\SQLiteTestMainFrame.i: Win32Project2\SQLiteTestMainFrame.cpp.i
@@ -301,7 +328,7 @@ Win32Project2\SQLiteTestMainFrame.i: Win32Project2\SQLiteTestMainFrame.cpp.i
 
 # target to preprocess a source file
 Win32Project2\SQLiteTestMainFrame.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SQLiteTestMainFrame.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.i
 .PHONY : Win32Project2\SQLiteTestMainFrame.cpp.i
 
 Win32Project2\SQLiteTestMainFrame.s: Win32Project2\SQLiteTestMainFrame.cpp.s
@@ -310,7 +337,7 @@ Win32Project2\SQLiteTestMainFrame.s: Win32Project2\SQLiteTestMainFrame.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\SQLiteTestMainFrame.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SQLiteTestMainFrame.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.s
 .PHONY : Win32Project2\SQLiteTestMainFrame.cpp.s
 
 Win32Project2\SearchElement.obj: Win32Project2\SearchElement.cpp.obj
@@ -319,7 +346,7 @@ Win32Project2\SearchElement.obj: Win32Project2\SearchElement.cpp.obj
 
 # target to build an object file
 Win32Project2\SearchElement.cpp.obj:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SearchElement.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj
 .PHONY : Win32Project2\SearchElement.cpp.obj
 
 Win32Project2\SearchElement.i: Win32Project2\SearchElement.cpp.i
@@ -328,7 +355,7 @@ Win32Project2\SearchElement.i: Win32Project2\SearchElement.cpp.i
 
 # target to preprocess a source file
 Win32Project2\SearchElement.cpp.i:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SearchElement.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.i
 .PHONY : Win32Project2\SearchElement.cpp.i
 
 Win32Project2\SearchElement.s: Win32Project2\SearchElement.cpp.s
@@ -337,8 +364,35 @@ Win32Project2\SearchElement.s: Win32Project2\SearchElement.cpp.s
 
 # target to generate assembly for a file
 Win32Project2\SearchElement.cpp.s:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\Win32Project2\SearchElement.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.s
 .PHONY : Win32Project2\SearchElement.cpp.s
+
+Win32Project2\wxActiveRecord.obj: Win32Project2\wxActiveRecord.cpp.obj
+
+.PHONY : Win32Project2\wxActiveRecord.obj
+
+# target to build an object file
+Win32Project2\wxActiveRecord.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj
+.PHONY : Win32Project2\wxActiveRecord.cpp.obj
+
+Win32Project2\wxActiveRecord.i: Win32Project2\wxActiveRecord.cpp.i
+
+.PHONY : Win32Project2\wxActiveRecord.i
+
+# target to preprocess a source file
+Win32Project2\wxActiveRecord.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.i
+.PHONY : Win32Project2\wxActiveRecord.cpp.i
+
+Win32Project2\wxActiveRecord.s: Win32Project2\wxActiveRecord.cpp.s
+
+.PHONY : Win32Project2\wxActiveRecord.s
+
+# target to generate assembly for a file
+Win32Project2\wxActiveRecord.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.s
+.PHONY : Win32Project2\wxActiveRecord.cpp.s
 
 # Help Target
 help:
@@ -346,9 +400,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... SQLite-FileManager-master
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Win32Project2__Copia
+	@echo ... edit_cache
 	@echo ... Win32Project2/About.obj
 	@echo ... Win32Project2/About.i
 	@echo ... Win32Project2/About.s
@@ -361,6 +415,9 @@ help:
 	@echo ... Win32Project2/Element.obj
 	@echo ... Win32Project2/Element.i
 	@echo ... Win32Project2/Element.s
+	@echo ... Win32Project2/Gcode.obj
+	@echo ... Win32Project2/Gcode.i
+	@echo ... Win32Project2/Gcode.s
 	@echo ... Win32Project2/Group.obj
 	@echo ... Win32Project2/Group.i
 	@echo ... Win32Project2/Group.s
@@ -373,6 +430,9 @@ help:
 	@echo ... Win32Project2/SearchElement.obj
 	@echo ... Win32Project2/SearchElement.i
 	@echo ... Win32Project2/SearchElement.s
+	@echo ... Win32Project2/wxActiveRecord.obj
+	@echo ... Win32Project2/wxActiveRecord.i
+	@echo ... Win32Project2/wxActiveRecord.s
 .PHONY : help
 
 

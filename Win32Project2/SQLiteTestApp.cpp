@@ -58,35 +58,40 @@ bool SQLiteTestApp::ConnectToDatabase()
 		catch(DatabaseLayerException & e) {wxUnusedVar(e);}
 		try
 		{
-            Database->RunQuery(wxT("CREATE TABLE elements (id INTEGER PRIMARY KEY NOT NULL UNIQUE, groupid INTEGER NOT NULL REFERENCES groups (id), image VARCHAR(128), gcode VARCHAR(128))"));
+            Database->RunQuery(wxT("CREATE TABLE elements (id INTEGER PRIMARY KEY NOT NULL UNIQUE, groupid INTEGER NOT NULL REFERENCES groups (id), image VARCHAR(128))"));
 		}
         catch(DatabaseLayerException & e) {wxUnusedVar(e);}
-      // try
-      //  {
-      //     Database->RunQuery(wxT("CREATE TABLE gcode (elementid INTEGER PRIMARY KEY NOT NULL UNIQUE, gcode  VARCHAR(128))"));
-      //  }
-      //  catch(DatabaseLayerException & e) {wxUnusedVar(e);}
-		if(bCreate)
-		{
+      try {
+          Database->RunQuery(
+                  wxT("CREATE TABLE gcodes (elementid INTEGER NOT NULL REFERENCES element (id), code VARCHAR(260) PRIMARY KEY NOT NULL UNIQUE)"));
+          }
+        catch(DatabaseLayerException & e) {wxUnusedVar(e);}
+		if(bCreate) {
             Database->RunQuery(
-				wxT("INSERT INTO groups(id, name, description) VALUES (1, 'Group', 'My groups')"));
-			pStatement = Database->PrepareStatement(
-				wxT("INSERT INTO elements(id, groupid, image, gcode) VALUES (?,?,?,?)"));
-          //  pStatement = Database->PrepareStatement(
-          //          wxT("INSERT INTO gcode(elementid, gcode) VALUES (?,?)"));
-			if (pStatement)
-			{
-				pStatement->SetParamInt(1, 1);
-				pStatement->SetParamInt(2, 1);
-				pStatement->SetParamString(3, "5822091.8_8.jpg");
-                pStatement->SetParamInt(4, 1);
+                    wxT("INSERT INTO groups(id, name, description) VALUES (1, 'Group', 'My groups')"));
+            pStatement = Database->PrepareStatement(
+                    wxT("INSERT INTO elements(id, groupid, image) VALUES (?,?,?)"));
+            if (pStatement) {
+                pStatement->SetParamInt(1, 1);
+                pStatement->SetParamInt(2, 1);
+                pStatement->SetParamString(3, "5822091.8_8.jpg");
 
-				pStatement->RunQuery();
+
+                pStatement->RunQuery();
                 Database->CloseStatement(pStatement);
-				pStatement = nullptr;
-			}
+                pStatement = nullptr;
+            }
+            pStatement = Database->PrepareStatement(
+                    wxT("INSERT INTO gcodes(elementid, code) VALUES (?,?)"));
+            if (pStatement) {
+                pStatement->SetParamInt(1, 1);
+                pStatement->SetParamString(2, "01010.txt");
+                pStatement->RunQuery();
+                Database->CloseStatement(pStatement);
+                pStatement = nullptr;
 
-		}
+            }
+        }
 	}
 	catch(DatabaseLayerException & e)
 	{
@@ -101,8 +106,9 @@ bool SQLiteTestApp::ConnectToDatabase()
 	}
 	try
 	{
-        GroupTable = new Group(wxGetApp().GetDatabase(), wxT("groups"));
-		ElementTable = new Element(wxGetApp().GetDatabase(), wxT("elements"));
+        GroupTable = new Group(wxGetApp().GetDatabase(), "groups");
+		ElementTable = new Element(wxGetApp().GetDatabase(), "elements");
+        GcodeTable = new Gcode(wxGetApp().GetDatabase(), "gcodes");
 
 	}
 	catch(DatabaseLayerException & e)
@@ -125,4 +131,8 @@ Group * SQLiteTestApp::GetGroupTable()
 Element * SQLiteTestApp::GetElementTable()
 {
 	return ElementTable;
+}
+
+Gcode *SQLiteTestApp::GetGcodeTable() {
+    return GcodeTable;
 }

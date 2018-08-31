@@ -28,9 +28,9 @@ GcodeRow* Gcode::New(){
 	return newRow;
 }
 
-GcodeRow * Gcode::Gcode(wxString key){
+GcodeRow* Gcode::Code(wxString key){
 	try{
-		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("SELECT * FROM %s WHERE gcode=?"),m_table.c_str()));
+		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("SELECT * FROM %s WHERE code=?"),m_table.c_str()));
 		pStatement->SetParamString(1,key);
 		DatabaseResultSet* result= pStatement->ExecuteQuery();
 
@@ -51,7 +51,7 @@ GcodeRow * Gcode::Gcode(wxString key){
 
 bool Gcode::Delete(wxString key){
 	try{
-		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("DELETE FROM %s WHERE gcode=?"),m_table.c_str()));
+		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("DELETE FROM %s WHERE code=?"),m_table.c_str()));
 		pStatement->SetParamString(1,key);
 		pStatement->ExecuteUpdate();
 		return true;
@@ -146,7 +146,7 @@ GcodeRow::GcodeRow(const GcodeRow& src){
 		return;
 	newRow=src.newRow;
 	
-	gcode=src.gcode;
+	code=src.code;
 	elementid=src.elementid;
 
 }
@@ -161,7 +161,7 @@ GcodeRow& GcodeRow::operator=(const GcodeRow& src){
 		return *this;
 	newRow=src.newRow;
 	
-	gcode=src.gcode;
+	code=src.code;
 	elementid=src.elementid;
 
 
@@ -171,7 +171,7 @@ GcodeRow& GcodeRow::operator=(const GcodeRow& src){
 bool GcodeRow::GetFromResult(DatabaseResultSet* result){
 	
 	newRow=false;
-		gcode=result->GetResultString(wxT("gcode"));
+		code=result->GetResultString(wxT("code"));
 	elementid=result->GetResultInt(wxT("elementid"));
 
 
@@ -182,8 +182,8 @@ bool GcodeRow::GetFromResult(DatabaseResultSet* result){
 bool GcodeRow::Save(){
 	try{
 		if(newRow){
-			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("INSERT INTO %s (gcode,elementid) VALUES (?,?)"),m_table.c_str()));
-			pStatement->SetParamString(1,gcode);
+			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("INSERT INTO %s (code,elementid) VALUES (?,?)"),m_table.c_str()));
+			pStatement->SetParamString(1,code);
 			pStatement->SetParamInt(2,elementid);
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
@@ -192,9 +192,9 @@ bool GcodeRow::Save(){
 			newRow=false;
 		}
 		else{
-			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("UPDATE %s SET ,elementid=? WHERE gcode=?"),m_table.c_str()));
+			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("UPDATE %s SET ,elementid=? WHERE code=?"),m_table.c_str()));
 			pStatement->SetParamInt(1,elementid);
-			pStatement->SetParamString(2,gcode);
+			pStatement->SetParamString(2,code);
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
 
@@ -211,8 +211,8 @@ bool GcodeRow::Save(){
 
 bool GcodeRow::Delete(){
 	try{
-		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("DELETE FROM %s WHERE gcode=?"),m_table.c_str()));
-		pStatement->SetParamString(1,gcode);
+		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("DELETE FROM %s WHERE code=?"),m_table.c_str()));
+		pStatement->SetParamString(1,code);
 		pStatement->ExecuteUpdate();
 		return true;
 	}
@@ -225,9 +225,9 @@ bool GcodeRow::Delete(){
 
 ElementRow* GcodeRow::GetElement(){
 	ElementRow* owner= new ElementRow(m_database,wxT("elements"));
-	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM elements WHERE gcode=?"));
+	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM elements WHERE code=?"));
 	pStatement->SetParamInt(1,elementid);
-	pStatement->SetParamString(1,elementid);
+
 	DatabaseResultSet* result= pStatement->ExecuteQuery();
 
 	result->Next();
@@ -237,7 +237,6 @@ ElementRow* GcodeRow::GetElement(){
 	m_database->CloseStatement(pStatement);
 	return owner;
 }
-
 
 
 GcodeRowSet::GcodeRowSet():wxActiveRecordRowSet(){
@@ -269,10 +268,10 @@ bool GcodeRowSet::SaveAll(){
 	}
 }
 
-int GcodeRowSet::CMPFUNC_gcode(wxActiveRecordRow** item1,wxActiveRecordRow** item2){
+int GcodeRowSet::CMPFUNC_code(wxActiveRecordRow** item1,wxActiveRecordRow** item2){
 	GcodeRow** m_item1=(GcodeRow**)item1;
 	GcodeRow** m_item2=(GcodeRow**)item2;
-	return (*m_item1)->gcode.Cmp((*m_item2)->gcode);
+	return (*m_item1)->code.Cmp((*m_item2)->code);
 }
 
 int GcodeRowSet::CMPFUNC_elementid(wxActiveRecordRow** item1,wxActiveRecordRow** item2){
@@ -287,13 +286,10 @@ int GcodeRowSet::CMPFUNC_elementid(wxActiveRecordRow** item1,wxActiveRecordRow**
 }
 
 CMPFUNC_proto GcodeRowSet::GetCmpFunc(const wxString& var) const{
-	if(var==wxT("gcode"))
-		return (CMPFUNC_proto)CMPFUNC_gcode;
+	if(var==wxT("code"))
+		return (CMPFUNC_proto)CMPFUNC_code;
 	else if(var==wxT("elementid"))
 		return (CMPFUNC_proto)CMPFUNC_elementid;
 	else 
 	return (CMPFUNC_proto)CMPFUNC_default;
 }
-
-
-

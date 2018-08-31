@@ -14,7 +14,7 @@ class SQLiteTestMainFrame : public wxFrame
 	wxListView * ElementsListView;
 	wxHtmlWindow * ElementInfoPanel;
 	wxHtmlWindow * ElementImagePanel;
-    wxHtmlWindow * GroupImagePanel;
+
 
 	wxToolBarToolBase* About;
     wxToolBarToolBase* SearchElement;
@@ -32,6 +32,7 @@ public:
 	DECLARE_EVENT_TABLE()
 	void OnExit(wxCommandEvent & event);
 	void OnGroupListBoxSelected(wxCommandEvent & event);
+
 	void OnElementListViewSelected(wxListEvent & event);
 	void OnElementImagePanelLinkClicked(wxHtmlLinkEvent & event);
 
@@ -42,8 +43,8 @@ public:
 
 	void OnAddElement(wxCommandEvent & event);
 	void OnRemoveElement(wxCommandEvent & event);
-    void OnAddGcode(wxCommandEvent & event);
-    void OnRemoveGcode(wxCommandEvent & event);
+   // void OnAddGcode(wxCommandEvent & event);
+   // void OnRemoveGcode(wxCommandEvent & event);
 	
 	void OnRemoveGroupUpdateUI(wxUpdateUIEvent & event);
 	void OnAddElementUpdateUI(wxUpdateUIEvent & event);

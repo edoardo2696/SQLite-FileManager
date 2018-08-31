@@ -145,75 +145,66 @@ ElementRow::ElementRow(const ElementRow& src){
 	if(&src==this)
 		return;
 	newRow=src.newRow;
-
+	
 	id=src.id;
 	groupid=src.groupid;
-    gcode=src.gcode;
-    image=src.image;
-
+	image=src.image;
 
 }
 
 ElementRow::ElementRow(DatabaseLayer* database,const wxString& table):wxActiveRecordRow(database,table){
 	newRow=true;
 }
-
+	
 
 ElementRow& ElementRow::operator=(const ElementRow& src){
 	if(&src==this)
 		return *this;
 	newRow=src.newRow;
+	
+	id=src.id;
+	groupid=src.groupid;
+	image=src.image;
 
-    id=src.id;
-    groupid=src.groupid;
-    gcode=src.gcode;
-    image=src.image;
 
-
-    return *this;
+	return *this;
 }
 
 bool ElementRow::GetFromResult(DatabaseResultSet* result){
-
+	
 	newRow=false;
-    try {
-        id = result->GetResultInt(wxT("id"));
-        groupid = result->GetResultInt(wxT("groupid"));
-        image = result->GetResultString(wxT("image"));
-        gcode = result->GetResultString(wxT("gcode"));
-    } catch (DatabaseLayerException & e) {
+		id=result->GetResultInt(wxT("id"));
+	groupid=result->GetResultInt(wxT("groupid"));
+	image=result->GetResultString(wxT("image"));
 
-    }
 
 	return true;
 }
-
+	
 
 bool ElementRow::Save(){
 	try{
 		if(newRow){
-			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("INSERT INTO %s (groupid,image,gcode) VALUES (?,?,?)"),m_table.c_str()));
-			pStatement->SetParamInt(1,groupid);
-			pStatement->SetParamString(2,image);
-			pStatement->SetParamString(3,gcode);
-
+			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("INSERT INTO %s (,groupid,image) VALUES (?,?,?)"),m_table.c_str()));
+			pStatement->SetParamInt(1,id);
+			pStatement->SetParamInt(2,groupid);
+			pStatement->SetParamString(3,image);
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
 
-
+			
 			newRow=false;
 		}
 		else{
-			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("UPDATE %s SET id=?,groupid=?,image=?,gcode=?, WHERE id=?"),m_table.c_str()));
-            pStatement->SetParamInt(1,id);
-            pStatement->SetParamInt(2,groupid);
-            pStatement->SetParamString(3,image);
-            pStatement->SetParamString(4,gcode);
+			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("UPDATE %s SET ,groupid=?,image=? WHERE id=?"),m_table.c_str()));
+			pStatement->SetParamInt(1,groupid);
+			pStatement->SetParamString(2,image);
+			pStatement->SetParamInt(3,id);
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
 
 		}
-
+		
 		return true;
 	}
 	catch (DatabaseLayerException& e)
@@ -252,6 +243,22 @@ GroupRow* ElementRow::GetGroup(){
 	return owner;
 }
 
+GcodeRowSet* ElementRow::GetGcodes(){
+	GcodeRowSet* set= new GcodeRowSet(m_database,wxT("gcodes"));
+	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM gcodes WHERE elementid=?"));
+	pStatement->SetParamInt(1,id);
+	DatabaseResultSet* result= pStatement->ExecuteQuery();
+
+	while(result->Next()){
+		GcodeRow* toAdd=new GcodeRow(m_database,wxT("gcodes"));
+		toAdd->GetFromResult(result);
+		set->Add(toAdd);
+	}
+	garbageRowSets.Add(set);
+	m_database->CloseResultSet(result);
+	m_database->CloseStatement(pStatement);
+	return set;
+}
 
 
 ElementRowSet::ElementRowSet():wxActiveRecordRowSet(){
@@ -283,7 +290,6 @@ bool ElementRowSet::SaveAll(){
 	}
 }
 
-
 int ElementRowSet::CMPFUNC_id(wxActiveRecordRow** item1,wxActiveRecordRow** item2){
 	ElementRow** m_item1=(ElementRow**)item1;
 	ElementRow** m_item2=(ElementRow**)item2;
@@ -312,16 +318,6 @@ int ElementRowSet::CMPFUNC_image(wxActiveRecordRow** item1,wxActiveRecordRow** i
 	return (*m_item1)->image.Cmp((*m_item2)->image);
 }
 
-
-int ElementRowSet::CMPFUNC_gcode(wxActiveRecordRow** item1,wxActiveRecordRow** item2){
-	ElementRow** m_item1=(ElementRow**)item1;
-	ElementRow** m_item2=(ElementRow**)item2;
-	return (*m_item1)->gcode.Cmp((*m_item2)->gcode);
-}
-
-
-
-
 CMPFUNC_proto ElementRowSet::GetCmpFunc(const wxString& var) const{
 	if(var==wxT("id"))
 		return (CMPFUNC_proto)CMPFUNC_id;
@@ -329,9 +325,8 @@ CMPFUNC_proto ElementRowSet::GetCmpFunc(const wxString& var) const{
 		return (CMPFUNC_proto)CMPFUNC_groupid;
 	else if(var==wxT("image"))
 		return (CMPFUNC_proto)CMPFUNC_image;
-	else if(var==wxT("gcode"))
-		return (CMPFUNC_proto)CMPFUNC_gcode;
-	else
+	else 
 	return (CMPFUNC_proto)CMPFUNC_default;
 }
+
 

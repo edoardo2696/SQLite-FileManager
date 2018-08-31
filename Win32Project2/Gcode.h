@@ -15,6 +15,7 @@ class Element;
 class ElementRow;
 class ElementRowSet;
 
+
 class Gcode: public wxSqliteActiveRecord{
 protected:
 	GcodeRow* RowFromResult(DatabaseResultSet* result);
@@ -24,7 +25,7 @@ public:
 	Gcode(DatabaseLayer* database,const wxString& table);
 	bool Create(const wxString& table,const wxString& name,const wxString& server=wxT(""),const wxString& user=wxT(""),const wxString& password=wxT(""));
 	GcodeRow* New();
-
+	GcodeRow* Code(wxString key);
 
 	bool Delete(wxString key);
 
@@ -32,7 +33,6 @@ public:
 	GcodeRowSet* WhereSet(const wxString& whereClause);
 	GcodeRowSet* All(); 
 
-public:
 };
 class GcodeRow: public wxActiveRecordRow{
 public:
@@ -43,7 +43,7 @@ public:
 	GcodeRow& operator=(const GcodeRow& src);
 	bool GetFromResult(DatabaseResultSet* result);
 public:
-	wxString gcode;
+	wxString code;
 	int elementid;
 
 public:
@@ -52,7 +52,7 @@ public:
 	bool Save();
 	bool Delete();
 
-public:
+
 };
 class GcodeRowSet: public wxActiveRecordRowSet{
 public:
@@ -62,12 +62,11 @@ public:
 	virtual GcodeRow* Item(unsigned long item);
 	virtual bool SaveAll();
 protected:
-	static int CMPFUNC_gcode(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
+	static int CMPFUNC_code(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_elementid(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_global(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	virtual CMPFUNC_proto GetCmpFunc(const wxString& var) const;
 
-public:
 };
 
 #endif

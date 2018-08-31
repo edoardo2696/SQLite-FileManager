@@ -14,7 +14,7 @@ enum
 
 EditElementDialog::EditElementDialog(wxWindow * parent)
 {
-	Create(parent, wxID_ANY, _("Editing Element"));
+	Create(parent, wxID_ANY, "Editing Element");
 }
 
 bool EditElementDialog::Create(wxWindow * parent, 
@@ -33,26 +33,26 @@ void EditElementDialog::CreateControls()
 	wxBoxSizer * sizer = new wxBoxSizer(wxVERTICAL);
 	SetSizer(sizer);
 
-	wxStaticText * nameLabel = new wxStaticText(this, wxID_ANY, _("Name:"));
-	wxStaticText * descriptionLabel = new wxStaticText(this, wxID_ANY, _("Description:"));
-	wxStaticText * Image = new wxStaticText( this, wxID_ANY, wxT("Image"));
-    wxStaticText * Gcode = new wxStaticText( this, wxID_ANY, wxT("Gcode"));
+	wxStaticText * NameLabel = new wxStaticText(this, wxID_ANY, "Name:");
+	wxStaticText * descriptionLabel = new wxStaticText(this, wxID_ANY, "Description:");
+	wxStaticText * Image = new wxStaticText( this, wxID_ANY, "Image");
+    wxStaticText * Gcode = new wxStaticText( this, wxID_ANY, "Gcode");
 
-    wxTextCtrl * nameEdit = new wxTextCtrl(this, ID_ELD_NAME_TEXTCTRL, wxEmptyString);
+    wxTextCtrl * NameEdit = new wxTextCtrl(this, ID_ELD_NAME_TEXTCTRL, wxEmptyString);
 	wxTextCtrl * descriptionEdit = new wxTextCtrl(this, ID_ELD_DESCRIPTION_TEXTCTRL, wxEmptyString);
 
-	nameEdit->SetMinSize(wxSize(150,-1));
-	nameEdit->SetValidator(wxGenericValidator(&Name));
+	NameEdit->SetMinSize(wxSize(150,-1));
+	NameEdit->SetValidator(wxGenericValidator(&Name));
 	descriptionEdit->SetValidator(wxGenericValidator(&Description));
 
 
-    wxFilePickerCtrl * FileDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, wxT("Select a File"));
-    wxFilePickerCtrl * GcodeDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, wxT("Select a Gcode"));
+    wxFilePickerCtrl * FileDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, "Select a File");
+    wxFilePickerCtrl * GcodeDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, "Select a Gcode");
 
 
 	wxFlexGridSizer * fg_sizer = new wxFlexGridSizer(5, 2, 0, 0);
-	fg_sizer->Add(nameLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
-	fg_sizer->Add(nameEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+	fg_sizer->Add(NameLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+	fg_sizer->Add(NameEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(descriptionLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(descriptionEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(Image, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
