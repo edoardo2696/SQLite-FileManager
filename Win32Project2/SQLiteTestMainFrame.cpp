@@ -392,7 +392,7 @@ void SQLiteTestMainFrame::OnExit(wxCommandEvent & event)
 }
 
 void SQLiteTestMainFrame::OnSearchElement(wxCommandEvent &event) {
-
-
+    SearchDialog about_dialog(this);
+    about_dialog.ShowModal();
 }
 
