@@ -2,7 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="SQLite-FileManager-master" targetName="SQLite-FileManager-master" />
+      <config projectName="Project" targetName="gtest_main" />
+      <config projectName="Project" targetName="Win32Project2" />
+      <config projectName="Project" targetName="gtest" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -11,91 +13,332 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b5634a3-8296-43a8-917b-7c3dd4946faf" name="Default Changelist" comment="" />
+    <list default="true" id="5141bcef-8eb0-4f25-9901-12baff9cb7bd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/Win32Project/test/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/Win32Project/test/lib/googletest/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1655535947">
+    <session id="-1518860995">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cpp" value="3" />
-          <entry key="h" value="15" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="18" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="h" value="116" />
-          <entry key="txt" value="79" />
+          <entry key="txt" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="79" />
-          <entry key="ObjectiveC" value="116" />
+          <entry key="CMakeLists.txt" value="98" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1897535573">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1522541131">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="37" />
+          <entry key="h" value="37" />
+          <entry key="obj" value="1" />
+          <entry key="txt" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="3" />
+          <entry key="ObjectiveC" value="74" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="3739" />
+          <entry key="h" value="516" />
+          <entry key="txt" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="11" />
+          <entry key="ObjectiveC" value="4255" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1072858569">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="24" />
+          <entry key="filters" value="1" />
+          <entry key="h" value="16" />
+          <entry key="txt" value="3" />
+          <entry key="user" value="1" />
+          <entry key="vcxproj" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="3" />
+          <entry key="ObjectiveC" value="40" />
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="419" />
+          <entry key="h" value="75" />
+          <entry key="txt" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="23" />
+          <entry key="ObjectiveC" value="494" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="397817543">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.117" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.25" value="3" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.32" value="2" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="2" />
+          <entry key="project.open.time.36" value="4" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="2" />
+          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="31" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="15021" />
+          <entry key="h" value="1740" />
+          <entry key="txt" value="383" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="373" />
+          <entry key="ObjectiveC" value="16761" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cc" value="1" />
+          <entry key="cmake" value="3" />
+          <entry key="cpp" value="213" />
+          <entry key="gitattributes" value="1" />
+          <entry key="h" value="178" />
+          <entry key="obj" value="1" />
+          <entry key="txt" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeCache.txt" value="1" />
+          <entry key="CMakeLists.txt" value="39" />
+          <entry key="ObjectiveC" value="392" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.cidr.testingFrameworks.usages">
+        <counts>
+          <entry key="Google Test" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Win32Project2/EditGroupDialog.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ELEMENT</find>
+      <find>m_GroupsListBox</find>
+      <find>m_ElementsListView</find>
+      <find>m_ElementInfoPanel</find>
+      <find>ShowModal</find>
+      <find>bSizer55</find>
+      <find>SearchDialogBase</find>
+      <find>textCtr</find>
+      <find>button1</find>
+      <find>GetSize().GetHeight()</find>
+      <find>OnElementInfoPanelLinkClicked</find>
+      <find>last_name</find>
+      <find>Get</find>
+      <find>SQLite FileManager</find>
+      <find>Element</find>
+      <find>Person</find>
+      <find>RowFromResult</find>
+      <find>GetE</find>
+      <find>GetDescription(</find>
+      <find>GetElementTable</find>
+      <find>GetDescription</find>
+      <find>GetName</find>
+      <find>GetName(</find>
+      <find>GetGroupTable</find>
+      <find>GetGroupT</find>
+      <find>id</find>
+      <find>groupidentifier</find>
+      <find>ID_ELEMENT_IMAGE_PANEL</find>
+      <find>elementid</find>
+      <find>Win32Project2.lib</find>
+    </findStrings>
     <replaceStrings>
-      <replace>databaselayer/include/wx</replace>
+      <replace>ElementRow</replace>
+      <replace>ELEMENT</replace>
+      <replace>GroupsListBox</replace>
+      <replace>ElementsListView</replace>
+      <replace>ElementInfoPanel</replace>
+      <replace>sizer2</replace>
+      <replace>sizer3</replace>
+      <replace>SearchDialog</replace>
+      <replace>staticText1</replace>
+      <replace>button2</replace>
+      <replace>Win32Project2</replace>
+      <replace>Gcode</replace>
+      <replace>Element</replace>
+      <replace>groupid</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Win32Project2/wxString.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/cpp.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/setup.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/version.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/platform.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/defs.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/memory.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/object.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/wx.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/valgen.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/generic/splitter.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/EditGcodeDialog.h" />
         <option value="$PROJECT_DIR$/Win32Project2/EditGroupDialog.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/EditGroupDialog.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/Gcode.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/PreparedStatement.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/Group.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/Group.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/EditElementDialog.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/EditElementDialog.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/EditGcodeDialog.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/DatabaseLayerException.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/Gcode.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/SQLiteTestMainFrame.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/SQLiteTestApp.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/Element.h" />
+        <option value="$PROJECT_DIR$/Win32Project2/Element.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project2/SQLiteTestMainFrame.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/Element.h" />
+        <option value="$PROJECT_DIR$/Win32Project/Gcode.h" />
+        <option value="$PROJECT_DIR$/Win32Project/Gcode.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/wxActiveRecord.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/wxActiveRecord.h" />
+        <option value="$PROJECT_DIR$/tester.cpp" />
+        <option value="$PROJECT_DIR$/tester.h" />
+        <option value="$PROJECT_DIR$/TestData.h" />
+        <option value="$PROJECT_DIR$/Test.h" />
+        <option value="$PROJECT_DIR$/Test.cpp" />
+        <option value="$PROJECT_DIR$/SqliteUnitTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/RunTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Win32Project/test/RunAllTests.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.h" />
+        <option value="$PROJECT_DIR$/Win32Project/EditElementDialog.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/Element.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/SQLiteTestApp.h" />
+        <option value="$PROJECT_DIR$/Win32Project/SQLiteTestApp.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/UnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Tester.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/runAllTests.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Win32Project/test/UnitTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/SqlUnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/SqlUnitTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/SqlUnitTest.cpp" />
+        <option value="$PROJECT_DIR$/../../CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
@@ -106,12 +349,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="461" />
-    <option name="y" value="294" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -122,19 +366,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="SQLite-FileManager-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SQLite-FileManager-master" type="462c0819:PsiDirectoryNode" />
+              <item name="SQLite FileManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SQLite FileManager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SQLite-FileManager-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SQLite-FileManager-master" type="462c0819:PsiDirectoryNode" />
-              <item name="Win32Project2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SQLite-FileManager-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SQLite-FileManager-master" type="462c0819:PsiDirectoryNode" />
-              <item name="Win32Project2" type="462c0819:PsiDirectoryNode" />
-              <item name="databaselayer" type="462c0819:PsiDirectoryNode" />
+              <item name="SQLite FileManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SQLite FileManager" type="462c0819:PsiDirectoryNode" />
+              <item name="Win32Project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,11 +381,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project" />
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,20 +409,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SQLite-FileManager-master">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="Application.Win32Project2">
+    <configuration name="TestGroup" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Win32Project" TARGET_NAME="SqliteUnitTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Win32Project" RUN_TARGET_NAME="SqliteUnitTest" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQLite-FileManager-master" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SQLite-FileManager-master" TARGET_NAME="SQLite-FileManager-master" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SQLite-FileManager-master" RUN_TARGET_NAME="SQLite-FileManager-master">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Win32Project" TARGET_NAME="Win32Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Win32Project" RUN_TARGET_NAME="Win32Project">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Win32Project2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Win32Project" TARGET_NAME="Win32Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Win32Project" RUN_TARGET_NAME="Win32Project">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.SQLite-FileManager-master" />
+      <item itemvalue="Application.Win32Project2" />
+      <item itemvalue="Google Test.TestGroup" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -182,63 +436,146 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8b5634a3-8296-43a8-917b-7c3dd4946faf" name="Default Changelist" comment="" />
-      <created>1535367824822</created>
+      <changelist id="5141bcef-8eb0-4f25-9901-12baff9cb7bd" name="Default Changelist" comment="" />
+      <created>1532941984130</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1535367824822</updated>
-      <workItem from="1535367827254" duration="2148000" />
+      <updated>1532941984130</updated>
+      <workItem from="1532941986747" duration="3309000" />
+      <workItem from="1532964120027" duration="246000" />
+      <workItem from="1533022957091" duration="1482000" />
+      <workItem from="1533115352566" duration="175000" />
+      <workItem from="1533393340512" duration="18000" />
+      <workItem from="1533393381466" duration="539000" />
+      <workItem from="1533541679833" duration="4756000" />
+      <workItem from="1533561023184" duration="1715000" />
+      <workItem from="1533625303398" duration="7007000" />
+      <workItem from="1533651837940" duration="4509000" />
+      <workItem from="1533831766228" duration="613000" />
+      <workItem from="1534255154622" duration="289000" />
+      <workItem from="1534259225975" duration="6984000" />
+      <workItem from="1534433349921" duration="591000" />
+      <workItem from="1534486163698" duration="7064000" />
+      <workItem from="1534507349279" duration="7193000" />
+      <workItem from="1535095158605" duration="148000" />
+      <workItem from="1535095986263" duration="101000" />
+      <workItem from="1535096154393" duration="149000" />
+      <workItem from="1535096382763" duration="105000" />
+      <workItem from="1535096529482" duration="8637000" />
+      <workItem from="1535200863941" duration="732000" />
+      <workItem from="1535213079492" duration="4503000" />
+      <workItem from="1535278157612" duration="8326000" />
+      <workItem from="1535356454524" duration="5669000" />
+      <workItem from="1535367368193" duration="58000" />
+      <workItem from="1535367533746" duration="8000" />
+      <workItem from="1535381150927" duration="1200000" />
+      <workItem from="1535645433288" duration="27000" />
+      <workItem from="1535650756907" duration="1730000" />
+      <workItem from="1535697902655" duration="865000" />
+      <workItem from="1535705578200" duration="6508000" />
+      <workItem from="1535716780892" duration="1882000" />
+      <workItem from="1535818466884" duration="883000" />
+      <workItem from="1535819692196" duration="2152000" />
+      <workItem from="1535959489722" duration="8653000" />
+      <workItem from="1535970296509" duration="14869000" />
+      <workItem from="1535994215889" duration="3893000" />
+      <workItem from="1536051736295" duration="5180000" />
+      <workItem from="1536066280919" duration="6428000" />
+      <workItem from="1536130539416" duration="26179000" />
+      <workItem from="1536223657253" duration="8983000" />
+      <workItem from="1536242448492" duration="3680000" />
+      <workItem from="1536253909051" duration="2145000" />
+      <workItem from="1536304529174" duration="11798000" />
+      <workItem from="1536583819411" duration="1351000" />
+      <workItem from="1536654777960" duration="8611000" />
+      <workItem from="1536684924830" duration="3729000" />
+      <workItem from="1536752658904" duration="605000" />
+      <workItem from="1536822009447" duration="11877000" />
+      <workItem from="1536930877039" duration="9146000" />
+      <workItem from="1536995736337" duration="735000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="GoogleTestSQL - 2018.09.01 at 18h 51m 32s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.01 at 18h 56m 21s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.01 at 18h 56m 48s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.01 at 19h 01m 40s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.03 at 10h 18m 10s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.11 at 11h 23m 25s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.11 at 19h 24m 42s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.13 at 09h 53m 20s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.13 at 18h 13m 44s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="GoogleTestSQL - 2018.09.13 at 18h 14m 21s.xml">
+      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2148000" />
+    <option name="totallyTimeSpent" value="218035000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.4143167" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="CMake" weight="0.329718" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22017354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.38394794" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.18004338" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32899246" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="5" visible="true" weight="0.4143167" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26477188" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22124863" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.036144577" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.45892662" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32899246" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,92 +585,276 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Win32Project2/wxString.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project2/SQLiteTestMainFrame.cpp" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/event.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="3608" selection-start-line="3608" selection-end-line="3608" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/RecordIDClientData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseErrorCodes.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/wxString.cpp">
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseErrorReporter.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/wxActiveRecord/wxActiveRecord.cpp">
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseLayer.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/wxActiveRecord.cpp">
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/PreparedStatement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseLayerException.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/wxActiveRecord/wxActiveRecord.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/EditGcodeDialog.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/Gcode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
+        <state relative-caret-position="653">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/version.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/wxActiveRecord/wxActiveRecord.cpp" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/wxActiveRecord.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/wxActiveRecord.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="301" column="6" selection-start-line="301" selection-start-column="6" selection-end-line="301" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestData.h" />
+    <entry file="file://$PROJECT_DIR$/TestData.cpp" />
+    <entry file="file://$PROJECT_DIR$/SqliteUnitTest.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/RunTest.cpp" />
+    <entry file="file://$PROJECT_DIR$/../Astar/test/Tester.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletestbackup/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/SearchElement.cpp" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="12" />
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/cpp.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/EditElementDialog.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="-542">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/setup.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/Element.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="12" />
+        <state relative-caret-position="280">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/platform.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/wxcrt.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="172" column="12" selection-start-line="172" selection-start-column="10" selection-end-line="172" selection-end-column="12" />
+        <state relative-caret-position="148">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/defs.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/memory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/object.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/UnitTest.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="12" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/wx.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/Gcode.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="840">
+          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Win32Project2.dir/cmake_clean_target.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Win32Project2.dir/cmake_clean.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/ucrt/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/Element.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/Group.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/EditGroupDialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/EditGroupDialog.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/EditElementDialog.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/EditGcodeDialog.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/SqlUnitTest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/SqlUnitTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/filefn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/Group.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="206" column="54" lean-forward="true" selection-start-line="206" selection-start-column="54" selection-end-line="206" selection-end-column="54" />
+          <folding>
+            <element signature="e#20#60#0" />
+            <element signature="e#62#244#0" />
+            <element signature="e#246#345#0" />
+            <element signature="e#347#552#0" />
+            <element signature="e#554#695#0" />
+            <element signature="e#804#1317#0" />
+            <element signature="e#1638#2143#0" />
+            <element signature="e#2145#2756#0" />
+            <element signature="e#2759#3313#0" />
+            <element signature="e#3316#3378#0" />
+            <element signature="e#3380#3473#0" />
+            <element signature="e#3475#3672#0" />
+            <element signature="e#3674#3790#0" />
+            <element signature="e#3794#4024#0" />
+            <element signature="e#4026#4330#0" />
+            <element signature="e#6242#6294#0" />
+            <element signature="e#6296#6388#0" />
+            <element signature="e#6390#6501#0" />
+            <element signature="e#6608#6901#0" />
+            <element signature="e#6903#7114#0" />
+            <element signature="e#7116#7348#0" />
+            <element signature="e#7350#7573#0" />
+            <element signature="e#7575#7795#0" />
+            <element signature="e#7797#8076#0" />
+            <element signature="e#8078#8536#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/runlTests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/SqlUnitTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="635">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#1#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project2/EditGroupDialog.h">
+    <entry file="file://$PROJECT_DIR$/../../CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
