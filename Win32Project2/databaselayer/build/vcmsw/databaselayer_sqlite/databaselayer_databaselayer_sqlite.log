@@ -1,0 +1,21 @@
+﻿  DatabaseErrorReporter.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  DatabaseLayer.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  DatabaseQueryParser.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  DatabaseResultSet.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  DatabaseStringConverter.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  PreparedStatement.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  SqliteDatabaseLayer.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  SqlitePreparedStatement.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  SqliteResultSet.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  SqliteResultSetMetaData.cpp
+c:\users\badii.disit\desktop\win32project2\win32project2\databaselayer\include\wx/setup.h(121): fatal error C1083: Non è possibile aprire il file inclusione: '../../../lib/vc_lib/msw/wx/setup.h': No such file or directory
+  Generazione del codice in corso...

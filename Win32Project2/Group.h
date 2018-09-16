@@ -44,6 +44,7 @@ public:
 public:
 	wxString name;
 	wxString description;
+	wxString image;
 	int id;
 
 public:
@@ -63,6 +64,7 @@ public:
 protected:
 	static int CMPFUNC_name(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_description(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
+    static int CMPFUNC_image(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_id(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_global(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	virtual CMPFUNC_proto GetCmpFunc(const wxString& var) const;

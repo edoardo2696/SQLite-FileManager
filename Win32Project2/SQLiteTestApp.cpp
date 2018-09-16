@@ -26,6 +26,7 @@ int SQLiteTestApp::OnExit()
 {
 	wxDELETE(ElementTable);
 	wxDELETE(GroupTable);
+	wxDELETE(GcodeTable);
 	if(Database)
 	{
 		if(Database->IsOpen())
@@ -53,29 +54,31 @@ bool SQLiteTestApp::ConnectToDatabase()
 
 		try
 		{
-            Database->RunQuery(wxT("CREATE TABLE groups (id INTEGER PRIMARY KEY NOT NULL UNIQUE, name VARCHAR(128) NOT NULL UNIQUE, description VARCHAR(512))"));
+            Database->RunQuery(wxT("CREATE TABLE groups (id INTEGER PRIMARY KEY NOT NULL UNIQUE, name VARCHAR(128) NOT NULL UNIQUE, description VARCHAR(512), image VARCHAR(128))"));
 		}
 		catch(DatabaseLayerException & e) {wxUnusedVar(e);}
 		try
 		{
-            Database->RunQuery(wxT("CREATE TABLE elements (id INTEGER PRIMARY KEY NOT NULL UNIQUE, groupid INTEGER NOT NULL REFERENCES groups (id), image VARCHAR(128))"));
+            Database->RunQuery(wxT("CREATE TABLE elements (id INTEGER PRIMARY KEY NOT NULL UNIQUE, name VARCHAR(128) NOT NULL UNIQUE, description VARCHAR(512), groupid INTEGER NOT NULL REFERENCES groups (id), image VARCHAR(128))"));
 		}
         catch(DatabaseLayerException & e) {wxUnusedVar(e);}
       try {
           Database->RunQuery(
-                  wxT("CREATE TABLE gcodes (elementid INTEGER NOT NULL REFERENCES element (id), code VARCHAR(260) PRIMARY KEY NOT NULL UNIQUE)"));
+                  wxT("CREATE TABLE gcodes (elementid INTEGER NOT NULL REFERENCES element (id), code  VARCHAR(128) PRIMARY KEY NOT NULL UNIQUE)"));
+
           }
         catch(DatabaseLayerException & e) {wxUnusedVar(e);}
 		if(bCreate) {
             Database->RunQuery(
-                    wxT("INSERT INTO groups(id, name, description) VALUES (1, 'Group', 'My groups')"));
+                    wxT("INSERT INTO groups(id, name, description, image) VALUES (?,?,?,?)"));
             pStatement = Database->PrepareStatement(
-                    wxT("INSERT INTO elements(id, groupid, image) VALUES (?,?,?)"));
+                    wxT("INSERT INTO elements(id, name, description, groupid, image) VALUES (?,?,?,?,?)"));
             if (pStatement) {
-                pStatement->SetParamInt(1, 1);
-                pStatement->SetParamInt(2, 1);
-                pStatement->SetParamString(3, "5822091.8_8.jpg");
-
+                pStatement->SetParamInt(1,0);
+                pStatement->SetParamString(2, "");
+                pStatement->SetParamString(3, "");
+                pStatement->SetParamInt(4, 1);
+                pStatement->SetParamString(5, "");
 
                 pStatement->RunQuery();
                 Database->CloseStatement(pStatement);
@@ -85,7 +88,7 @@ bool SQLiteTestApp::ConnectToDatabase()
                     wxT("INSERT INTO gcodes(elementid, code) VALUES (?,?)"));
             if (pStatement) {
                 pStatement->SetParamInt(1, 1);
-                pStatement->SetParamString(2, "01010.txt");
+                pStatement->SetParamString(2, "");
                 pStatement->RunQuery();
                 Database->CloseStatement(pStatement);
                 pStatement = nullptr;

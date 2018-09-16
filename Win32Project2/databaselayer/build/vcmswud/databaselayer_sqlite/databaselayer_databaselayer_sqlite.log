@@ -1,0 +1,12 @@
+﻿  SqliteResultSetMetaData.cpp
+  SqliteResultSet.cpp
+  SqlitePreparedStatement.cpp
+  SqliteDatabaseLayer.cpp
+  PreparedStatement.cpp
+  DatabaseStringConverter.cpp
+  DatabaseResultSet.cpp
+  DatabaseQueryParser.cpp
+  DatabaseLayer.cpp
+  DatabaseErrorReporter.cpp
+  Generazione del codice in corso...
+  databaselayer_databaselayer_sqlite.vcxproj -> C:\Users\Edoardo Luci\Desktop\Nuova cartella (12)\Win32Project2 - Copia\Win32Project2\databaselayer\build\.\..\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib

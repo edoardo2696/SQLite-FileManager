@@ -2,13 +2,15 @@
 #define _EDIT_Element_DIALOG_H
 
 #include <wx/wx.h>
+#include <databaselayer/include/wx/filepicker.h>
 
 class EditElementDialog : public wxDialog
 {
+
 	wxString Name;
 	wxString Description;
-    wxString FileImage;
-    wxString GcodeFile;
+	wxFilePickerCtrl * Image;
+
 	void CreateControls();
 public:
 	EditElementDialog(wxWindow * parent);
@@ -16,8 +18,7 @@ public:
 
 	const wxString & GetName();
 	const wxString & GetDescription();
-    const wxString & GetFileImage();
-    const wxString & GetGcodeFile();
+    const wxString  GetImage();
 
 };
 

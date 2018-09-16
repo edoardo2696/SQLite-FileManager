@@ -47,6 +47,8 @@ public:
 	bool GetFromResult(DatabaseResultSet* result);
 public:
 	int id;
+	wxString name;
+	wxString description;
 	int groupid;
 	wxString image;
 
@@ -68,6 +70,8 @@ public:
 	virtual bool SaveAll();
 protected:
 	static int CMPFUNC_id(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
+	static int CMPFUNC_name(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
+	static int CMPFUNC_description(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_groupid(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_image(wxActiveRecordRow** item1,wxActiveRecordRow** item2);
 	static int CMPFUNC_global(wxActiveRecordRow** item1,wxActiveRecordRow** item2);

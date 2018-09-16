@@ -48,7 +48,6 @@ GcodeRow* Gcode::Code(wxString key){
 	}
 }
 
-
 bool Gcode::Delete(wxString key){
 	try{
 		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("DELETE FROM %s WHERE code=?"),m_table.c_str()));
@@ -61,7 +60,6 @@ bool Gcode::Delete(wxString key){
 		return false;
 	}
 }
-
 
 GcodeRow* Gcode::Where(const wxString& whereClause){
 	try{
@@ -106,7 +104,6 @@ GcodeRowSet* Gcode::WhereSet(const wxString& whereClause){
 		return 0;
 	}
 }
-
 
 GcodeRowSet* Gcode::All(){
 	GcodeRowSet* rowSet=new GcodeRowSet();
@@ -155,7 +152,6 @@ GcodeRow::GcodeRow(DatabaseLayer* database,const wxString& table):wxActiveRecord
 	newRow=true;
 }
 	
-
 GcodeRow& GcodeRow::operator=(const GcodeRow& src){
 	if(&src==this)
 		return *this;
@@ -177,7 +173,6 @@ bool GcodeRow::GetFromResult(DatabaseResultSet* result){
 
 	return true;
 }
-	
 
 bool GcodeRow::Save(){
 	try{
@@ -222,7 +217,6 @@ bool GcodeRow::Delete(){
 	}
 }
 
-
 ElementRow* GcodeRow::GetElement(){
 	ElementRow* owner= new ElementRow(m_database,wxT("elements"));
 	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM elements WHERE code=?"));
@@ -251,6 +245,7 @@ GcodeRowSet::GcodeRowSet(DatabaseLayer* database,const wxString& table):wxActive
 GcodeRow* GcodeRowSet::Item(unsigned long item){
 	return (GcodeRow*)wxActiveRecordRowSet::Item(item);
 }
+
 
 bool GcodeRowSet::SaveAll(){
 	try{

@@ -1,4 +1,6 @@
 #include "EditGroupDialog.h"
+#include "../EditGcodeDialog.h"
+
 #include <wx/valgen.h>
 #include <databaselayer/include/wx/filepicker.h>
 #include <databaselayer/include/wx/wfstream.h>
@@ -7,12 +9,13 @@ enum
 {
 	ID_EGD_NAME_TEXTCTRL = 10001,
 	ID_EGD_DESCRIPTION_TEXTCTRL,
-	ID_EGD_IMAGE_CHOICE
+	ID_EGD_GROUPID_TEXTCTRL
+
 };
 
 EditGroupDialog::EditGroupDialog(wxWindow * parent)
 {
-	Create(parent, wxID_ANY, _("Editing group"));
+	Create(parent, wxID_ANY, _(" Group Adder"));
 }
 
 bool EditGroupDialog::Create(wxWindow * parent, wxWindowID id, const wxString title)
@@ -38,53 +41,42 @@ void EditGroupDialog::CreateControls()
 	wxTextCtrl * descriptionEdit = new wxTextCtrl(this, ID_EGD_DESCRIPTION_TEXTCTRL, wxEmptyString, wxDefaultPosition, wxSize(-1, 80), wxTE_MULTILINE);
 
 
-	wxFilePickerCtrl * ImageDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, wxT("Select a File"));
+	ImagePicker = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, wxT("Select a File"));
+
 	nameEdit->SetValidator(wxGenericValidator(&GroupName));
 	descriptionEdit->SetValidator(wxGenericValidator(&GroupDescription));
 
+
 	wxFlexGridSizer * fg_sizer = new wxFlexGridSizer(3, 2, 0, 0);
+
 	fg_sizer->Add(nameLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(nameEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(descriptionLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(descriptionEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(ImageGroup, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	fg_sizer->Add(ImageDirCtrl, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	fg_sizer->Add(ImagePicker, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	fg_sizer->AddGrowableCol(1);
 
 	sizer->Add(fg_sizer, 1, wxEXPAND|wxTOP|wxLEFT|wxRIGHT, 5);
 	sizer->Add(CreateButtonSizer(wxID_OK|wxID_CANCEL), 0, wxALIGN_RIGHT|wxALL, 5);
 }
 
+
 const wxString & EditGroupDialog::GetGroupName()
 {
 	return GroupName;
 }
 
-void EditGroupDialog::SetGroupName(const wxString & value)
-{
-	GroupName = value;
-}
 
 const wxString & EditGroupDialog::GetGroupDescription()
 {
 	return GroupDescription;
 }
 
-void EditGroupDialog::SetGroupDescription(const wxString & value)
+
+const wxString EditGroupDialog::GetImage()
 {
-	GroupDescription = value;
-}
+	return ImagePicker->GetPath();
 
-const wxString &EditGroupDialog::GetImageDirCtrl(wxCommandEvent& event)
-{ /*wxFileDialog openFileDialog(this, ("Open JPEG file"), "", "", "JPEG files (*.jpg)|*jpg", wxFD_OPEN|wxFD_FILE_MUST_EXIST);
-		if(openFileDialog.ShowModal() == wxID_CANCEL)
-			return ImageDirCtrl;
-		wxFileInputStream input_stream(openFileDialog.GetPath());
-
-		if(!input_stream.IsOk())
-		{
-			wxLogError("Cannot Open File '%s'.", openFileDialog.GetPath());
-					}*/
-    return ImageDirCtrl;
 }
 

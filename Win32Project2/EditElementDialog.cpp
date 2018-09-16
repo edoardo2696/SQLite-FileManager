@@ -7,14 +7,14 @@ enum
 {
 	ID_ELD_NAME_TEXTCTRL = 10001,
 	ID_ELD_DESCRIPTION_TEXTCTRL,
-
+    ID_ELD_ID_TEXTCTRL
 
 
 };
 
 EditElementDialog::EditElementDialog(wxWindow * parent)
 {
-	Create(parent, wxID_ANY, "Editing Element");
+	Create(parent, wxID_ANY, "Element Adder");
 }
 
 bool EditElementDialog::Create(wxWindow * parent, 
@@ -35,8 +35,8 @@ void EditElementDialog::CreateControls()
 
 	wxStaticText * NameLabel = new wxStaticText(this, wxID_ANY, "Name:");
 	wxStaticText * descriptionLabel = new wxStaticText(this, wxID_ANY, "Description:");
-	wxStaticText * Image = new wxStaticText( this, wxID_ANY, "Image");
-    wxStaticText * Gcode = new wxStaticText( this, wxID_ANY, "Gcode");
+	wxStaticText * ImageElement = new wxStaticText( this, wxID_ANY, "Image");
+
 
     wxTextCtrl * NameEdit = new wxTextCtrl(this, ID_ELD_NAME_TEXTCTRL, wxEmptyString);
 	wxTextCtrl * descriptionEdit = new wxTextCtrl(this, ID_ELD_DESCRIPTION_TEXTCTRL, wxEmptyString);
@@ -45,25 +45,18 @@ void EditElementDialog::CreateControls()
 	NameEdit->SetValidator(wxGenericValidator(&Name));
 	descriptionEdit->SetValidator(wxGenericValidator(&Description));
 
-
-    wxFilePickerCtrl * FileDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, "Select a File");
-    wxFilePickerCtrl * GcodeDirCtrl = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, "Select a Gcode");
+     Image = new wxFilePickerCtrl( this, wxID_ANY, wxEmptyString, "Select a File");
 
 
-	wxFlexGridSizer * fg_sizer = new wxFlexGridSizer(5, 2, 0, 0);
+    wxFlexGridSizer * fg_sizer = new wxFlexGridSizer(3, 2, 0, 0);
 	fg_sizer->Add(NameLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(NameEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(descriptionLabel, 0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL|wxALL, 5);
 	fg_sizer->Add(descriptionEdit, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5);
-	fg_sizer->Add(Image, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-    fg_sizer->Add(FileDirCtrl, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-    fg_sizer->Add(Gcode, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-    fg_sizer->Add(GcodeDirCtrl, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	fg_sizer->Add(ImageElement, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+    fg_sizer->Add(Image, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+
     fg_sizer->AddGrowableCol(1);
-
-
-
-
 	sizer->Add(fg_sizer, 1, wxEXPAND|wxTOP|wxLEFT|wxRIGHT, 5);
 	sizer->Add(CreateButtonSizer(wxID_OK|wxID_CANCEL), 0, wxALIGN_RIGHT|wxALL, 5);
 
@@ -80,11 +73,11 @@ const wxString & EditElementDialog::GetDescription()
 	return Description;
 }
 
-const wxString &EditElementDialog::GetFileImage() {
-    return FileImage;
+const wxString EditElementDialog::GetImage()
+{
+    return Image->GetPath();
 }
 
-const wxString &EditElementDialog::GetGcodeFile() {
-    return GcodeFile;
-}
+
+
 

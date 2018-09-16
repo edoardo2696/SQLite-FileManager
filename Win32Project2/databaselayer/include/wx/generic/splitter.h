@@ -11,6 +11,7 @@
 #ifndef _WX_GENERIC_SPLITTER_H_
 #define _WX_GENERIC_SPLITTER_H_
 
+#include <databaselayer/include/wx/splitter.h>
 #include "wx/window.h"                      // base class declaration
 #include "wx/containr.h"                    // wxControlContainer
 

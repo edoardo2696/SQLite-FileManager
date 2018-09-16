@@ -29,7 +29,7 @@ GroupRow* Group::New(){
 
 GroupRow* Group::Id(int key){
 	try{
-		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("SELECT * FROM %s WHERE id=?"),m_table.c_str()));
+		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format("SELECT * FROM %s WHERE id=?",m_table.c_str()));
 		pStatement->SetParamInt(1,key);
 		DatabaseResultSet* result= pStatement->ExecuteQuery();
 
@@ -66,12 +66,12 @@ GroupRow* Group::Where(const wxString& whereClause){
 	try{
 		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("SELECT * FROM %s WHERE %s"),m_table.c_str(),whereClause.c_str()));
 		DatabaseResultSet* result= pStatement->ExecuteQuery();
-	
+
 		GroupRow* row=RowFromResult(result);
-		
+
 		garbageRows.Add(row);
 		m_database->CloseResultSet(result);
-		m_database->CloseStatement(pStatement);						
+		m_database->CloseStatement(pStatement);
 		return row;
 	}
 	catch (DatabaseLayerException& e)
@@ -86,18 +86,18 @@ GroupRowSet* Group::WhereSet(const wxString& whereClause){
 	try{
 		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("SELECT * FROM %s WHERE %s"),m_table.c_str(),whereClause.c_str()));
 		DatabaseResultSet* result= pStatement->ExecuteQuery();
-		
+
 		if(result){
 			while(result->Next()){
 				rowSet->Add(RowFromResult(result));
 			}
 		}
-		
+
 		garbageRowSets.Add(rowSet);
 		m_database->CloseResultSet(result);
-		m_database->CloseStatement(pStatement);	
+		m_database->CloseStatement(pStatement);
 		return rowSet;
-		
+
 	}
 	catch (DatabaseLayerException& e)
 	{
@@ -147,6 +147,7 @@ GroupRow::GroupRow(const GroupRow& src){
 	
 	name=src.name;
 	description=src.description;
+	image=src.image;
 	id=src.id;
 
 }
@@ -163,6 +164,7 @@ GroupRow& GroupRow::operator=(const GroupRow& src){
 	
 	name=src.name;
 	description=src.description;
+	image=src.image;
 	id=src.id;
 
 
@@ -172,9 +174,10 @@ GroupRow& GroupRow::operator=(const GroupRow& src){
 bool GroupRow::GetFromResult(DatabaseResultSet* result){
 	
 	newRow=false;
-		name=result->GetResultString(wxT("name"));
-	description=result->GetResultString(wxT("description"));
-	id=result->GetResultInt(wxT("id"));
+		name=result->GetResultString("name");
+	description=result->GetResultString("description");
+	image=result->GetResultString("image");
+	id=result->GetResultInt("id");
 
 
 	return true;
@@ -184,9 +187,10 @@ bool GroupRow::GetFromResult(DatabaseResultSet* result){
 bool GroupRow::Save(){
 	try{
 		if(newRow){
-			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("INSERT INTO %s (name,description) VALUES (?,?)"),m_table.c_str()));
+			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format("INSERT INTO %s (name,description,image) VALUES (?,?,?)",m_table.c_str()));
 			pStatement->SetParamString(1,name);
 			pStatement->SetParamString(2,description);
+			pStatement->SetParamString(3,image);
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
 
@@ -194,10 +198,11 @@ bool GroupRow::Save(){
 			newRow=false;
 		}
 		else{
-			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("UPDATE %s SET name=?,description=? WHERE id=?"),m_table.c_str()));
+			PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format("UPDATE %s SET name=?,description=?,image=? WHERE id=?",m_table.c_str()));
 			pStatement->SetParamString(1,name);
 			pStatement->SetParamString(2,description);
-			pStatement->SetParamInt(3,id);
+			pStatement->SetParamString(3,image);
+			pStatement->SetParamInt(4,id);
 			pStatement->RunQuery();
 			m_database->CloseStatement(pStatement);
 
@@ -214,7 +219,7 @@ bool GroupRow::Save(){
 
 bool GroupRow::Delete(){
 	try{
-		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format(wxT("DELETE FROM %s WHERE id=?"),m_table.c_str()));
+		PreparedStatement* pStatement=m_database->PrepareStatement(wxString::Format("DELETE FROM %s WHERE id=?",m_table.c_str()));
 		pStatement->SetParamInt(1,id);
 		pStatement->ExecuteUpdate();
 		return true;
@@ -227,13 +232,13 @@ bool GroupRow::Delete(){
 
 
 ElementRowSet* GroupRow::GetElements(){
-	ElementRowSet* set= new ElementRowSet(m_database,wxT("elements"));
-	PreparedStatement* pStatement=m_database->PrepareStatement(wxT("SELECT * FROM elements WHERE groupid=?"));
+	ElementRowSet* set= new ElementRowSet(m_database,"elements");
+	PreparedStatement* pStatement=m_database->PrepareStatement("SELECT * FROM elements WHERE groupid=?");
 	pStatement->SetParamInt(1,id);
 	DatabaseResultSet* result= pStatement->ExecuteQuery();
 
 	while(result->Next()){
-		ElementRow* toAdd=new ElementRow(m_database,wxT("elements"));
+		ElementRow* toAdd=new ElementRow(m_database,"elements");
 		toAdd->GetFromResult(result);
 		set->Add(toAdd);
 	}
@@ -286,6 +291,13 @@ int GroupRowSet::CMPFUNC_description(wxActiveRecordRow** item1,wxActiveRecordRow
 	return (*m_item1)->description.Cmp((*m_item2)->description);
 }
 
+int GroupRowSet::CMPFUNC_image(wxActiveRecordRow** item1,wxActiveRecordRow** item2) {
+	GroupRow **m_item1 = (GroupRow **) item1;
+	GroupRow **m_item2 = (GroupRow **) item2;
+	return (*m_item1)->image.Cmp((*m_item2)->image);
+}
+
+
 int GroupRowSet::CMPFUNC_id(wxActiveRecordRow** item1,wxActiveRecordRow** item2){
 	GroupRow** m_item1=(GroupRow**)item1;
 	GroupRow** m_item2=(GroupRow**)item2;
@@ -302,6 +314,8 @@ CMPFUNC_proto GroupRowSet::GetCmpFunc(const wxString& var) const{
 		return (CMPFUNC_proto)CMPFUNC_name;
 	else if(var==wxT("description"))
 		return (CMPFUNC_proto)CMPFUNC_description;
+	else if(var==wxT("image"))
+		return (CMPFUNC_proto)CMPFUNC_image;
 	else if(var==wxT("id"))
 		return (CMPFUNC_proto)CMPFUNC_id;
 	else 
