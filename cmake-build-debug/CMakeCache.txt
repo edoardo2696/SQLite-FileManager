@@ -122,7 +122,22 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=/INCREMENTAL:NO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Win32Project2
+CMAKE_PROJECT_NAME:STATIC=Win32Project
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //RC compiler
 CMAKE_RC_COMPILER:FILEPATH=C:/Program Files (x86)/Windows Kits/10/bin/10.0.17134.0/x86/rc.exe
@@ -199,16 +214,28 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 PYTHON_EXECUTABLE:FILEPATH=PYTHON_EXECUTABLE-NOTFOUND
 
 //Value Computed by CMake
+Project_BINARY_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager
+
+//Value Computed by CMake
 Win32Project2_BINARY_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug
 
 //Value Computed by CMake
 Win32Project2_SOURCE_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project2/test/lib/googletest
+Win32Project_BINARY_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project2/test/lib/googletest
+Win32Project_SOURCE_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/lib/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -372,4 +399,14 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_samples
+gtest_build_samples-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_tests
+gtest_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_disable_pthreads
+gtest_disable_pthreads-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_force_shared_crt
+gtest_force_shared_crt-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_hide_internal_symbols
+gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
 

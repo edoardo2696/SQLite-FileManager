@@ -57,17 +57,6 @@ CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManag
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache\fast: rebuild_cache
-
-.PHONY : rebuild_cache\fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,6 +67,17 @@ edit_cache:
 edit_cache\fast: edit_cache
 
 .PHONY : edit_cache\fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache\fast: rebuild_cache
+
+.PHONY : rebuild_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -112,287 +112,300 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Win32Project2__Copia
+# Target rules for targets named Win32Project2
 
 # Build rule for target.
-Win32Project2__Copia: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project2__Copia
-.PHONY : Win32Project2__Copia
+Win32Project2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project2
+.PHONY : Win32Project2
 
 # fast build rule for target.
-Win32Project2__Copia\fast:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\build
-.PHONY : Win32Project2__Copia\fast
+Win32Project2\fast:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\build
+.PHONY : Win32Project2\fast
 
-Win32Project2\About.obj: Win32Project2\About.cpp.obj
+#=============================================================================
+# Target rules for targets named Win32Project
 
-.PHONY : Win32Project2\About.obj
+# Build rule for target.
+Win32Project: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project
+.PHONY : Win32Project
 
-# target to build an object file
-Win32Project2\About.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj
-.PHONY : Win32Project2\About.cpp.obj
+# fast build rule for target.
+Win32Project\fast:
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\build
+.PHONY : Win32Project\fast
 
-Win32Project2\About.i: Win32Project2\About.cpp.i
+Win32Project\About.obj: Win32Project\About.cpp.obj
 
-.PHONY : Win32Project2\About.i
-
-# target to preprocess a source file
-Win32Project2\About.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.i
-.PHONY : Win32Project2\About.cpp.i
-
-Win32Project2\About.s: Win32Project2\About.cpp.s
-
-.PHONY : Win32Project2\About.s
-
-# target to generate assembly for a file
-Win32Project2\About.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.s
-.PHONY : Win32Project2\About.cpp.s
-
-Win32Project2\EditElementDialog.obj: Win32Project2\EditElementDialog.cpp.obj
-
-.PHONY : Win32Project2\EditElementDialog.obj
+.PHONY : Win32Project\About.obj
 
 # target to build an object file
-Win32Project2\EditElementDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj
-.PHONY : Win32Project2\EditElementDialog.cpp.obj
+Win32Project\About.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\About.cpp.obj
+.PHONY : Win32Project\About.cpp.obj
 
-Win32Project2\EditElementDialog.i: Win32Project2\EditElementDialog.cpp.i
+Win32Project\About.i: Win32Project\About.cpp.i
 
-.PHONY : Win32Project2\EditElementDialog.i
+.PHONY : Win32Project\About.i
 
 # target to preprocess a source file
-Win32Project2\EditElementDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.i
-.PHONY : Win32Project2\EditElementDialog.cpp.i
+Win32Project\About.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\About.cpp.i
+.PHONY : Win32Project\About.cpp.i
 
-Win32Project2\EditElementDialog.s: Win32Project2\EditElementDialog.cpp.s
+Win32Project\About.s: Win32Project\About.cpp.s
 
-.PHONY : Win32Project2\EditElementDialog.s
+.PHONY : Win32Project\About.s
 
 # target to generate assembly for a file
-Win32Project2\EditElementDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.s
-.PHONY : Win32Project2\EditElementDialog.cpp.s
+Win32Project\About.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\About.cpp.s
+.PHONY : Win32Project\About.cpp.s
 
-Win32Project2\EditGroupDialog.obj: Win32Project2\EditGroupDialog.cpp.obj
+Win32Project\EditElementDialog.obj: Win32Project\EditElementDialog.cpp.obj
 
-.PHONY : Win32Project2\EditGroupDialog.obj
+.PHONY : Win32Project\EditElementDialog.obj
 
 # target to build an object file
-Win32Project2\EditGroupDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj
-.PHONY : Win32Project2\EditGroupDialog.cpp.obj
+Win32Project\EditElementDialog.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditElementDialog.cpp.obj
+.PHONY : Win32Project\EditElementDialog.cpp.obj
 
-Win32Project2\EditGroupDialog.i: Win32Project2\EditGroupDialog.cpp.i
+Win32Project\EditElementDialog.i: Win32Project\EditElementDialog.cpp.i
 
-.PHONY : Win32Project2\EditGroupDialog.i
+.PHONY : Win32Project\EditElementDialog.i
 
 # target to preprocess a source file
-Win32Project2\EditGroupDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.i
-.PHONY : Win32Project2\EditGroupDialog.cpp.i
+Win32Project\EditElementDialog.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditElementDialog.cpp.i
+.PHONY : Win32Project\EditElementDialog.cpp.i
 
-Win32Project2\EditGroupDialog.s: Win32Project2\EditGroupDialog.cpp.s
+Win32Project\EditElementDialog.s: Win32Project\EditElementDialog.cpp.s
 
-.PHONY : Win32Project2\EditGroupDialog.s
+.PHONY : Win32Project\EditElementDialog.s
 
 # target to generate assembly for a file
-Win32Project2\EditGroupDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.s
-.PHONY : Win32Project2\EditGroupDialog.cpp.s
+Win32Project\EditElementDialog.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditElementDialog.cpp.s
+.PHONY : Win32Project\EditElementDialog.cpp.s
 
-Win32Project2\Element.obj: Win32Project2\Element.cpp.obj
+Win32Project\EditGcodeDialog.obj: Win32Project\EditGcodeDialog.cpp.obj
 
-.PHONY : Win32Project2\Element.obj
+.PHONY : Win32Project\EditGcodeDialog.obj
 
 # target to build an object file
-Win32Project2\Element.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj
-.PHONY : Win32Project2\Element.cpp.obj
+Win32Project\EditGcodeDialog.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGcodeDialog.cpp.obj
+.PHONY : Win32Project\EditGcodeDialog.cpp.obj
 
-Win32Project2\Element.i: Win32Project2\Element.cpp.i
+Win32Project\EditGcodeDialog.i: Win32Project\EditGcodeDialog.cpp.i
 
-.PHONY : Win32Project2\Element.i
+.PHONY : Win32Project\EditGcodeDialog.i
 
 # target to preprocess a source file
-Win32Project2\Element.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.i
-.PHONY : Win32Project2\Element.cpp.i
+Win32Project\EditGcodeDialog.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGcodeDialog.cpp.i
+.PHONY : Win32Project\EditGcodeDialog.cpp.i
 
-Win32Project2\Element.s: Win32Project2\Element.cpp.s
+Win32Project\EditGcodeDialog.s: Win32Project\EditGcodeDialog.cpp.s
 
-.PHONY : Win32Project2\Element.s
+.PHONY : Win32Project\EditGcodeDialog.s
 
 # target to generate assembly for a file
-Win32Project2\Element.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.s
-.PHONY : Win32Project2\Element.cpp.s
+Win32Project\EditGcodeDialog.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGcodeDialog.cpp.s
+.PHONY : Win32Project\EditGcodeDialog.cpp.s
 
-Win32Project2\Gcode.obj: Win32Project2\Gcode.cpp.obj
+Win32Project\EditGroupDialog.obj: Win32Project\EditGroupDialog.cpp.obj
 
-.PHONY : Win32Project2\Gcode.obj
+.PHONY : Win32Project\EditGroupDialog.obj
 
 # target to build an object file
-Win32Project2\Gcode.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj
-.PHONY : Win32Project2\Gcode.cpp.obj
+Win32Project\EditGroupDialog.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGroupDialog.cpp.obj
+.PHONY : Win32Project\EditGroupDialog.cpp.obj
 
-Win32Project2\Gcode.i: Win32Project2\Gcode.cpp.i
+Win32Project\EditGroupDialog.i: Win32Project\EditGroupDialog.cpp.i
 
-.PHONY : Win32Project2\Gcode.i
+.PHONY : Win32Project\EditGroupDialog.i
 
 # target to preprocess a source file
-Win32Project2\Gcode.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.i
-.PHONY : Win32Project2\Gcode.cpp.i
+Win32Project\EditGroupDialog.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGroupDialog.cpp.i
+.PHONY : Win32Project\EditGroupDialog.cpp.i
 
-Win32Project2\Gcode.s: Win32Project2\Gcode.cpp.s
+Win32Project\EditGroupDialog.s: Win32Project\EditGroupDialog.cpp.s
 
-.PHONY : Win32Project2\Gcode.s
+.PHONY : Win32Project\EditGroupDialog.s
 
 # target to generate assembly for a file
-Win32Project2\Gcode.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.s
-.PHONY : Win32Project2\Gcode.cpp.s
+Win32Project\EditGroupDialog.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGroupDialog.cpp.s
+.PHONY : Win32Project\EditGroupDialog.cpp.s
 
-Win32Project2\Group.obj: Win32Project2\Group.cpp.obj
+Win32Project\Element.obj: Win32Project\Element.cpp.obj
 
-.PHONY : Win32Project2\Group.obj
+.PHONY : Win32Project\Element.obj
 
 # target to build an object file
-Win32Project2\Group.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj
-.PHONY : Win32Project2\Group.cpp.obj
+Win32Project\Element.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Element.cpp.obj
+.PHONY : Win32Project\Element.cpp.obj
 
-Win32Project2\Group.i: Win32Project2\Group.cpp.i
+Win32Project\Element.i: Win32Project\Element.cpp.i
 
-.PHONY : Win32Project2\Group.i
+.PHONY : Win32Project\Element.i
 
 # target to preprocess a source file
-Win32Project2\Group.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.i
-.PHONY : Win32Project2\Group.cpp.i
+Win32Project\Element.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Element.cpp.i
+.PHONY : Win32Project\Element.cpp.i
 
-Win32Project2\Group.s: Win32Project2\Group.cpp.s
+Win32Project\Element.s: Win32Project\Element.cpp.s
 
-.PHONY : Win32Project2\Group.s
+.PHONY : Win32Project\Element.s
 
 # target to generate assembly for a file
-Win32Project2\Group.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.s
-.PHONY : Win32Project2\Group.cpp.s
+Win32Project\Element.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Element.cpp.s
+.PHONY : Win32Project\Element.cpp.s
 
-Win32Project2\SQLiteTestApp.obj: Win32Project2\SQLiteTestApp.cpp.obj
+Win32Project\Gcode.obj: Win32Project\Gcode.cpp.obj
 
-.PHONY : Win32Project2\SQLiteTestApp.obj
+.PHONY : Win32Project\Gcode.obj
 
 # target to build an object file
-Win32Project2\SQLiteTestApp.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj
-.PHONY : Win32Project2\SQLiteTestApp.cpp.obj
+Win32Project\Gcode.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Gcode.cpp.obj
+.PHONY : Win32Project\Gcode.cpp.obj
 
-Win32Project2\SQLiteTestApp.i: Win32Project2\SQLiteTestApp.cpp.i
+Win32Project\Gcode.i: Win32Project\Gcode.cpp.i
 
-.PHONY : Win32Project2\SQLiteTestApp.i
+.PHONY : Win32Project\Gcode.i
 
 # target to preprocess a source file
-Win32Project2\SQLiteTestApp.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.i
-.PHONY : Win32Project2\SQLiteTestApp.cpp.i
+Win32Project\Gcode.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Gcode.cpp.i
+.PHONY : Win32Project\Gcode.cpp.i
 
-Win32Project2\SQLiteTestApp.s: Win32Project2\SQLiteTestApp.cpp.s
+Win32Project\Gcode.s: Win32Project\Gcode.cpp.s
 
-.PHONY : Win32Project2\SQLiteTestApp.s
+.PHONY : Win32Project\Gcode.s
 
 # target to generate assembly for a file
-Win32Project2\SQLiteTestApp.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.s
-.PHONY : Win32Project2\SQLiteTestApp.cpp.s
+Win32Project\Gcode.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Gcode.cpp.s
+.PHONY : Win32Project\Gcode.cpp.s
 
-Win32Project2\SQLiteTestMainFrame.obj: Win32Project2\SQLiteTestMainFrame.cpp.obj
+Win32Project\Group.obj: Win32Project\Group.cpp.obj
 
-.PHONY : Win32Project2\SQLiteTestMainFrame.obj
+.PHONY : Win32Project\Group.obj
 
 # target to build an object file
-Win32Project2\SQLiteTestMainFrame.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj
-.PHONY : Win32Project2\SQLiteTestMainFrame.cpp.obj
+Win32Project\Group.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Group.cpp.obj
+.PHONY : Win32Project\Group.cpp.obj
 
-Win32Project2\SQLiteTestMainFrame.i: Win32Project2\SQLiteTestMainFrame.cpp.i
+Win32Project\Group.i: Win32Project\Group.cpp.i
 
-.PHONY : Win32Project2\SQLiteTestMainFrame.i
+.PHONY : Win32Project\Group.i
 
 # target to preprocess a source file
-Win32Project2\SQLiteTestMainFrame.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.i
-.PHONY : Win32Project2\SQLiteTestMainFrame.cpp.i
+Win32Project\Group.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Group.cpp.i
+.PHONY : Win32Project\Group.cpp.i
 
-Win32Project2\SQLiteTestMainFrame.s: Win32Project2\SQLiteTestMainFrame.cpp.s
+Win32Project\Group.s: Win32Project\Group.cpp.s
 
-.PHONY : Win32Project2\SQLiteTestMainFrame.s
+.PHONY : Win32Project\Group.s
 
 # target to generate assembly for a file
-Win32Project2\SQLiteTestMainFrame.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.s
-.PHONY : Win32Project2\SQLiteTestMainFrame.cpp.s
+Win32Project\Group.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Group.cpp.s
+.PHONY : Win32Project\Group.cpp.s
 
-Win32Project2\SearchElement.obj: Win32Project2\SearchElement.cpp.obj
+Win32Project\SQLiteTestMainFrame.obj: Win32Project\SQLiteTestMainFrame.cpp.obj
 
-.PHONY : Win32Project2\SearchElement.obj
+.PHONY : Win32Project\SQLiteTestMainFrame.obj
 
 # target to build an object file
-Win32Project2\SearchElement.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj
-.PHONY : Win32Project2\SearchElement.cpp.obj
+Win32Project\SQLiteTestMainFrame.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\SQLiteTestMainFrame.cpp.obj
+.PHONY : Win32Project\SQLiteTestMainFrame.cpp.obj
 
-Win32Project2\SearchElement.i: Win32Project2\SearchElement.cpp.i
+Win32Project\SQLiteTestMainFrame.i: Win32Project\SQLiteTestMainFrame.cpp.i
 
-.PHONY : Win32Project2\SearchElement.i
+.PHONY : Win32Project\SQLiteTestMainFrame.i
 
 # target to preprocess a source file
-Win32Project2\SearchElement.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.i
-.PHONY : Win32Project2\SearchElement.cpp.i
+Win32Project\SQLiteTestMainFrame.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\SQLiteTestMainFrame.cpp.i
+.PHONY : Win32Project\SQLiteTestMainFrame.cpp.i
 
-Win32Project2\SearchElement.s: Win32Project2\SearchElement.cpp.s
+Win32Project\SQLiteTestMainFrame.s: Win32Project\SQLiteTestMainFrame.cpp.s
 
-.PHONY : Win32Project2\SearchElement.s
+.PHONY : Win32Project\SQLiteTestMainFrame.s
 
 # target to generate assembly for a file
-Win32Project2\SearchElement.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.s
-.PHONY : Win32Project2\SearchElement.cpp.s
+Win32Project\SQLiteTestMainFrame.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\SQLiteTestMainFrame.cpp.s
+.PHONY : Win32Project\SQLiteTestMainFrame.cpp.s
 
-Win32Project2\wxActiveRecord.obj: Win32Project2\wxActiveRecord.cpp.obj
+Win32Project\SqlUnitTest.obj: Win32Project\SqlUnitTest.cpp.obj
 
-.PHONY : Win32Project2\wxActiveRecord.obj
+.PHONY : Win32Project\SqlUnitTest.obj
 
 # target to build an object file
-Win32Project2\wxActiveRecord.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj
-.PHONY : Win32Project2\wxActiveRecord.cpp.obj
+Win32Project\SqlUnitTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\SqlUnitTest.cpp.obj
+.PHONY : Win32Project\SqlUnitTest.cpp.obj
 
-Win32Project2\wxActiveRecord.i: Win32Project2\wxActiveRecord.cpp.i
+Win32Project\SqlUnitTest.i: Win32Project\SqlUnitTest.cpp.i
 
-.PHONY : Win32Project2\wxActiveRecord.i
+.PHONY : Win32Project\SqlUnitTest.i
 
 # target to preprocess a source file
-Win32Project2\wxActiveRecord.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.i
-.PHONY : Win32Project2\wxActiveRecord.cpp.i
+Win32Project\SqlUnitTest.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\SqlUnitTest.cpp.i
+.PHONY : Win32Project\SqlUnitTest.cpp.i
 
-Win32Project2\wxActiveRecord.s: Win32Project2\wxActiveRecord.cpp.s
+Win32Project\SqlUnitTest.s: Win32Project\SqlUnitTest.cpp.s
 
-.PHONY : Win32Project2\wxActiveRecord.s
+.PHONY : Win32Project\SqlUnitTest.s
 
 # target to generate assembly for a file
-Win32Project2\wxActiveRecord.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2__Copia.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.s
-.PHONY : Win32Project2\wxActiveRecord.cpp.s
+Win32Project\SqlUnitTest.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\SqlUnitTest.cpp.s
+.PHONY : Win32Project\SqlUnitTest.cpp.s
+
+Win32Project\wxActiveRecord.obj: Win32Project\wxActiveRecord.cpp.obj
+
+.PHONY : Win32Project\wxActiveRecord.obj
+
+# target to build an object file
+Win32Project\wxActiveRecord.cpp.obj:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\wxActiveRecord.cpp.obj
+.PHONY : Win32Project\wxActiveRecord.cpp.obj
+
+Win32Project\wxActiveRecord.i: Win32Project\wxActiveRecord.cpp.i
+
+.PHONY : Win32Project\wxActiveRecord.i
+
+# target to preprocess a source file
+Win32Project\wxActiveRecord.cpp.i:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\wxActiveRecord.cpp.i
+.PHONY : Win32Project\wxActiveRecord.cpp.i
+
+Win32Project\wxActiveRecord.s: Win32Project\wxActiveRecord.cpp.s
+
+.PHONY : Win32Project\wxActiveRecord.s
+
+# target to generate assembly for a file
+Win32Project\wxActiveRecord.cpp.s:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\wxActiveRecord.cpp.s
+.PHONY : Win32Project\wxActiveRecord.cpp.s
 
 # Help Target
 help:
@@ -400,39 +413,40 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... Win32Project2__Copia
+	@echo ... Win32Project2
+	@echo ... Win32Project
 	@echo ... edit_cache
-	@echo ... Win32Project2/About.obj
-	@echo ... Win32Project2/About.i
-	@echo ... Win32Project2/About.s
-	@echo ... Win32Project2/EditElementDialog.obj
-	@echo ... Win32Project2/EditElementDialog.i
-	@echo ... Win32Project2/EditElementDialog.s
-	@echo ... Win32Project2/EditGroupDialog.obj
-	@echo ... Win32Project2/EditGroupDialog.i
-	@echo ... Win32Project2/EditGroupDialog.s
-	@echo ... Win32Project2/Element.obj
-	@echo ... Win32Project2/Element.i
-	@echo ... Win32Project2/Element.s
-	@echo ... Win32Project2/Gcode.obj
-	@echo ... Win32Project2/Gcode.i
-	@echo ... Win32Project2/Gcode.s
-	@echo ... Win32Project2/Group.obj
-	@echo ... Win32Project2/Group.i
-	@echo ... Win32Project2/Group.s
-	@echo ... Win32Project2/SQLiteTestApp.obj
-	@echo ... Win32Project2/SQLiteTestApp.i
-	@echo ... Win32Project2/SQLiteTestApp.s
-	@echo ... Win32Project2/SQLiteTestMainFrame.obj
-	@echo ... Win32Project2/SQLiteTestMainFrame.i
-	@echo ... Win32Project2/SQLiteTestMainFrame.s
-	@echo ... Win32Project2/SearchElement.obj
-	@echo ... Win32Project2/SearchElement.i
-	@echo ... Win32Project2/SearchElement.s
-	@echo ... Win32Project2/wxActiveRecord.obj
-	@echo ... Win32Project2/wxActiveRecord.i
-	@echo ... Win32Project2/wxActiveRecord.s
+	@echo ... rebuild_cache
+	@echo ... Win32Project/About.obj
+	@echo ... Win32Project/About.i
+	@echo ... Win32Project/About.s
+	@echo ... Win32Project/EditElementDialog.obj
+	@echo ... Win32Project/EditElementDialog.i
+	@echo ... Win32Project/EditElementDialog.s
+	@echo ... Win32Project/EditGcodeDialog.obj
+	@echo ... Win32Project/EditGcodeDialog.i
+	@echo ... Win32Project/EditGcodeDialog.s
+	@echo ... Win32Project/EditGroupDialog.obj
+	@echo ... Win32Project/EditGroupDialog.i
+	@echo ... Win32Project/EditGroupDialog.s
+	@echo ... Win32Project/Element.obj
+	@echo ... Win32Project/Element.i
+	@echo ... Win32Project/Element.s
+	@echo ... Win32Project/Gcode.obj
+	@echo ... Win32Project/Gcode.i
+	@echo ... Win32Project/Gcode.s
+	@echo ... Win32Project/Group.obj
+	@echo ... Win32Project/Group.i
+	@echo ... Win32Project/Group.s
+	@echo ... Win32Project/SQLiteTestMainFrame.obj
+	@echo ... Win32Project/SQLiteTestMainFrame.i
+	@echo ... Win32Project/SQLiteTestMainFrame.s
+	@echo ... Win32Project/SqlUnitTest.obj
+	@echo ... Win32Project/SqlUnitTest.i
+	@echo ... Win32Project/SqlUnitTest.s
+	@echo ... Win32Project/wxActiveRecord.obj
+	@echo ... Win32Project/wxActiveRecord.i
+	@echo ... Win32Project/wxActiveRecord.s
 .PHONY : help
 
 
