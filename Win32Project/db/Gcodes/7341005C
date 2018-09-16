@@ -1,0 +1,67 @@
+N1      [SQUADRETTINE CON NERVATURE BOB.DIST.CINGHIE.DIS.7341.005.2/1]
+N2      
+N3      [X0 NEL CENTRO - Y0 A BOCCHETTA FISSA]
+N4      
+N5      M72
+N6      
+N7      T10M6[FRESA D.40] 
+N8      O1
+N9      X46Y-9R
+N10     S1000M13F500
+N11     Z0R
+N12     G1X-46
+N13     Z50R
+N14     O2
+N15     X46Y-9R
+N16     Z0R
+N17     G1X-46
+N18     Z150RM9
+N19     M5
+N20     T6M6[FRESA D.5,5 WIDIA]
+N21     O2
+N22     L1
+N23     O1
+N24     L1
+N25     Z250RM9
+N26     M5
+N27     T7M6[SVASATORE]
+N28     O1
+N29     L2
+N30     O2
+N31     L2
+N32     Z300RM9
+N33     M5
+N34     Y300R
+N35     M30
+N36     
+N37     L=1           [TRACCIA 5,5]
+N38     X0Y-9R
+N39     S3000M13F60
+N40     Z2R
+N41     G1Z0
+N42     Y-13.8Z-2
+N43     Y-9Z-4
+N44     Y-13.8Z-6
+N45     Y-9
+N46     Z100R
+N47     G32
+N48     
+N49     L=2          [SVASATURE]
+N50     X0Y-9R
+N51     S3000M13F300
+N52     Z2R
+N53     G1Z-3
+N54     Y-13.8
+N55     Z20R
+N56     X-26Y6R
+N57     Z-3R
+N58     G49K7
+N59     G41
+N60     G1Y-0.2
+N61     X20.8
+N62     Y-18.8
+N63     X-20.8
+N64     Y5
+N65     G40
+N66     Z100R
+N67     G32

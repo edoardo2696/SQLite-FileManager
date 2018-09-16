@@ -1,0 +1,68 @@
+N1      [$2X-53.7008I132.76Y-89.7204J6.93172K-45Q30
+N2      
+N3      [LEVA CESOIE DIS.4220.135.3]
+N4      
+N5      [METTERE 2 PEZZI INCLINATI A 30' VERSO SINISTRA IN UNA MORSA]
+N6      
+N7      [TEMPO PROGRAMMA 0H 00M 00S]
+N8      
+N9      M72
+N10     
+N11     T4M6[FRESA D.16 INSERTI]
+N12     O1
+N13     L1
+N14     O2
+N15     L1
+N16     Z250RM9
+N17     M5
+N18     Y300R
+N19     M30
+N20     
+N21     L=1           [FRESA D.16 INSERTI]
+N22     X-6Y-20R
+N23     S2500M13F450
+N24     Z10R
+N25     G49I8
+N26     G41
+N27     G1Y-8.5
+N28     X-43
+N29     Y-31.5
+N30     X-2
+N31     G40
+N32     Z8
+N33     G41
+N34     G1Y-8.5
+N35     X-43
+N36     Y-31.5
+N37     X2
+N38     G40
+N39     Z6
+N40     G41
+N41     G1Y-8.5
+N42     X-43
+N43     Y-31.5
+N44     X6
+N45     G40
+N46     Z4
+N47     G41
+N48     G1Y-8.5
+N49     X-43
+N50     Y-31.5
+N51     X10
+N52     G40
+N53     Z2
+N54     G41
+N55     G1Y-8.5
+N56     X-43
+N57     Y-31.5
+N58     X12
+N59     G40
+N60     Z0
+N61     G41
+N62     G1Y-8.5
+N63     X-43
+N64     Y-31.5
+N65     X12
+N66     G40
+N67     Z150R
+N68     G32
