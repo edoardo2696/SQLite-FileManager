@@ -6,5 +6,5 @@ CXX_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
 
 CXX_DEFINES = -DUNICODE -D_UNICODE
 
-CXX_INCLUDES = -IC:\Users\EDOARD~1\Desktop\SQLITE~2\WIN32P~1 -I\Win32Project2\databaselayer\include -I\Win32Project2\databaselayer\lib\vc_lib -I\Win32Project2\databaselayer\sqlite\include -I\Win32Project2\wxActiveRecord 
+CXX_INCLUDES = -I"C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\googletest-master\googletest\include" -I"C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\googletest-master\googletest" -IC:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\WIN32P~1 -IC:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\WIN32P~1\DATABA~1\include -IC:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\WIN32P~1\DATABA~1\lib\vc_lib -IC:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\WIN32P~1\DATABA~1\sqlite\include -IC:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\WIN32P~1\WXACTI~1 -IC:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\WIN32P~1\test\lib\GOOGLE~1\test 
 

@@ -1,3 +1,4 @@
-C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/cmake-build-debug/CMakeFiles/SQLite-FileManager-master.dir
-C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Edoardo Luci/Desktop/SQLite-FileManager-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/CMakeFiles/Win32Project2.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/CMakeFiles/Win32Project.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir

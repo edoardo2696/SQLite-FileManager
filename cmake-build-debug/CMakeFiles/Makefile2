@@ -60,45 +60,82 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master"
+CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/SQLite-FileManager-master.dir
+# Target rules for target CMakeFiles/Win32Project2.dir
 
 # All Build rule for target.
-CMakeFiles\SQLite-FileManager-master.dir\all:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\depend
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9 "Built target SQLite-FileManager-master"
-.PHONY : CMakeFiles\SQLite-FileManager-master.dir\all
+CMakeFiles\Win32Project2.dir\all:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\depend
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target Win32Project2"
+.PHONY : CMakeFiles\Win32Project2.dir\all
 
 # Include target in all.
-all: CMakeFiles\SQLite-FileManager-master.dir\all
+all: CMakeFiles\Win32Project2.dir\all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\SQLite-FileManager-master.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" 9
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles\SQLite-FileManager-master.dir\rule
+CMakeFiles\Win32Project2.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 10
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles\Win32Project2.dir\rule
 
 # Convenience name for target.
-SQLite-FileManager-master: CMakeFiles\SQLite-FileManager-master.dir\rule
+Win32Project2: CMakeFiles\Win32Project2.dir\rule
 
-.PHONY : SQLite-FileManager-master
-
-# clean rule for target.
-CMakeFiles\SQLite-FileManager-master.dir\clean:
-	$(MAKE) -f CMakeFiles\SQLite-FileManager-master.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\SQLite-FileManager-master.dir\clean
-.PHONY : CMakeFiles\SQLite-FileManager-master.dir\clean
+.PHONY : Win32Project2
 
 # clean rule for target.
-clean: CMakeFiles\SQLite-FileManager-master.dir\clean
+CMakeFiles\Win32Project2.dir\clean:
+	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\clean
+.PHONY : CMakeFiles\Win32Project2.dir\clean
+
+# clean rule for target.
+clean: CMakeFiles\Win32Project2.dir\clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Win32Project.dir
+
+# All Build rule for target.
+CMakeFiles\Win32Project.dir\all: CMakeFiles\Win32Project2.dir\all
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\depend
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Win32Project"
+.PHONY : CMakeFiles\Win32Project.dir\all
+
+# Include target in all.
+all: CMakeFiles\Win32Project.dir\all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\Win32Project.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 12
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles\Win32Project.dir\rule
+
+# Convenience name for target.
+Win32Project: CMakeFiles\Win32Project.dir\rule
+
+.PHONY : Win32Project
+
+# clean rule for target.
+CMakeFiles\Win32Project.dir\clean:
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\clean
+.PHONY : CMakeFiles\Win32Project.dir\clean
+
+# clean rule for target.
+clean: CMakeFiles\Win32Project.dir\clean
 
 .PHONY : clean
 

@@ -44,10 +44,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master"
+CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles\Win32Project2__Copia.dir\depend.make
@@ -60,173 +60,192 @@ include CMakeFiles\Win32Project2__Copia.dir\flags.make
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj: ..\Win32Project2\EditGroupDialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGroupDialog.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGroupDialog.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\EditGroupDialog.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditGroupDialog.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGroupDialog.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\EditGroupDialog.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditGroupDialog.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGroupDialog.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\EditGroupDialog.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditGroupDialog.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj: ..\Win32Project2\EditElementDialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditElementDialog.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditElementDialog.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\EditElementDialog.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditElementDialog.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditElementDialog.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\EditElementDialog.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditElementDialog.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditElementDialog.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\EditElementDialog.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditElementDialog.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj: ..\Win32Project2\Group.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Group.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Group.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\Group.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Group.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Group.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\Group.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Group.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Group.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\Group.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Group.cpp"
+<<
+
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj: ..\Win32Project2\Gcode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Gcode.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Gcode.cpp"
+<<
+
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Gcode.cpp.i"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Gcode.cpp"
+<<
+
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Gcode.cpp.s"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Gcode.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj: ..\Win32Project2\Element.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Element.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Element.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\Element.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Element.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Element.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\Element.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Element.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/Element.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\Element.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\Element.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj: ..\Win32Project2\SQLiteTestApp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestApp.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestApp.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SQLiteTestApp.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\SQLiteTestApp.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestApp.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SQLiteTestApp.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\SQLiteTestApp.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestApp.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SQLiteTestApp.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\SQLiteTestApp.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj: ..\Win32Project2\SQLiteTestMainFrame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestMainFrame.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestMainFrame.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SQLiteTestMainFrame.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\SQLiteTestMainFrame.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestMainFrame.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SQLiteTestMainFrame.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\SQLiteTestMainFrame.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SQLiteTestMainFrame.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SQLiteTestMainFrame.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\SQLiteTestMainFrame.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj: ..\Win32Project2\wxActiveRecord.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/wxActiveRecord.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/wxActiveRecord.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\wxActiveRecord.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\wxActiveRecord.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/wxActiveRecord.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\wxActiveRecord.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\wxActiveRecord.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/wxActiveRecord.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\wxActiveRecord.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\wxActiveRecord.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj: ..\Win32Project2\About.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/About.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/About.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\About.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\About.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/About.cpp.i"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\About.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\About.cpp"
 <<
 
 CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/About.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\About.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\About.cpp"
 <<
 
-CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
-CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj: ..\Win32Project2\SearchElement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SearchElement.cpp.obj"
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.obj: CMakeFiles\Win32Project2__Copia.dir\flags.make
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.obj: ..\Win32Project2\EditGcodeDialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGcodeDialog.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SearchElement.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.obj /FdCMakeFiles\Win32Project2__Copia.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditGcodeDialog.cpp"
 <<
 
-CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SearchElement.cpp.i"
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SearchElement.cpp"
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGcodeDialog.cpp.i"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditGcodeDialog.cpp"
 <<
 
-CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/SearchElement.cpp.s"
+CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Win32Project2__Copia.dir/Win32Project2/EditGcodeDialog.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.s /c "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\Win32Project2\SearchElement.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project2\EditGcodeDialog.cpp"
 <<
 
 # Object files for target Win32Project2__Copia
@@ -234,12 +253,13 @@ Win32Project2__Copia_OBJECTS = \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj" \
+"CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj" \
 "CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj" \
-"CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj"
+"CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.obj"
 
 # External object files for target Win32Project2__Copia
 Win32Project2__Copia_EXTERNAL_OBJECTS =
@@ -247,12 +267,13 @@ Win32Project2__Copia_EXTERNAL_OBJECTS =
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGroupDialog.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditElementDialog.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Group.cpp.obj
+Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Gcode.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\Element.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestApp.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SQLiteTestMainFrame.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\wxActiveRecord.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\About.cpp.obj
-Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\SearchElement.cpp.obj
+Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\Win32Project2\EditGcodeDialog.cpp.obj
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\build.make
 Win32Project2__Copia.exe: ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud.lib
 Win32Project2__Copia.exe: ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud_net.lib
@@ -287,9 +308,9 @@ Win32Project2__Copia.exe: ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_we
 Win32Project2__Copia.exe: ..\Win32Project2\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib
 Win32Project2__Copia.exe: ..\Win32Project2\databaselayer\sqlite\lib\sqlite3.lib
 Win32Project2__Copia.exe: CMakeFiles\Win32Project2__Copia.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Win32Project2__Copia.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Win32Project2__Copia.exe"
 	"C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Win32Project2__Copia.dir --manifests  -- C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Win32Project2__Copia.dir\objects1.rsp @<<
- /out:Win32Project2__Copia.exe /implib:Win32Project2__Copia.lib /pdb:"C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\Win32Project2__Copia.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:windows ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud_net.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud_xml.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxregexud.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxexpatd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_core.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_adv.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxpngd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxjpegd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxtiffd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxzlibd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_html.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_gl.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_qa.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_xrc.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_aui.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_propgrid.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_ribbon.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_richtext.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxscintillad.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib ..\Win32Project2\databaselayer\sqlite\lib\sqlite3.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxscintillad.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib ..\Win32Project2\databaselayer\sqlite\lib\sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:Win32Project2__Copia.exe /implib:Win32Project2__Copia.lib /pdb:"C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Win32Project2__Copia.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:windows ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud_net.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxbase30ud_xml.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxregexud.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxexpatd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_core.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_adv.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxpngd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxjpegd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxtiffd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxzlibd.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_html.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_gl.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_qa.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_xrc.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_aui.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_propgrid.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_ribbon.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_richtext.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxscintillad.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib ..\Win32Project2\databaselayer\sqlite\lib\sqlite3.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxscintillad.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib ..\Win32Project2\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib ..\Win32Project2\databaselayer\sqlite\lib\sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -302,6 +323,6 @@ CMakeFiles\Win32Project2__Copia.dir\clean:
 .PHONY : CMakeFiles\Win32Project2__Copia.dir\clean
 
 CMakeFiles\Win32Project2__Copia.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master" "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master" "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug" "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug" "C:\Users\Edoardo Luci\Desktop\SQLite-FileManager-master\cmake-build-debug\CMakeFiles\Win32Project2__Copia.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager" "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager" "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug" "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug" "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles\Win32Project2__Copia.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles\Win32Project2__Copia.dir\depend
 

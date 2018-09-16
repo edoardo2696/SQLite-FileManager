@@ -47,5 +47,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SQLite-FileManager-master.dir/DependInfo.cmake"
+  "CMakeFiles/Win32Project2.dir/DependInfo.cmake"
+  "CMakeFiles/Win32Project.dir/DependInfo.cmake"
   )
