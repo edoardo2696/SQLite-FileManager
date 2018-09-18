@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SqlUnitTest.dir/SqlUnitTest.cpp.obj"
+  "CMakeFiles/SqlUnitTest.dir/UnitTest.cpp.obj"
   "SqlUnitTest.pdb"
   "SqlUnitTest.exe"
   "SqlUnitTest.exe.manifest"

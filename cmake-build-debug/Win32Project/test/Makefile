@@ -57,6 +57,30 @@ CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManag
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install\local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local
+
+# Special rule for the target install/local
+install\local\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local\fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install\fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,6 +102,16 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components\fast: list_install_components
+
+.PHONY : list_install_components\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,56 +156,56 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Win32Project\test\CMakeFiles\SqliteUnitTest.dir\rule:
+Win32Project\test\CMakeFiles\UnitTest.dir\rule:
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\SqliteUnitTest.dir\rule
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\UnitTest.dir\rule
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-.PHONY : Win32Project\test\CMakeFiles\SqliteUnitTest.dir\rule
+.PHONY : Win32Project\test\CMakeFiles\UnitTest.dir\rule
 
 # Convenience name for target.
-SqliteUnitTest: Win32Project\test\CMakeFiles\SqliteUnitTest.dir\rule
+UnitTest: Win32Project\test\CMakeFiles\UnitTest.dir\rule
 
-.PHONY : SqliteUnitTest
+.PHONY : UnitTest
 
 # fast build rule for target.
-SqliteUnitTest\fast:
+UnitTest\fast:
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-	$(MAKE) -f Win32Project\test\CMakeFiles\SqliteUnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\SqliteUnitTest.dir\build
+	$(MAKE) -f Win32Project\test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\UnitTest.dir\build
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-.PHONY : SqliteUnitTest\fast
+.PHONY : UnitTest\fast
 
-SqlUnitTest.obj: SqlUnitTest.cpp.obj
+UnitTest.obj: UnitTest.cpp.obj
 
-.PHONY : SqlUnitTest.obj
+.PHONY : UnitTest.obj
 
 # target to build an object file
-SqlUnitTest.cpp.obj:
+UnitTest.cpp.obj:
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-	$(MAKE) -f Win32Project\test\CMakeFiles\SqliteUnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\SqliteUnitTest.dir\SqlUnitTest.cpp.obj
+	$(MAKE) -f Win32Project\test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\UnitTest.dir\UnitTest.cpp.obj
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-.PHONY : SqlUnitTest.cpp.obj
+.PHONY : UnitTest.cpp.obj
 
-SqlUnitTest.i: SqlUnitTest.cpp.i
+UnitTest.i: UnitTest.cpp.i
 
-.PHONY : SqlUnitTest.i
+.PHONY : UnitTest.i
 
 # target to preprocess a source file
-SqlUnitTest.cpp.i:
+UnitTest.cpp.i:
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-	$(MAKE) -f Win32Project\test\CMakeFiles\SqliteUnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\SqliteUnitTest.dir\SqlUnitTest.cpp.i
+	$(MAKE) -f Win32Project\test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\UnitTest.dir\UnitTest.cpp.i
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-.PHONY : SqlUnitTest.cpp.i
+.PHONY : UnitTest.cpp.i
 
-SqlUnitTest.s: SqlUnitTest.cpp.s
+UnitTest.s: UnitTest.cpp.s
 
-.PHONY : SqlUnitTest.s
+.PHONY : UnitTest.s
 
 # target to generate assembly for a file
-SqlUnitTest.cpp.s:
+UnitTest.cpp.s:
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-	$(MAKE) -f Win32Project\test\CMakeFiles\SqliteUnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\SqliteUnitTest.dir\SqlUnitTest.cpp.s
+	$(MAKE) -f Win32Project\test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) Win32Project\test\CMakeFiles\UnitTest.dir\UnitTest.cpp.s
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-.PHONY : SqlUnitTest.cpp.s
+.PHONY : UnitTest.cpp.s
 
 # Help Target
 help:
@@ -179,12 +213,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... SqliteUnitTest
+	@echo ... UnitTest
+	@echo ... install/local
+	@echo ... install
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... SqlUnitTest.obj
-	@echo ... SqlUnitTest.i
-	@echo ... SqlUnitTest.s
+	@echo ... list_install_components
+	@echo ... UnitTest.obj
+	@echo ... UnitTest.i
+	@echo ... UnitTest.s
 .PHONY : help
 
 

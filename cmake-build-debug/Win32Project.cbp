@@ -5,77 +5,13 @@
 		<Option title="Win32Project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\googletest\;CMake Files\test\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Win32Project2">
-				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project2.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add option="-DUNICODE"/>
-					<Add option="-D_UNICODE"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 Win32Project2"/>
-					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Win32Project2/fast">
-				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project2.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add option="-DUNICODE"/>
-					<Add option="-D_UNICODE"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
-					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 Win32Project2/fast"/>
 					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
@@ -97,6 +33,8 @@
 					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
 					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
 					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
@@ -129,6 +67,8 @@
 					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
 					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
 					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
@@ -140,6 +80,26 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 Win32Project/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 install/local"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 install"/>
 					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
@@ -165,72 +125,316 @@
 					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 list_install_components"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitTest">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/UnitTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project2/databaselayer/sqlite/lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/wxActiveRecord"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 UnitTest"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UnitTest/fast">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/UnitTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project2/databaselayer/sqlite/lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/../Win32Project/wxActiveRecord"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 UnitTest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 gtest"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 gtest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 gtest_main"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/About.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/About.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditElementDialog.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditElementDialog.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGcodeDialog.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGcodeDialog.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGroupDialog.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGroupDialog.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Element.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Element.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Gcode.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Gcode.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Group.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Group.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/RecordIDClientData.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SQLiteTestMainFrame.cpp">
 			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SQLiteTestMainFrame.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SqlUnitTest.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SqlUnitTest.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord.cpp">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord.h">
-			<Option target="Win32Project2"/>
+			<Option target="Win32Project"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/UnitTest.cpp">
+			<Option target="UnitTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
 		</Unit>
 		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\googletest\"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\googletest\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

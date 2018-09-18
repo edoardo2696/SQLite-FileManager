@@ -66,50 +66,13 @@ CMAKE_SOURCE_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManag
 CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/Win32Project2.dir
-
-# All Build rule for target.
-CMakeFiles\Win32Project2.dir\all:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\depend
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target Win32Project2"
-.PHONY : CMakeFiles\Win32Project2.dir\all
-
-# Include target in all.
-all: CMakeFiles\Win32Project2.dir\all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles\Win32Project2.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 10
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles\Win32Project2.dir\rule
-
-# Convenience name for target.
-Win32Project2: CMakeFiles\Win32Project2.dir\rule
-
-.PHONY : Win32Project2
-
-# clean rule for target.
-CMakeFiles\Win32Project2.dir\clean:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\clean
-.PHONY : CMakeFiles\Win32Project2.dir\clean
-
-# clean rule for target.
-clean: CMakeFiles\Win32Project2.dir\clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/Win32Project.dir
 
 # All Build rule for target.
-CMakeFiles\Win32Project.dir\all: CMakeFiles\Win32Project2.dir\all
+CMakeFiles\Win32Project.dir\all:
 	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\depend
 	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Win32Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13 "Built target Win32Project"
 .PHONY : CMakeFiles\Win32Project.dir\all
 
 # Include target in all.
@@ -119,7 +82,7 @@ all: CMakeFiles\Win32Project.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Win32Project.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 12
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 11
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles\Win32Project.dir\rule
@@ -136,6 +99,158 @@ CMakeFiles\Win32Project.dir\clean:
 
 # clean rule for target.
 clean: CMakeFiles\Win32Project.dir\clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Convenience name for "all" pass in the directory.
+test\all: test\CMakeFiles\UnitTest.dir\all
+test\all: test\googletest\all
+
+.PHONY : test\all
+
+# Convenience name for "clean" pass in the directory.
+test\clean: test\CMakeFiles\UnitTest.dir\clean
+test\clean: test\googletest\clean
+
+.PHONY : test\clean
+
+# Convenience name for "preinstall" pass in the directory.
+test\preinstall: test\googletest\preinstall
+
+.PHONY : test\preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/UnitTest.dir
+
+# All Build rule for target.
+test\CMakeFiles\UnitTest.dir\all: test\googletest\CMakeFiles\gtest.dir\all
+test\CMakeFiles\UnitTest.dir\all: test\googletest\CMakeFiles\gtest_main.dir\all
+	$(MAKE) -f test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\UnitTest.dir\depend
+	$(MAKE) -f test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\UnitTest.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target UnitTest"
+.PHONY : test\CMakeFiles\UnitTest.dir\all
+
+# Include target in all.
+all: test\CMakeFiles\UnitTest.dir\all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test\CMakeFiles\UnitTest.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 6
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test\CMakeFiles\UnitTest.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
+.PHONY : test\CMakeFiles\UnitTest.dir\rule
+
+# Convenience name for target.
+UnitTest: test\CMakeFiles\UnitTest.dir\rule
+
+.PHONY : UnitTest
+
+# clean rule for target.
+test\CMakeFiles\UnitTest.dir\clean:
+	$(MAKE) -f test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\UnitTest.dir\clean
+.PHONY : test\CMakeFiles\UnitTest.dir\clean
+
+# clean rule for target.
+clean: test\CMakeFiles\UnitTest.dir\clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test\googletest
+
+# Convenience name for "all" pass in the directory.
+test\googletest\all: test\googletest\CMakeFiles\gtest.dir\all
+test\googletest\all: test\googletest\CMakeFiles\gtest_main.dir\all
+
+.PHONY : test\googletest\all
+
+# Convenience name for "clean" pass in the directory.
+test\googletest\clean: test\googletest\CMakeFiles\gtest.dir\clean
+test\googletest\clean: test\googletest\CMakeFiles\gtest_main.dir\clean
+
+.PHONY : test\googletest\clean
+
+# Convenience name for "preinstall" pass in the directory.
+test\googletest\preinstall:
+
+.PHONY : test\googletest\preinstall
+
+#=============================================================================
+# Target rules for target test/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+test\googletest\CMakeFiles\gtest.dir\all:
+	$(MAKE) -f test\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest.dir\depend
+	$(MAKE) -f test\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=14,15 "Built target gtest"
+.PHONY : test\googletest\CMakeFiles\gtest.dir\all
+
+# Include target in all.
+all: test\googletest\CMakeFiles\gtest.dir\all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test\googletest\CMakeFiles\gtest.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
+.PHONY : test\googletest\CMakeFiles\gtest.dir\rule
+
+# Convenience name for target.
+gtest: test\googletest\CMakeFiles\gtest.dir\rule
+
+.PHONY : gtest
+
+# clean rule for target.
+test\googletest\CMakeFiles\gtest.dir\clean:
+	$(MAKE) -f test\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest.dir\clean
+.PHONY : test\googletest\CMakeFiles\gtest.dir\clean
+
+# clean rule for target.
+clean: test\googletest\CMakeFiles\gtest.dir\clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+test\googletest\CMakeFiles\gtest_main.dir\all: test\googletest\CMakeFiles\gtest.dir\all
+	$(MAKE) -f test\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest_main.dir\depend
+	$(MAKE) -f test\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest_main.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=16,17 "Built target gtest_main"
+.PHONY : test\googletest\CMakeFiles\gtest_main.dir\all
+
+# Include target in all.
+all: test\googletest\CMakeFiles\gtest_main.dir\all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test\googletest\CMakeFiles\gtest_main.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 4
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest_main.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" 0
+.PHONY : test\googletest\CMakeFiles\gtest_main.dir\rule
+
+# Convenience name for target.
+gtest_main: test\googletest\CMakeFiles\gtest_main.dir\rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+test\googletest\CMakeFiles\gtest_main.dir\clean:
+	$(MAKE) -f test\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest_main.dir\clean
+.PHONY : test\googletest\CMakeFiles\gtest_main.dir\clean
+
+# clean rule for target.
+clean: test\googletest\CMakeFiles\gtest_main.dir\clean
 
 .PHONY : clean
 

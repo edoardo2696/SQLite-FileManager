@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Win32Project/databaselayer/include/DatabaseErrorCodes.h
-
 ../Win32Project/databaselayer/include/DatabaseErrorReporter.h
 wx/wxprec.h
 ../Win32Project/databaselayer/include/wx/wxprec.h
@@ -33,8 +31,6 @@ DatabaseResultSet.h
 ../Win32Project/databaselayer/include/DatabaseResultSet.h
 PreparedStatement.h
 ../Win32Project/databaselayer/include/PreparedStatement.h
-
-../Win32Project/databaselayer/include/DatabaseLayerException.h
 
 ../Win32Project/databaselayer/include/DatabaseQueryParser.h
 wx/wxprec.h
@@ -263,12 +259,6 @@ atomic.h
 -
 wx/thread.h
 ../Win32Project/databaselayer/include/wx/wx/thread.h
-
-../Win32Project/databaselayer/include/wx/base64.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/buffer.h
-../Win32Project/databaselayer/include/wx/wx/buffer.h
 
 ../Win32Project/databaselayer/include/wx/beforestd.h
 
@@ -858,26 +848,6 @@ wx/os2/combobox.h
 
 ../Win32Project/databaselayer/include/wx/compiler.h
 
-../Win32Project/databaselayer/include/wx/confbase.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/object.h
-../Win32Project/databaselayer/include/wx/wx/object.h
-wx/base64.h
-../Win32Project/databaselayer/include/wx/wx/base64.h
-
-../Win32Project/databaselayer/include/wx/config.h
-wx/confbase.h
-../Win32Project/databaselayer/include/wx/wx/confbase.h
-wx/msw/regconf.h
-../Win32Project/databaselayer/include/wx/wx/msw/regconf.h
-wx/os2/iniconf.h
-../Win32Project/databaselayer/include/wx/wx/os2/iniconf.h
-wx/fileconf.h
-../Win32Project/databaselayer/include/wx/wx/fileconf.h
-
 ../Win32Project/databaselayer/include/wx/containr.h
 wx/defs.h
 ../Win32Project/databaselayer/include/wx/wx/defs.h
@@ -1258,16 +1228,6 @@ algorithm
 wx/afterstd.h
 ../Win32Project/databaselayer/include/wx/wx/afterstd.h
 
-../Win32Project/databaselayer/include/wx/encconv.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/object.h
-../Win32Project/databaselayer/include/wx/wx/object.h
-wx/fontenc.h
-../Win32Project/databaselayer/include/wx/wx/fontenc.h
-wx/dynarray.h
-../Win32Project/databaselayer/include/wx/wx/dynarray.h
-
 ../Win32Project/databaselayer/include/wx/event.h
 wx/defs.h
 ../Win32Project/databaselayer/include/wx/wx/defs.h
@@ -1308,18 +1268,6 @@ wx/defs.h
 
 ../Win32Project/databaselayer/include/wx/features.h
 
-../Win32Project/databaselayer/include/wx/ffile.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/filefn.h
-../Win32Project/databaselayer/include/wx/wx/filefn.h
-wx/convauto.h
-../Win32Project/databaselayer/include/wx/wx/convauto.h
-stdio.h
--
-
 ../Win32Project/databaselayer/include/wx/file.h
 wx/defs.h
 ../Win32Project/databaselayer/include/wx/wx/defs.h
@@ -1329,18 +1277,6 @@ wx/filefn.h
 ../Win32Project/databaselayer/include/wx/wx/filefn.h
 wx/convauto.h
 ../Win32Project/databaselayer/include/wx/wx/convauto.h
-
-../Win32Project/databaselayer/include/wx/fileconf.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/textfile.h
-../Win32Project/databaselayer/include/wx/wx/textfile.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/confbase.h
-../Win32Project/databaselayer/include/wx/wx/confbase.h
-wx/filename.h
-../Win32Project/databaselayer/include/wx/wx/filename.h
 
 ../Win32Project/databaselayer/include/wx/filectrl.h
 wx/defs.h
@@ -1443,30 +1379,6 @@ wx/longlong.h
 ../Win32Project/databaselayer/include/wx/wx/longlong.h
 wx/file.h
 ../Win32Project/databaselayer/include/wx/wx/file.h
-
-../Win32Project/databaselayer/include/wx/filepicker.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/pickerbase.h
-../Win32Project/databaselayer/include/wx/wx/pickerbase.h
-wx/filename.h
-../Win32Project/databaselayer/include/wx/wx/filename.h
-wx/gtk/filepicker.h
-../Win32Project/databaselayer/include/wx/wx/gtk/filepicker.h
-wx/generic/filepickerg.h
-../Win32Project/databaselayer/include/wx/wx/generic/filepickerg.h
-
-../Win32Project/databaselayer/include/wx/filesys.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/stream.h
-../Win32Project/databaselayer/include/wx/wx/stream.h
-wx/datetime.h
-../Win32Project/databaselayer/include/wx/wx/datetime.h
-wx/filename.h
-../Win32Project/databaselayer/include/wx/wx/filename.h
-wx/hashmap.h
-../Win32Project/databaselayer/include/wx/wx/hashmap.h
 
 ../Win32Project/databaselayer/include/wx/flags.h
 
@@ -1610,14 +1522,6 @@ wx/filedlg.h
 wx/generic/filectrlg.h
 ../Win32Project/databaselayer/include/wx/generic/wx/generic/filectrlg.h
 
-../Win32Project/databaselayer/include/wx/generic/filepickerg.h
-wx/button.h
-../Win32Project/databaselayer/include/wx/generic/wx/button.h
-wx/filedlg.h
-../Win32Project/databaselayer/include/wx/generic/wx/filedlg.h
-wx/dirdlg.h
-../Win32Project/databaselayer/include/wx/generic/wx/dirdlg.h
-
 ../Win32Project/databaselayer/include/wx/generic/icon.h
 wx/bitmap.h
 ../Win32Project/databaselayer/include/wx/generic/wx/bitmap.h
@@ -1661,14 +1565,6 @@ wx/bitmap.h
 ../Win32Project/databaselayer/include/wx/generic/region.h
 
 ../Win32Project/databaselayer/include/wx/generic/scrolwin.h
-
-../Win32Project/databaselayer/include/wx/generic/splitter.h
-databaselayer/include/wx/splitter.h
--
-wx/window.h
-../Win32Project/databaselayer/include/wx/generic/wx/window.h
-wx/containr.h
-../Win32Project/databaselayer/include/wx/generic/wx/containr.h
 
 ../Win32Project/databaselayer/include/wx/generic/statbmpg.h
 wx/statbmp.h
@@ -1777,10 +1673,6 @@ wx/filectrl.h
 ../Win32Project/databaselayer/include/wx/gtk/filedlg.h
 wx/gtk/filectrl.h
 ../Win32Project/databaselayer/include/wx/gtk/wx/gtk/filectrl.h
-
-../Win32Project/databaselayer/include/wx/gtk/filepicker.h
-wx/generic/filepickerg.h
-../Win32Project/databaselayer/include/wx/gtk/wx/generic/filepickerg.h
 
 ../Win32Project/databaselayer/include/wx/gtk/font.h
 
@@ -2059,88 +1951,6 @@ ext/hash_set
 -
 hash_set
 -
-
-../Win32Project/databaselayer/include/wx/html/htmlcell.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-wx/html/htmltag.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmltag.h
-wx/html/htmldefs.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmldefs.h
-wx/window.h
-../Win32Project/databaselayer/include/wx/html/wx/window.h
-
-../Win32Project/databaselayer/include/wx/html/htmldefs.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-
-../Win32Project/databaselayer/include/wx/html/htmlfilt.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-wx/filesys.h
-../Win32Project/databaselayer/include/wx/html/wx/filesys.h
-
-../Win32Project/databaselayer/include/wx/html/htmlpars.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-wx/html/htmltag.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmltag.h
-wx/filesys.h
-../Win32Project/databaselayer/include/wx/html/wx/filesys.h
-wx/hashmap.h
-../Win32Project/databaselayer/include/wx/html/wx/hashmap.h
-wx/hashset.h
-../Win32Project/databaselayer/include/wx/html/wx/hashset.h
-wx/vector.h
-../Win32Project/databaselayer/include/wx/html/wx/vector.h
-wx/fontenc.h
-../Win32Project/databaselayer/include/wx/html/wx/fontenc.h
-
-../Win32Project/databaselayer/include/wx/html/htmltag.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-wx/object.h
-../Win32Project/databaselayer/include/wx/html/wx/object.h
-wx/arrstr.h
-../Win32Project/databaselayer/include/wx/html/wx/arrstr.h
-
-../Win32Project/databaselayer/include/wx/html/htmlwin.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-wx/window.h
-../Win32Project/databaselayer/include/wx/html/wx/window.h
-wx/scrolwin.h
-../Win32Project/databaselayer/include/wx/html/wx/scrolwin.h
-wx/config.h
-../Win32Project/databaselayer/include/wx/html/wx/config.h
-wx/stopwatch.h
-../Win32Project/databaselayer/include/wx/html/wx/stopwatch.h
-wx/html/winpars.h
-../Win32Project/databaselayer/include/wx/html/wx/html/winpars.h
-wx/html/htmlcell.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmlcell.h
-wx/filesys.h
-../Win32Project/databaselayer/include/wx/html/wx/filesys.h
-wx/html/htmlfilt.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmlfilt.h
-wx/filename.h
-../Win32Project/databaselayer/include/wx/html/wx/filename.h
-wx/bitmap.h
-../Win32Project/databaselayer/include/wx/html/wx/bitmap.h
-
-../Win32Project/databaselayer/include/wx/html/winpars.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/html/wx/defs.h
-wx/module.h
-../Win32Project/databaselayer/include/wx/html/wx/module.h
-wx/font.h
-../Win32Project/databaselayer/include/wx/html/wx/font.h
-wx/html/htmlpars.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmlpars.h
-wx/html/htmlcell.h
-../Win32Project/databaselayer/include/wx/html/wx/html/htmlcell.h
-wx/encconv.h
-../Win32Project/databaselayer/include/wx/html/wx/encconv.h
 
 ../Win32Project/databaselayer/include/wx/icon.h
 wx/iconloc.h
@@ -2948,23 +2758,7 @@ wx/statbox.h
 
 ../Win32Project/databaselayer/include/wx/msw/radiobut.h
 
-../Win32Project/databaselayer/include/wx/msw/regconf.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/msw/wx/defs.h
-wx/msw/registry.h
-../Win32Project/databaselayer/include/wx/msw/wx/msw/registry.h
-wx/object.h
-../Win32Project/databaselayer/include/wx/msw/wx/object.h
-wx/confbase.h
-../Win32Project/databaselayer/include/wx/msw/wx/confbase.h
-wx/buffer.h
-../Win32Project/databaselayer/include/wx/msw/wx/buffer.h
-
 ../Win32Project/databaselayer/include/wx/msw/region.h
-
-../Win32Project/databaselayer/include/wx/msw/registry.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/msw/wx/defs.h
 
 ../Win32Project/databaselayer/include/wx/msw/scrolbar.h
 
@@ -3225,8 +3019,6 @@ wx/bitmap.h
 ../Win32Project/databaselayer/include/wx/os2/wx/bitmap.h
 wx/os2/gdiimage.h
 ../Win32Project/databaselayer/include/wx/os2/wx/os2/gdiimage.h
-
-../Win32Project/databaselayer/include/wx/os2/iniconf.h
 
 ../Win32Project/databaselayer/include/wx/os2/listbox.h
 wx/dynarray.h
@@ -3672,14 +3464,6 @@ wx/cocoa/pen.h
 wx/os2/pen.h
 ../Win32Project/databaselayer/include/wx/wx/os2/pen.h
 
-../Win32Project/databaselayer/include/wx/pickerbase.h
-wx/control.h
-../Win32Project/databaselayer/include/wx/wx/control.h
-wx/sizer.h
-../Win32Project/databaselayer/include/wx/wx/sizer.h
-wx/containr.h
-../Win32Project/databaselayer/include/wx/wx/containr.h
-
 ../Win32Project/databaselayer/include/wx/platform.h
 unistd.h
 -
@@ -3887,12 +3671,6 @@ wx/cocoa/slider.h
 ../Win32Project/databaselayer/include/wx/wx/cocoa/slider.h
 wx/os2/slider.h
 ../Win32Project/databaselayer/include/wx/wx/os2/slider.h
-
-../Win32Project/databaselayer/include/wx/splitter.h
-wx/event.h
-../Win32Project/databaselayer/include/wx/wx/event.h
-wx/generic/splitter.h
-../Win32Project/databaselayer/include/wx/wx/generic/splitter.h
 
 ../Win32Project/databaselayer/include/wx/statbmp.h
 wx/defs.h
@@ -4132,18 +3910,6 @@ wx/list.h
 wx/control.h
 ../Win32Project/databaselayer/include/wx/wx/control.h
 
-../Win32Project/databaselayer/include/wx/textbuf.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/arrstr.h
-../Win32Project/databaselayer/include/wx/wx/arrstr.h
-wx/convauto.h
-../Win32Project/databaselayer/include/wx/wx/convauto.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/dynarray.h
-../Win32Project/databaselayer/include/wx/wx/dynarray.h
-
 ../Win32Project/databaselayer/include/wx/textctrl.h
 wx/defs.h
 ../Win32Project/databaselayer/include/wx/wx/defs.h
@@ -4198,14 +3964,6 @@ wx/motif/textentry.h
 wx/os2/textentry.h
 ../Win32Project/databaselayer/include/wx/wx/os2/textentry.h
 
-../Win32Project/databaselayer/include/wx/textfile.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/textbuf.h
-../Win32Project/databaselayer/include/wx/wx/textbuf.h
-wx/file.h
-../Win32Project/databaselayer/include/wx/wx/file.h
-
 ../Win32Project/databaselayer/include/wx/thread.h
 wx/defs.h
 ../Win32Project/databaselayer/include/wx/wx/defs.h
@@ -4239,14 +3997,6 @@ wx/unix/tls.h
 ../Win32Project/databaselayer/include/wx/wx/unix/tls.h
 stdlib.h
 -
-
-../Win32Project/databaselayer/include/wx/tokenzr.h
-wx/object.h
-../Win32Project/databaselayer/include/wx/wx/object.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/arrstr.h
-../Win32Project/databaselayer/include/wx/wx/arrstr.h
 
 ../Win32Project/databaselayer/include/wx/toolbar.h
 wx/defs.h
@@ -4596,20 +4346,6 @@ wx/meta/convertible.h
 wx/meta/int2type.h
 ../Win32Project/databaselayer/include/wx/wx/meta/int2type.h
 
-../Win32Project/databaselayer/include/wx/wfstream.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/wx/defs.h
-wx/object.h
-../Win32Project/databaselayer/include/wx/wx/object.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/wx/string.h
-wx/stream.h
-../Win32Project/databaselayer/include/wx/wx/stream.h
-wx/file.h
-../Win32Project/databaselayer/include/wx/wx/file.h
-wx/ffile.h
-../Win32Project/databaselayer/include/wx/wx/ffile.h
-
 ../Win32Project/databaselayer/include/wx/window.h
 wx/event.h
 ../Win32Project/databaselayer/include/wx/wx/event.h
@@ -4952,52 +4688,6 @@ wx/arrstr.h
 wx/region.h
 ../Win32Project/databaselayer/include/wx/x11/wx/region.h
 
-../Win32Project/databaselayer/include/wx/xrc/xmlres.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/xrc/wx/defs.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/xrc/wx/string.h
-wx/dynarray.h
-../Win32Project/databaselayer/include/wx/xrc/wx/dynarray.h
-wx/arrstr.h
-../Win32Project/databaselayer/include/wx/xrc/wx/arrstr.h
-wx/datetime.h
-../Win32Project/databaselayer/include/wx/xrc/wx/datetime.h
-wx/list.h
-../Win32Project/databaselayer/include/wx/xrc/wx/list.h
-wx/gdicmn.h
-../Win32Project/databaselayer/include/wx/xrc/wx/gdicmn.h
-wx/filesys.h
-../Win32Project/databaselayer/include/wx/xrc/wx/filesys.h
-wx/bitmap.h
-../Win32Project/databaselayer/include/wx/xrc/wx/bitmap.h
-wx/icon.h
-../Win32Project/databaselayer/include/wx/xrc/wx/icon.h
-wx/artprov.h
-../Win32Project/databaselayer/include/wx/xrc/wx/artprov.h
-wx/colour.h
-../Win32Project/databaselayer/include/wx/xrc/wx/colour.h
-wx/vector.h
-../Win32Project/databaselayer/include/wx/xrc/wx/vector.h
-wx/xrc/xmlreshandler.h
-../Win32Project/databaselayer/include/wx/xrc/wx/xrc/xmlreshandler.h
-
-../Win32Project/databaselayer/include/wx/xrc/xmlreshandler.h
-wx/defs.h
-../Win32Project/databaselayer/include/wx/xrc/wx/defs.h
-wx/string.h
-../Win32Project/databaselayer/include/wx/xrc/wx/string.h
-wx/artprov.h
-../Win32Project/databaselayer/include/wx/xrc/wx/artprov.h
-wx/colour.h
-../Win32Project/databaselayer/include/wx/xrc/wx/colour.h
-wx/filesys.h
-../Win32Project/databaselayer/include/wx/xrc/wx/filesys.h
-wx/imaglist.h
-../Win32Project/databaselayer/include/wx/xrc/wx/imaglist.h
-wx/window.h
-../Win32Project/databaselayer/include/wx/xrc/wx/window.h
-
 ../Win32Project/databaselayer/include/wx/xti.h
 wx/defs.h
 ../Win32Project/databaselayer/include/wx/wx/defs.h
@@ -5054,155 +4744,151 @@ typeinfo
 stdarg.h
 -
 
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/About.h
-wx/artprov.h
--
-wx/xrc/xmlres.h
--
-wx/string.h
--
-wx/stattext.h
--
-wx/gdicmn.h
--
-wx/font.h
--
-wx/colour.h
--
-wx/settings.h
--
-wx/sizer.h
--
-wx/button.h
--
-wx/dialog.h
--
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/UnitTest.cpp
+databaselayer/include/DatabaseLayer.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/databaselayer/include/DatabaseLayer.h
+databaselayer/include/SqliteDatabaseLayer.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/databaselayer/include/SqliteDatabaseLayer.h
+googletest/include/gtest/gtest.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest.h
 
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditElementDialog.h
-wx/wx.h
--
-databaselayer/include/wx/filepicker.h
--
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-death-test.h
+gtest/internal/gtest-death-test-internal.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-death-test-internal.h
 
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGcodeDialog.h
-wx/wx.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-message.h
+limits
 -
-databaselayer/include/wx/filepicker.h
--
+gtest/internal/gtest-port.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-port.h
 
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGroupDialog.h
-wx/wx.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-param-test.h
+gtest/internal/gtest-port.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-port.h
+utility
 -
-databaselayer/include/wx/filepicker.h
--
+gtest/internal/gtest-internal.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-internal.h
+gtest/internal/gtest-param-util.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-param-util.h
+gtest/internal/gtest-param-util-generated.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-param-util-generated.h
 
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Element.h
-wxActiveRecord.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord.h
-wx/wx.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-printers.h
+ostream
 -
-wx/string.h
+sstream
 -
-wx/datetime.h
+string
 -
-Group.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Group.h
-Gcode.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Gcode.h
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Gcode.h
-wxActiveRecord.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord.h
-wx/wx.h
--
-wx/string.h
--
-wx/datetime.h
--
-Element.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Element.h
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Group.h
-wxActiveRecord.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord.h
-wx/wx.h
--
-wx/string.h
--
-wx/datetime.h
--
-Element.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Element.h
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SQLiteTestMainFrame.h
-wx/wx.h
--
-wx/toolbar.h
--
-wx/listbox.h
--
-wx/listctrl.h
--
-wx/html/htmlwin.h
--
-databaselayer/include/wx/generic/splitter.h
--
-About.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/About.h
-EditGcodeDialog.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGcodeDialog.h
-EditGroupDialog.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditGroupDialog.h
-EditElementDialog.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/EditElementDialog.h
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SqlUnitTest.cpp
-wx/image.h
--
-DatabaseLayerException.h
--
-SqlUnitTest.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SqlUnitTest.h
-SQLiteTestMainFrame.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SQLiteTestMainFrame.h
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/SqlUnitTest.h
-wx/wx.h
--
-DatabaseLayer.h
--
-SqliteDatabaseLayer.h
--
-Group.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Group.h
-Element.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Element.h
-Gcode.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/Gcode.h
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord.h
-wx/wx.h
--
-wx/string.h
--
-wx/wfstream.h
--
-wx/tokenzr.h
--
-DatabaseLayer.h
--
-DatabaseErrorCodes.h
--
-DatabaseLayerException.h
+utility
 -
 vector
 -
-SqliteDatabaseLayer.h
+gtest/internal/gtest-port.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-port.h
+gtest/internal/gtest-internal.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-internal.h
+tuple
 -
-PostgresDatabaseLayer.h
+gtest/internal/custom/gtest-printers.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/custom/gtest-printers.h
+
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-test-part.h
+iosfwd
 -
-MysqlDatabaseLayer.h
+vector
 -
-FirebirdDatabaseLayer.h
+gtest/internal/gtest-internal.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-internal.h
+gtest/internal/gtest-string.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-string.h
+
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-typed-test.h
+gtest/internal/gtest-port.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-port.h
+gtest/internal/gtest-type-util.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/internal/gtest-type-util.h
+
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest.h
+limits
 -
+ostream
+-
+vector
+-
+../gtest/internal/gtest-internal.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest-internal.h
+../gtest/internal/gtest-string.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest-string.h
+../gtest/gtest-death-test.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-death-test.h
+../gtest/gtest-message.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-message.h
+../gtest/gtest-param-test.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-param-test.h
+../gtest/gtest-printers.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-printers.h
+../gtest/gtest_prod.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest_prod.h
+../gtest/gtest-test-part.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-test-part.h
+../gtest/gtest-typed-test.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-typed-test.h
+gtest-typed-test.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest-typed-test.h
+gtest/gtest_pred_impl.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest/gtest_pred_impl.h
+
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/gtest_prod.h
+
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest-internal.h
+gtest/internal/gtest-port.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest/internal/gtest-port.h
+stdlib.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+unistd.h
+-
+stdexcept
+-
+ctype.h
+-
+float.h
+-
+string.h
+-
+iomanip
+-
+limits
+-
+map
+-
+set
+-
+string
+-
+vector
+-
+gtest/gtest-message.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest/gtest-message.h
+gtest/internal/gtest-string.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest/internal/gtest-string.h
+gtest/internal/gtest-filepath.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest/internal/gtest-filepath.h
+gtest/internal/gtest-type-util.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest/internal/gtest-type-util.h
+
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest-string.h
+mem.h
+-
+string.h
+-
+string
+-
+gtest/internal/gtest-port.h
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/googletest/include/gtest/internal/gtest/internal/gtest-port.h
 

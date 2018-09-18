@@ -18,7 +18,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtestd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtest.lib" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -52,7 +52,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtestd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtest.lib" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -86,7 +86,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtest_maind.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -120,7 +120,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtest_maind.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>

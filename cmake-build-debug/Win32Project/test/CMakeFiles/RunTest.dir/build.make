@@ -58,75 +58,78 @@ include Win32Project\test\CMakeFiles\RunTest.dir\progress.make
 # Include the compile flags for this target's objects.
 include Win32Project\test\CMakeFiles\RunTest.dir\flags.make
 
-Win32Project\test\CMakeFiles\RunTest.dir\RunAllTests.cpp.obj: Win32Project\test\CMakeFiles\RunTest.dir\flags.make
-Win32Project\test\CMakeFiles\RunTest.dir\RunAllTests.cpp.obj: ..\Win32Project\test\RunAllTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Win32Project/test/CMakeFiles/RunTest.dir/RunAllTests.cpp.obj"
+Win32Project\test\CMakeFiles\RunTest.dir\RunTest.cpp.obj: Win32Project\test\CMakeFiles\RunTest.dir\flags.make
+Win32Project\test\CMakeFiles\RunTest.dir\RunTest.cpp.obj: ..\Win32Project\test\RunTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Win32Project/test/CMakeFiles/RunTest.dir/RunTest.cpp.obj"
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\RunTest.dir\RunAllTests.cpp.obj /FdCMakeFiles\RunTest.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\RunAllTests.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\RunTest.dir\RunTest.cpp.obj /FdCMakeFiles\RunTest.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\RunTest.cpp"
 <<
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
 
-Win32Project\test\CMakeFiles\RunTest.dir\RunAllTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RunTest.dir/RunAllTests.cpp.i"
+Win32Project\test\CMakeFiles\RunTest.dir\RunTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RunTest.dir/RunTest.cpp.i"
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\RunTest.dir\RunAllTests.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\RunAllTests.cpp"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\RunTest.dir\RunTest.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\RunTest.cpp"
 <<
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
 
-Win32Project\test\CMakeFiles\RunTest.dir\RunAllTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RunTest.dir/RunAllTests.cpp.s"
-	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\RunTest.dir\RunAllTests.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\RunAllTests.cpp"
-<<
-	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-
-Win32Project\test\CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.obj: Win32Project\test\CMakeFiles\RunTest.dir\flags.make
-Win32Project\test\CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.obj: ..\Win32Project\test\SqliteUnitTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Win32Project/test/CMakeFiles/RunTest.dir/SqliteUnitTest.cpp.obj"
+Win32Project\test\CMakeFiles\RunTest.dir\RunTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RunTest.dir/RunTest.cpp.s"
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\RunTest.dir\SqliteUnitTest.cpp.obj /FdCMakeFiles\RunTest.dir\ /FS -c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\SqliteUnitTest.cpp"
-<<
-	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-
-Win32Project\test\CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RunTest.dir/SqliteUnitTest.cpp.i"
-	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe > CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\SqliteUnitTest.cpp"
-<<
-	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
-
-Win32Project\test\CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RunTest.dir/SqliteUnitTest.cpp.s"
-	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\RunTest.dir\SqliteUnitTest.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\SqliteUnitTest.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\RunTest.dir\RunTest.cpp.s /c "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\RunTest.cpp"
 <<
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
 
 # Object files for target RunTest
 RunTest_OBJECTS = \
-"CMakeFiles\RunTest.dir\RunAllTests.cpp.obj" \
-"CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.obj"
+"CMakeFiles\RunTest.dir\RunTest.cpp.obj"
 
 # External object files for target RunTest
 RunTest_EXTERNAL_OBJECTS =
 
-Win32Project\test\RunTest.exe: Win32Project\test\CMakeFiles\RunTest.dir\RunAllTests.cpp.obj
-Win32Project\test\RunTest.exe: Win32Project\test\CMakeFiles\RunTest.dir\SqliteUnitTest.cpp.obj
+Win32Project\test\RunTest.exe: Win32Project\test\CMakeFiles\RunTest.dir\RunTest.cpp.obj
 Win32Project\test\RunTest.exe: Win32Project\test\CMakeFiles\RunTest.dir\build.make
 Win32Project\test\RunTest.exe: Win32Project\test\lib\googletest\gtest.lib
 Win32Project\test\RunTest.exe: Win32Project\test\lib\googletest\gtest_main.lib
+Win32Project\test\RunTest.exe: Win32Project2.lib
 Win32Project\test\RunTest.exe: Win32Project\test\lib\googletest\gtest.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxbase30ud.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxbase30ud_net.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxbase30ud_xml.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxregexud.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxexpatd.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_core.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_adv.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxpngd.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxjpegd.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxtiffd.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxzlibd.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_html.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_gl.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_qa.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_xrc.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_aui.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_propgrid.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_ribbon.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_richtext.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_media.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxscintillad.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_media.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxscintillad.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib
+Win32Project\test\RunTest.exe: ..\Win32Project\databaselayer\sqlite\lib\sqlite3.lib
 Win32Project\test\RunTest.exe: Win32Project\test\CMakeFiles\RunTest.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable RunTest.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RunTest.exe"
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1\WIN32P~1\test
 	"C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\RunTest.dir --manifests  -- C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1414~1.264\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\RunTest.dir\objects1.rsp @<<
- /out:RunTest.exe /implib:RunTest.lib /pdb:"C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Win32Project\test\RunTest.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console lib\googletest\gtest.lib lib\googletest\gtest_main.lib Win32Project.lib lib\googletest\gtest.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:RunTest.exe /implib:RunTest.lib /pdb:"C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\Win32Project\test\RunTest.pdb" /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console lib\googletest\gtest.lib lib\googletest\gtest_main.lib ..\..\Win32Project2.lib lib\googletest\gtest.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxbase30ud.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxbase30ud_net.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxbase30ud_xml.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxregexud.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxexpatd.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_core.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_adv.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxpngd.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxjpegd.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxtiffd.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxzlibd.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_html.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_gl.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_qa.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_xrc.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_aui.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_propgrid.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_ribbon.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_richtext.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxscintillad.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_media.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_stc.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxscintillad.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxmsw30ud_webview.lib ..\..\..\Win32Project\databaselayer\lib\vc_lib\wxcode_msw28ud_databaselayer_sqlite.lib ..\..\..\Win32Project\databaselayer\sqlite\lib\sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 	cd C:\Users\EDOARD~1\Desktop\ELABOR~1\SQLITE~2\CMAKE-~1
 

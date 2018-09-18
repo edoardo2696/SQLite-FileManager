@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/SqlUnitTest.cpp" "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/CMakeFiles/SqlUnitTest.dir/SqlUnitTest.cpp.obj"
+  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/UnitTest.cpp" "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/CMakeFiles/SqlUnitTest.dir/UnitTest.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
@@ -23,14 +23,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Win32Project/databaselayer/lib/vc_lib"
   "../Win32Project/databaselayer/sqlite/include"
   "../Win32Project/wxActiveRecord"
-  "../Win32Project/test/lib/googletest/include"
-  "../Win32Project/test/lib/googletest"
+  "../Win32Project/test/lib/googletest-master/googletest/include"
+  "../Win32Project/test/lib/googletest-master/googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/CMakeFiles/Win32Project2.dir/DependInfo.cmake"
   )
 

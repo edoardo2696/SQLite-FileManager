@@ -57,6 +57,30 @@ CMAKE_BINARY_DIR = "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManag
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install\local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local
+
+# Special rule for the target install/local
+install\local\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local\fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2018.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install\fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,6 +102,16 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components\fast: list_install_components
+
+.PHONY : list_install_components\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -112,19 +146,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Win32Project2
-
-# Build rule for target.
-Win32Project2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Win32Project2
-.PHONY : Win32Project2
-
-# fast build rule for target.
-Win32Project2\fast:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\build
-.PHONY : Win32Project2\fast
-
-#=============================================================================
 # Target rules for targets named Win32Project
 
 # Build rule for target.
@@ -137,13 +158,52 @@ Win32Project\fast:
 	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\build
 .PHONY : Win32Project\fast
 
+#=============================================================================
+# Target rules for targets named UnitTest
+
+# Build rule for target.
+UnitTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) UnitTest
+.PHONY : UnitTest
+
+# fast build rule for target.
+UnitTest\fast:
+	$(MAKE) -f test\CMakeFiles\UnitTest.dir\build.make /nologo -$(MAKEFLAGS) test\CMakeFiles\UnitTest.dir\build
+.PHONY : UnitTest\fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest\fast:
+	$(MAKE) -f test\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest.dir\build
+.PHONY : gtest\fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main\fast:
+	$(MAKE) -f test\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) test\googletest\CMakeFiles\gtest_main.dir\build
+.PHONY : gtest_main\fast
+
 Win32Project\About.obj: Win32Project\About.cpp.obj
 
 .PHONY : Win32Project\About.obj
 
 # target to build an object file
 Win32Project\About.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\About.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\About.cpp.obj
 .PHONY : Win32Project\About.cpp.obj
 
 Win32Project\About.i: Win32Project\About.cpp.i
@@ -152,7 +212,7 @@ Win32Project\About.i: Win32Project\About.cpp.i
 
 # target to preprocess a source file
 Win32Project\About.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\About.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\About.cpp.i
 .PHONY : Win32Project\About.cpp.i
 
 Win32Project\About.s: Win32Project\About.cpp.s
@@ -161,7 +221,7 @@ Win32Project\About.s: Win32Project\About.cpp.s
 
 # target to generate assembly for a file
 Win32Project\About.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\About.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\About.cpp.s
 .PHONY : Win32Project\About.cpp.s
 
 Win32Project\EditElementDialog.obj: Win32Project\EditElementDialog.cpp.obj
@@ -170,7 +230,7 @@ Win32Project\EditElementDialog.obj: Win32Project\EditElementDialog.cpp.obj
 
 # target to build an object file
 Win32Project\EditElementDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditElementDialog.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditElementDialog.cpp.obj
 .PHONY : Win32Project\EditElementDialog.cpp.obj
 
 Win32Project\EditElementDialog.i: Win32Project\EditElementDialog.cpp.i
@@ -179,7 +239,7 @@ Win32Project\EditElementDialog.i: Win32Project\EditElementDialog.cpp.i
 
 # target to preprocess a source file
 Win32Project\EditElementDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditElementDialog.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditElementDialog.cpp.i
 .PHONY : Win32Project\EditElementDialog.cpp.i
 
 Win32Project\EditElementDialog.s: Win32Project\EditElementDialog.cpp.s
@@ -188,7 +248,7 @@ Win32Project\EditElementDialog.s: Win32Project\EditElementDialog.cpp.s
 
 # target to generate assembly for a file
 Win32Project\EditElementDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditElementDialog.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditElementDialog.cpp.s
 .PHONY : Win32Project\EditElementDialog.cpp.s
 
 Win32Project\EditGcodeDialog.obj: Win32Project\EditGcodeDialog.cpp.obj
@@ -197,7 +257,7 @@ Win32Project\EditGcodeDialog.obj: Win32Project\EditGcodeDialog.cpp.obj
 
 # target to build an object file
 Win32Project\EditGcodeDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGcodeDialog.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditGcodeDialog.cpp.obj
 .PHONY : Win32Project\EditGcodeDialog.cpp.obj
 
 Win32Project\EditGcodeDialog.i: Win32Project\EditGcodeDialog.cpp.i
@@ -206,7 +266,7 @@ Win32Project\EditGcodeDialog.i: Win32Project\EditGcodeDialog.cpp.i
 
 # target to preprocess a source file
 Win32Project\EditGcodeDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGcodeDialog.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditGcodeDialog.cpp.i
 .PHONY : Win32Project\EditGcodeDialog.cpp.i
 
 Win32Project\EditGcodeDialog.s: Win32Project\EditGcodeDialog.cpp.s
@@ -215,7 +275,7 @@ Win32Project\EditGcodeDialog.s: Win32Project\EditGcodeDialog.cpp.s
 
 # target to generate assembly for a file
 Win32Project\EditGcodeDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGcodeDialog.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditGcodeDialog.cpp.s
 .PHONY : Win32Project\EditGcodeDialog.cpp.s
 
 Win32Project\EditGroupDialog.obj: Win32Project\EditGroupDialog.cpp.obj
@@ -224,7 +284,7 @@ Win32Project\EditGroupDialog.obj: Win32Project\EditGroupDialog.cpp.obj
 
 # target to build an object file
 Win32Project\EditGroupDialog.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGroupDialog.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditGroupDialog.cpp.obj
 .PHONY : Win32Project\EditGroupDialog.cpp.obj
 
 Win32Project\EditGroupDialog.i: Win32Project\EditGroupDialog.cpp.i
@@ -233,7 +293,7 @@ Win32Project\EditGroupDialog.i: Win32Project\EditGroupDialog.cpp.i
 
 # target to preprocess a source file
 Win32Project\EditGroupDialog.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGroupDialog.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditGroupDialog.cpp.i
 .PHONY : Win32Project\EditGroupDialog.cpp.i
 
 Win32Project\EditGroupDialog.s: Win32Project\EditGroupDialog.cpp.s
@@ -242,7 +302,7 @@ Win32Project\EditGroupDialog.s: Win32Project\EditGroupDialog.cpp.s
 
 # target to generate assembly for a file
 Win32Project\EditGroupDialog.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\EditGroupDialog.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\EditGroupDialog.cpp.s
 .PHONY : Win32Project\EditGroupDialog.cpp.s
 
 Win32Project\Element.obj: Win32Project\Element.cpp.obj
@@ -251,7 +311,7 @@ Win32Project\Element.obj: Win32Project\Element.cpp.obj
 
 # target to build an object file
 Win32Project\Element.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Element.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Element.cpp.obj
 .PHONY : Win32Project\Element.cpp.obj
 
 Win32Project\Element.i: Win32Project\Element.cpp.i
@@ -260,7 +320,7 @@ Win32Project\Element.i: Win32Project\Element.cpp.i
 
 # target to preprocess a source file
 Win32Project\Element.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Element.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Element.cpp.i
 .PHONY : Win32Project\Element.cpp.i
 
 Win32Project\Element.s: Win32Project\Element.cpp.s
@@ -269,7 +329,7 @@ Win32Project\Element.s: Win32Project\Element.cpp.s
 
 # target to generate assembly for a file
 Win32Project\Element.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Element.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Element.cpp.s
 .PHONY : Win32Project\Element.cpp.s
 
 Win32Project\Gcode.obj: Win32Project\Gcode.cpp.obj
@@ -278,7 +338,7 @@ Win32Project\Gcode.obj: Win32Project\Gcode.cpp.obj
 
 # target to build an object file
 Win32Project\Gcode.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Gcode.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Gcode.cpp.obj
 .PHONY : Win32Project\Gcode.cpp.obj
 
 Win32Project\Gcode.i: Win32Project\Gcode.cpp.i
@@ -287,7 +347,7 @@ Win32Project\Gcode.i: Win32Project\Gcode.cpp.i
 
 # target to preprocess a source file
 Win32Project\Gcode.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Gcode.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Gcode.cpp.i
 .PHONY : Win32Project\Gcode.cpp.i
 
 Win32Project\Gcode.s: Win32Project\Gcode.cpp.s
@@ -296,7 +356,7 @@ Win32Project\Gcode.s: Win32Project\Gcode.cpp.s
 
 # target to generate assembly for a file
 Win32Project\Gcode.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Gcode.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Gcode.cpp.s
 .PHONY : Win32Project\Gcode.cpp.s
 
 Win32Project\Group.obj: Win32Project\Group.cpp.obj
@@ -305,7 +365,7 @@ Win32Project\Group.obj: Win32Project\Group.cpp.obj
 
 # target to build an object file
 Win32Project\Group.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Group.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Group.cpp.obj
 .PHONY : Win32Project\Group.cpp.obj
 
 Win32Project\Group.i: Win32Project\Group.cpp.i
@@ -314,7 +374,7 @@ Win32Project\Group.i: Win32Project\Group.cpp.i
 
 # target to preprocess a source file
 Win32Project\Group.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Group.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Group.cpp.i
 .PHONY : Win32Project\Group.cpp.i
 
 Win32Project\Group.s: Win32Project\Group.cpp.s
@@ -323,7 +383,7 @@ Win32Project\Group.s: Win32Project\Group.cpp.s
 
 # target to generate assembly for a file
 Win32Project\Group.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\Group.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\Group.cpp.s
 .PHONY : Win32Project\Group.cpp.s
 
 Win32Project\SQLiteTestMainFrame.obj: Win32Project\SQLiteTestMainFrame.cpp.obj
@@ -359,7 +419,7 @@ Win32Project\SqlUnitTest.obj: Win32Project\SqlUnitTest.cpp.obj
 
 # target to build an object file
 Win32Project\SqlUnitTest.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\SqlUnitTest.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\SqlUnitTest.cpp.obj
 .PHONY : Win32Project\SqlUnitTest.cpp.obj
 
 Win32Project\SqlUnitTest.i: Win32Project\SqlUnitTest.cpp.i
@@ -368,7 +428,7 @@ Win32Project\SqlUnitTest.i: Win32Project\SqlUnitTest.cpp.i
 
 # target to preprocess a source file
 Win32Project\SqlUnitTest.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\SqlUnitTest.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\SqlUnitTest.cpp.i
 .PHONY : Win32Project\SqlUnitTest.cpp.i
 
 Win32Project\SqlUnitTest.s: Win32Project\SqlUnitTest.cpp.s
@@ -377,7 +437,7 @@ Win32Project\SqlUnitTest.s: Win32Project\SqlUnitTest.cpp.s
 
 # target to generate assembly for a file
 Win32Project\SqlUnitTest.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\SqlUnitTest.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\SqlUnitTest.cpp.s
 .PHONY : Win32Project\SqlUnitTest.cpp.s
 
 Win32Project\wxActiveRecord.obj: Win32Project\wxActiveRecord.cpp.obj
@@ -386,7 +446,7 @@ Win32Project\wxActiveRecord.obj: Win32Project\wxActiveRecord.cpp.obj
 
 # target to build an object file
 Win32Project\wxActiveRecord.cpp.obj:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\wxActiveRecord.cpp.obj
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\wxActiveRecord.cpp.obj
 .PHONY : Win32Project\wxActiveRecord.cpp.obj
 
 Win32Project\wxActiveRecord.i: Win32Project\wxActiveRecord.cpp.i
@@ -395,7 +455,7 @@ Win32Project\wxActiveRecord.i: Win32Project\wxActiveRecord.cpp.i
 
 # target to preprocess a source file
 Win32Project\wxActiveRecord.cpp.i:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\wxActiveRecord.cpp.i
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\wxActiveRecord.cpp.i
 .PHONY : Win32Project\wxActiveRecord.cpp.i
 
 Win32Project\wxActiveRecord.s: Win32Project\wxActiveRecord.cpp.s
@@ -404,7 +464,7 @@ Win32Project\wxActiveRecord.s: Win32Project\wxActiveRecord.cpp.s
 
 # target to generate assembly for a file
 Win32Project\wxActiveRecord.cpp.s:
-	$(MAKE) -f CMakeFiles\Win32Project2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project2.dir\Win32Project\wxActiveRecord.cpp.s
+	$(MAKE) -f CMakeFiles\Win32Project.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Win32Project.dir\Win32Project\wxActiveRecord.cpp.s
 .PHONY : Win32Project\wxActiveRecord.cpp.s
 
 # Help Target
@@ -413,10 +473,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Win32Project2
 	@echo ... Win32Project
+	@echo ... install/local
+	@echo ... install
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... list_install_components
+	@echo ... UnitTest
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... Win32Project/About.obj
 	@echo ... Win32Project/About.i
 	@echo ... Win32Project/About.s

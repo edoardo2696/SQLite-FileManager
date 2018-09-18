@@ -25,6 +25,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Win32Project/wxActiveRecord"
   "../Win32Project/test/lib/googletest/include"
   "../Win32Project/test/lib/googletest"
+  "../Win32Project/test/Win32Project/test/lib/googletest/include/gtest"
   )
 
 # Targets to which this target links.

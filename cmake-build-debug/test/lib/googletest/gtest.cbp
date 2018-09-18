@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="gtest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\lib\;CMake Files\test\lib\googletest\;CMake Files\test\lib\googletest\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/src"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/test/lib/googletest/include/gtest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 gtest"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/src"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/test/lib/googletest/include/gtest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 gtest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/src"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/test/lib/googletest/include/gtest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 gtest_main"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/test/lib/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/googletest-master/googletest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/lib/vc_lib"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/sqlite/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/wxActiveRecord"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/include"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/src"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/test/lib/googletest/include/gtest"/>
+					<Add directory="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\cmake-build-debug\test\lib\googletest\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\lib\googletest\"/>
+		</Unit>
+		<Unit filename="C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/lib/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\lib\googletest\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

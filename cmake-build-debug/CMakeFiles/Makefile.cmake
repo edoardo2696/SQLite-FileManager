@@ -18,9 +18,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeRCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeSystemSpecificInitialize.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/CheckIncludeFile.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/CheckLibraryExists.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/CheckSymbolExists.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/MSVC-C.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/MSVC-CXX.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/FindPackageHandleStandardArgs.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/FindPackageMessage.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/FindPythonInterp.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/FindThreads.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-MSVC-C.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-MSVC-CXX.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-MSVC.cmake"
@@ -32,6 +39,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.12.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeRCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeSystem.cmake"
+  "../test/CMakeLists.txt"
+  "../test/googletest/CMakeLists.txt"
+  "../test/googletest/cmake/internal_utils.cmake"
   )
 
 # The corresponding makefile is:
@@ -43,10 +53,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Win32Project2.dir/DependInfo.cmake"
   "CMakeFiles/Win32Project.dir/DependInfo.cmake"
+  "test/CMakeFiles/UnitTest.dir/DependInfo.cmake"
+  "test/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "test/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

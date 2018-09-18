@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+      <config projectName="Project" targetName="UnitTest" />
       <config projectName="Project" targetName="gtest_main" />
-      <config projectName="Project" targetName="Win32Project2" />
       <config projectName="Project" targetName="gtest" />
     </generated>
   </component>
@@ -17,6 +17,8 @@
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/Win32Project/test/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/Win32Project/test/lib/googletest/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/test/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/test/lib/googletest/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
     <expand />
     <select />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="-1518860995">
       <usages-collector id="statistics.lifecycle.project">
@@ -160,9 +163,10 @@
         <counts>
           <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.106" value="1" />
           <entry key="project.open.time.117" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.25" value="3" />
+          <entry key="project.open.time.25" value="4" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.33" value="2" />
@@ -170,58 +174,96 @@
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="4" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.39" value="2" />
+          <entry key="project.open.time.38" value="2" />
+          <entry key="project.open.time.39" value="3" />
           <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="15021" />
-          <entry key="h" value="1740" />
-          <entry key="txt" value="383" />
+          <entry key="cc" value="5" />
+          <entry key="cmake" value="1" />
+          <entry key="cpp" value="20143" />
+          <entry key="h" value="2901" />
+          <entry key="txt" value="1146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="373" />
-          <entry key="ObjectiveC" value="16761" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="CMakeLists.txt" value="1128" />
+          <entry key="ObjectiveC" value="23049" />
+          <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cc" value="1" />
-          <entry key="cmake" value="3" />
-          <entry key="cpp" value="213" />
+          <entry key="cc" value="5" />
+          <entry key="cmake" value="11" />
+          <entry key="cpp" value="265" />
+          <entry key="exe" value="1" />
           <entry key="gitattributes" value="1" />
-          <entry key="h" value="178" />
-          <entry key="obj" value="1" />
-          <entry key="txt" value="37" />
+          <entry key="h" value="256" />
+          <entry key="htm" value="1" />
+          <entry key="lib" value="2" />
+          <entry key="m4" value="1" />
+          <entry key="manifest" value="1" />
+          <entry key="md" value="1" />
+          <entry key="obj" value="3" />
+          <entry key="pump" value="2" />
+          <entry key="res" value="1" />
+          <entry key="tuple" value="5" />
+          <entry key="txt" value="70" />
+          <entry key="xlocale" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeCache.txt" value="1" />
-          <entry key="CMakeLists.txt" value="39" />
-          <entry key="ObjectiveC" value="392" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="CMakeLists.txt" value="80" />
+          <entry key="HTML" value="1" />
+          <entry key="ObjectiveC" value="534" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
         <counts>
-          <entry key="Google Test" value="16" />
+          <entry key="Google Test" value="100" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/UnitTest.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/UnitTest.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="159" selection-start-line="6" selection-end-line="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -232,7 +274,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ELEMENT</find>
       <find>m_GroupsListBox</find>
       <find>m_ElementsListView</find>
       <find>m_ElementInfoPanel</find>
@@ -262,6 +303,7 @@
       <find>ID_ELEMENT_IMAGE_PANEL</find>
       <find>elementid</find>
       <find>Win32Project2.lib</find>
+      <find>${PROJECT_SOURCE_DIR}/test/googletest/</find>
     </findStrings>
     <replaceStrings>
       <replace>ElementRow</replace>
@@ -289,57 +331,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/valgen.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/wx/generic/splitter.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/EditGcodeDialog.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/EditGroupDialog.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/EditGroupDialog.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/Gcode.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/PreparedStatement.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/Group.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/Group.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/EditElementDialog.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/EditElementDialog.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/EditGcodeDialog.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/databaselayer/include/DatabaseLayerException.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/Gcode.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/SQLiteTestMainFrame.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/SQLiteTestApp.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/Element.h" />
-        <option value="$PROJECT_DIR$/Win32Project2/Element.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project2/SQLiteTestMainFrame.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/Element.h" />
-        <option value="$PROJECT_DIR$/Win32Project/Gcode.h" />
-        <option value="$PROJECT_DIR$/Win32Project/Gcode.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/wxActiveRecord.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/wxActiveRecord.h" />
-        <option value="$PROJECT_DIR$/tester.cpp" />
         <option value="$PROJECT_DIR$/tester.h" />
         <option value="$PROJECT_DIR$/TestData.h" />
         <option value="$PROJECT_DIR$/Test.h" />
         <option value="$PROJECT_DIR$/Test.cpp" />
         <option value="$PROJECT_DIR$/SqliteUnitTest.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/test/RunTest.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Win32Project/test/RunAllTests.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.h" />
         <option value="$PROJECT_DIR$/Win32Project/EditElementDialog.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/Element.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/SQLiteTestApp.h" />
         <option value="$PROJECT_DIR$/Win32Project/SQLiteTestApp.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/test/UnitTest.h" />
         <option value="$PROJECT_DIR$/Win32Project/test/Tester.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/test/runAllTests.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.h" />
-        <option value="$PROJECT_DIR$/Win32Project/test/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Win32Project/test/UnitTest.cpp" />
         <option value="$PROJECT_DIR$/Win32Project/SqlUnitTest.h" />
         <option value="$PROJECT_DIR$/Win32Project/SqlUnitTest.cpp" />
-        <option value="$PROJECT_DIR$/Win32Project/test/SqlUnitTest.cpp" />
         <option value="$PROJECT_DIR$/../../CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Win32Project/test/RunTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Element.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Element.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Gcode.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Gcode.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Group.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/Group.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/SqlUnitTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/SqlUnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/Element.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/UnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/UnitTest.cpp" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/src/gtest_main.cc" />
+        <option value="$PROJECT_DIR$/Win32Project/test/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest-message.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest-param-test.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest-printers.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest-test-part.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest-typed-test.h" />
+        <option value="$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/internal/gtest-internal.h" />
+        <option value="$PROJECT_DIR$/test/lib/googletest/include/gtest/gtest.h" />
+        <option value="$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-internal.h" />
+        <option value="$PROJECT_DIR$/test/UnitTest.h" />
+        <option value="$PROJECT_DIR$/Win32Project/Group.cpp" />
+        <option value="$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-port.h" />
+        <option value="$PROJECT_DIR$/test/lib/googletest/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/../../test/lib/googletest/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/test/googletest/include/gtest/gtest.h" />
+        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/test/UnitTest.cpp" />
       </list>
     </option>
   </component>
@@ -350,9 +392,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="320" />
+    <option name="width" value="1607" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -361,23 +403,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SQLite FileManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Win32Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="SQLite FileManager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SQLite FileManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SQLite FileManager" type="462c0819:PsiDirectoryNode" />
-              <item name="Win32Project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,13 +423,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\test\cmake-build-debug" />
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\lib\googletest\include\gtest" />
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\lib\googletest\src" />
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test\lib\googletest\include\gtest\internal" />
+      <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project" />
       <recent name="C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\test" />
     </key>
@@ -409,27 +450,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Win32Project2">
-    <configuration name="TestGroup" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Win32Project" TARGET_NAME="SqliteUnitTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Win32Project" RUN_TARGET_NAME="SqliteUnitTest" TEST_MODE="PATTERN">
+  <component name="RunManager">
+    <configuration name="Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="UnitTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="UnitTest" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Win32Project" TARGET_NAME="Win32Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Win32Project" RUN_TARGET_NAME="Win32Project">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Win32Project2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Win32Project" TARGET_NAME="Win32Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Win32Project" RUN_TARGET_NAME="Win32Project">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.Win32Project2" />
-      <item itemvalue="Google Test.TestGroup" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -492,86 +518,94 @@
       <workItem from="1536752658904" duration="605000" />
       <workItem from="1536822009447" duration="11877000" />
       <workItem from="1536930877039" duration="9146000" />
-      <workItem from="1536995736337" duration="735000" />
+      <workItem from="1536995736337" duration="9098000" />
+      <workItem from="1537087473531" duration="10494000" />
+      <workItem from="1537119087546" duration="1086000" />
+      <workItem from="1537125461615" duration="3751000" />
+      <workItem from="1537195822301" duration="3464000" />
+      <workItem from="1537203754079" duration="3963000" />
+      <workItem from="1537212356508" duration="7510000" />
+      <workItem from="1537251983870" duration="18144000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GoogleTestSQL - 2018.09.01 at 18h 51m 32s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 15m 04s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.01 at 18h 56m 21s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 15m 21s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.01 at 18h 56m 48s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 15m 35s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.01 at 19h 01m 40s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 15m 48s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.03 at 10h 18m 10s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 15m 59s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.11 at 11h 23m 25s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 16m 15s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.11 at 19h 24m 42s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 18m 32s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.13 at 09h 53m 20s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 19m 39s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.13 at 18h 13m 44s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 20m 31s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="GoogleTestSQL - 2018.09.13 at 18h 14m 21s.xml">
-      <configuration name="GoogleTestSQL" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="Test - 2018.09.18 at 16h 21m 46s.xml">
+      <configuration name="Test" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218035000" />
+    <option name="totallyTimeSpent" value="274810000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="320" y="0" width="1607" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12605043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3991323" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22017354" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31872946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.38394794" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.62431544" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.18004338" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.6078861" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32899246" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26477188" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31449893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3991323" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22124863" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.01626898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.036144577" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.54555315" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" weight="0.45892662" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.18546638" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -585,276 +619,241 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Win32Project2/SQLiteTestMainFrame.cpp" />
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/event.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="3608" selection-start-line="3608" selection-end-line="3608" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/RecordIDClientData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseErrorCodes.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/internal/gtest-filepath.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/internal/gtest-linked_ptr.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest-message.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/internal/gtest-internal.h" />
+    <entry file="file://$PROJECT_DIR$/Win32Project/About.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseErrorReporter.h">
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/gtest.h" />
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-death-test-internal.h" />
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-filepath.h" />
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-param-util-generated.h" />
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-param-util-generated.h.pump" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Win32Project2.lib">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10098" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UnitTest.h" />
+    <entry file="file://$PROJECT_DIR$/test/Gcode.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseLayer.h">
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/gtest-printers.h" />
+    <entry file="file://$PROJECT_DIR$/test/Group.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/PreparedStatement.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/include/gtest/gtest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseLayerException.h">
+    <entry file="file://$PROJECT_DIR$/test/lib/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/test/cmake-build-debug/CMakeFiles/UnitTest.dir/UnitTest.cpp.obj">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/EditGcodeDialog.cpp">
+    <entry file="file://$PROJECT_DIR$/test/Group.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-port.h" />
+    <entry file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/ucrt/corecrt_wio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="224" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/filefn.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/include/gtest/internal/gtest-internal.h" />
+    <entry file="file://$PROJECT_DIR$/test/lib/googletest/CMakeLists.txt" />
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/win/share/cmake-3.12/Modules/CMakePackageConfigHelpers.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test/lib/googletest/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ElementTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="40" column="1" lean-forward="true" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/googletest/include/gtest/gtest-printers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="600" selection-start-line="600" selection-end-line="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/SqliteDatabaseLayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/googletest-release-1.8.1/googletest/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="1498" selection-start-line="1498" selection-end-line="1498" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/win/share/cmake-3.12/Modules/WriteBasicConfigVersionFile.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/googletest/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.14.26428/include/tuple">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15521">
+          <caret line="1162" selection-start-line="1162" selection-end-line="1162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/googletest/include/gtest/internal/gtest-port.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="1022" selection-start-line="1022" selection-end-line="1022" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.14.26428/include/xlocale">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="314" selection-start-line="314" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.661/UnitTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="55" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.658/UnitTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="73" column="9" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="73" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.418/UnitTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="32" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.338/UnitTest.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/Gcode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/wxActiveRecord/wxActiveRecord.cpp" />
-    <entry file="file://$PROJECT_DIR$/Win32Project/wxActiveRecord.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="180" selection-start-line="180" selection-end-line="180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/wxActiveRecord.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="301" column="6" selection-start-line="301" selection-start-column="6" selection-end-line="301" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestData.h" />
-    <entry file="file://$PROJECT_DIR$/TestData.cpp" />
-    <entry file="file://$PROJECT_DIR$/SqliteUnitTest.h" />
-    <entry file="file://$PROJECT_DIR$/Win32Project/RunTest.cpp" />
-    <entry file="file://$PROJECT_DIR$/../Astar/test/Tester.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletestbackup/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Win32Project/googletest/m4/gtest.m4">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/SearchElement.cpp" />
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/lib/googletest/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/test/googletest/include/gtest/internal/gtest-internal.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+        <state relative-caret-position="301">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/cmake-build-debug/CMakeCache.txt">
+    <entry file="file://$PROJECT_DIR$/test/googletest/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="1392" selection-start-line="1392" selection-end-line="1392" />
+          <folding>
+            <element signature="e#2437#2454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/cmake-build-debug/UnitTest.exe">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/EditElementDialog.cpp">
+    <entry file="file://$PROJECT_DIR$/Win32Project/Group.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-542">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="2839">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/Element.h">
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/wxcrt.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/UnitTest.h" />
-    <entry file="file://$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/Gcode.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Win32Project2.dir/cmake_clean_target.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Win32Project2.dir/cmake_clean.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Windows Kits/10/Include/10.0.17134.0/ucrt/string.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="265" selection-start-line="265" selection-end-line="265" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/SqliteUnitTest.h" />
-    <entry file="file://$PROJECT_DIR$/Win32Project/Element.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/SQLiteTestMainFrame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/Group.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/EditGroupDialog.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/EditGroupDialog.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/EditElementDialog.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/EditGcodeDialog.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/SqlUnitTest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Win32Project/SqlUnitTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="1414">
+          <caret line="88" column="48" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/wx/filefn.h">
+    <entry file="file://$PROJECT_DIR$/Win32Project/databaselayer/include/DatabaseLayer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        <state relative-caret-position="196">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/Group.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="206" column="54" lean-forward="true" selection-start-line="206" selection-start-column="54" selection-end-line="206" selection-end-column="54" />
-          <folding>
-            <element signature="e#20#60#0" />
-            <element signature="e#62#244#0" />
-            <element signature="e#246#345#0" />
-            <element signature="e#347#552#0" />
-            <element signature="e#554#695#0" />
-            <element signature="e#804#1317#0" />
-            <element signature="e#1638#2143#0" />
-            <element signature="e#2145#2756#0" />
-            <element signature="e#2759#3313#0" />
-            <element signature="e#3316#3378#0" />
-            <element signature="e#3380#3473#0" />
-            <element signature="e#3475#3672#0" />
-            <element signature="e#3674#3790#0" />
-            <element signature="e#3794#4024#0" />
-            <element signature="e#4026#4330#0" />
-            <element signature="e#6242#6294#0" />
-            <element signature="e#6296#6388#0" />
-            <element signature="e#6390#6501#0" />
-            <element signature="e#6608#6901#0" />
-            <element signature="e#6903#7114#0" />
-            <element signature="e#7116#7348#0" />
-            <element signature="e#7350#7573#0" />
-            <element signature="e#7575#7795#0" />
-            <element signature="e#7797#8076#0" />
-            <element signature="e#8078#8536#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/cmake-build-debug/CMakeFiles/UnitTest.dir/manifest.res">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/runlTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Win32Project/test/SqlUnitTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/cmake-build-debug/CMakeFiles/UnitTest.dir/intermediate.manifest">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="70" column="79" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/UnitTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="159" selection-start-line="6" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/UnitTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

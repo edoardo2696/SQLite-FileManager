@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RunTest.dir/RunAllTests.cpp.obj"
-  "CMakeFiles/RunTest.dir/SqliteUnitTest.cpp.obj"
+  "CMakeFiles/RunTest.dir/RunTest.cpp.obj"
   "RunTest.pdb"
   "RunTest.exe"
   "RunTest.exe.manifest"

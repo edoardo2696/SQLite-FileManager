@@ -4,8 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/RunAllTests.cpp" "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/CMakeFiles/RunTest.dir/RunAllTests.cpp.obj"
-  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/SqliteUnitTest.cpp" "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/CMakeFiles/RunTest.dir/SqliteUnitTest.cpp.obj"
+  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/RunTest.cpp" "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/CMakeFiles/RunTest.dir/RunTest.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
@@ -32,6 +31,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/Win32Project/test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/cmake-build-debug/CMakeFiles/Win32Project2.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
