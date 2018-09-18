@@ -44,7 +44,7 @@ ElementRow* Element::Id(int key){
 	catch (DatabaseLayerException& e)
 	{
 		ProcessException(e);
-		return NULL;
+		return nullptr;
 	}
 }
 

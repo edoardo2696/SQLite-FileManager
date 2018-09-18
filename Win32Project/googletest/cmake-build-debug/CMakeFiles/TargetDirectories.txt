@@ -1,0 +1,4 @@
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/lib/googletest/cmake-build-debug/CMakeFiles/gtest.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/lib/googletest/cmake-build-debug/CMakeFiles/gtest_main.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/lib/googletest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/test/lib/googletest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,6 @@
+
+
+
 #include "Group.h"
 
 Group::Group():wxSqliteActiveRecord(){
@@ -176,7 +179,7 @@ GroupRow& GroupRow::operator=(const GroupRow& src){
 bool GroupRow::GetFromResult(DatabaseResultSet* result){
 	
 	newRow=false;
-		name=result->GetResultString("name");
+	name=result->GetResultString("name");
 	description=result->GetResultString("description");
 	image=result->GetResultString("image");
 	id=result->GetResultInt("id");
