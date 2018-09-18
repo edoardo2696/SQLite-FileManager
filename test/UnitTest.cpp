@@ -99,17 +99,17 @@ TEST(GcodeTest, DeleteGCode) {
         wxString db_filename(wxT("SQLiteFileManager.db"));
         Database->Open(db_filename);
         PreparedStatement *pStatement(nullptr);
-        PreparedStatement *DeleteGroupStatement = Database->PrepareStatement(
+        PreparedStatement *DeleteGcodeStatement = Database->PrepareStatement(
                 wxString::Format("DELETE FROM gcodes WHERE id=1000"));
-        DeleteGroupStatement->RunQuery();
-        Database->CloseStatement(DeleteGroupStatement);
+        DeleteGcodeStatement->RunQuery();
+        Database->CloseStatement(DeleteGcodeStatement);
 
-        PreparedStatement *groupStatement = Database->PrepareStatement(
+        PreparedStatement *gcodeStatement = Database->PrepareStatement(
                 wxString::Format(wxT("SELECT * FROM gcodes WHERE id = 1000")));
-        DatabaseResultSet *result = groupStatement->ExecuteQuery();
+        DatabaseResultSet *result = gcodeStatement->ExecuteQuery();
         ASSERT_EQ(result->Next(), false);
 
-        Database->CloseStatement(groupStatement);
+        Database->CloseStatement(gcodeStatement);
     }   catch(DatabaseLayerException & e) {printf(e.GetErrorMessage());}
 }
 
@@ -119,17 +119,17 @@ TEST(ElementTest, DeleteElement) {
         wxString db_filename(wxT("SQLiteFileManager.db"));
         Database->Open(db_filename);
         PreparedStatement *pStatement(nullptr);
-        PreparedStatement *DeleteGroupStatement = Database->PrepareStatement(
+        PreparedStatement *DeleteElementStatement = Database->PrepareStatement(
                 wxString::Format("DELETE FROM elements WHERE id=1000"));
-        DeleteGroupStatement->RunQuery();
-        Database->CloseStatement(DeleteGroupStatement);
+        DeleteElementStatement->RunQuery();
+        Database->CloseStatement(DeleteElementStatement);
 
-        PreparedStatement *groupStatement = Database->PrepareStatement(
+        PreparedStatement *elementStatement = Database->PrepareStatement(
                 wxString::Format(wxT("SELECT * FROM elements WHERE id = 1000")));
-        DatabaseResultSet *result = groupStatement->ExecuteQuery();
+        DatabaseResultSet *result = elementStatement->ExecuteQuery();
         ASSERT_EQ(result->Next(), false);
 
-        Database->CloseStatement(groupStatement);
+        Database->CloseStatement(elementStatement);
     }   catch(DatabaseLayerException & e) {printf(e.GetErrorMessage());}
 }
 
