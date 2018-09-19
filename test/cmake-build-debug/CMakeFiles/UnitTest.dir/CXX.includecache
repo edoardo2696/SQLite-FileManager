@@ -4828,32 +4828,6 @@ C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/data
 sqlite3.h
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/sqlite3.h
 
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/chartype.h
-wx/platform.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/platform.h
-sys/types.h
--
-wchar.h
--
-wcstr.h
--
-stdlib.h
--
-widec.h
--
-ctype.h
--
-stddef.h
--
-string.h
--
-ctype.h
--
-tchar.h
--
-ctype.h
--
-
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/hashset.h
 wx/hashmap.h
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/hashmap.h
@@ -4865,50 +4839,6 @@ ext/hash_set
 -
 hash_set
 -
-
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/string.h
-wx/defs.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/defs.h
-ctype.h
--
-stdio.h
--
-string.h
--
-stdarg.h
--
-limits.h
--
-string.h
--
-stdio.h
--
-stdarg.h
--
-limits.h
--
-stdlib.h
--
-wx/wxcrtbase.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/wxcrtbase.h
-wx/strvararg.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/strvararg.h
-wx/buffer.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/buffer.h
-wx/strconv.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/strconv.h
-wx/stringimpl.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/stringimpl.h
-wx/stringops.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/stringops.h
-wx/unichar.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/unichar.h
-wx/tls.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/tls.h
-wx/iosfwrap.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/iosfwrap.h
-wx/crt.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx/crt.h
 
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx.h
 wx/defs.h
@@ -5095,10 +5025,6 @@ gtest/gtest.h
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/test/gtest/gtest.h
 ../Win32Project/databaselayer/include/wx/wx.h
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/wx.h
-../Win32Project/databaselayer/include/wx/chartype.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/chartype.h
-../Win32Project/databaselayer/include/wx/string.h
-C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/wx/string.h
 ../Win32Project/databaselayer/include/SqliteDatabaseLayer.h
 C:/Users/Edoardo Luci/Desktop/Elaborato C++/SQLite FileManager/Win32Project/databaselayer/include/SqliteDatabaseLayer.h
 ../Win32Project/databaselayer/include/DatabaseLayerException.h

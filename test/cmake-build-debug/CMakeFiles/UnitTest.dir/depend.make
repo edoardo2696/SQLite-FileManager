@@ -672,9 +672,7 @@ CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elabora
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\PreparedStatement.h"
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\ResultSetMetaData.h"
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\SqliteDatabaseLayer.h"
-CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\wx\chartype.h"
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\wx\hashset.h"
-CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\wx\string.h"
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\wx\wx.h"
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: "C:\Users\Edoardo Luci\Desktop\Elaborato C++\SQLite FileManager\Win32Project\databaselayer\include\wx\wxprec.h"
 CMakeFiles\UnitTest.dir\UnitTest.cpp.obj: ..\UnitTest.cpp
